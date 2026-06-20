@@ -1,0 +1,225 @@
+{
+  "seo": {
+    "homeTitle": "ADDNEXO ERP | Control Total de Inventario y Facturación",
+    "homeDesc": "El ERP ligero para centralizar tu inventario (Kardex), facturación digital automática, despachos y reportes financieros. Dile adiós al Excel y automatiza hoy.",
+    "contactTitle": "Contacto y Demo Gratis | ADDNEXO ERP",
+    "contactDesc": "Ponte en contacto con nuestro equipo y programa una demostración personalizada de ADDNEXO ERP. Comienza a optimizar tu operación hoy."
+  },
+  "navbar": {
+    "features": "Características",
+    "modules": "Módulos",
+    "howItWorks": "Cómo funciona",
+    "benefits": "Beneficios",
+    "requestDemo": "Solicitar Demo",
+    "language": "EN"
+  },
+  "hero": {
+    "badge": "ADDNEXO ERP — La evolución de CIMA",
+    "title1": "Centraliza toda tu",
+    "titleAccent": "operación y finanzas",
+    "title2": "en una sola plataforma",
+    "subtitle": "El ERP ligero diseñado para controlar inventario, ventas, despachos y facturación. Elimina el Excel, automatiza procesos críticos y toma decisiones con datos en tiempo real.",
+    "ctaPrimary": "Comenzar ahora",
+    "ctaSecondary": "Ver cómo funciona",
+    "videoPlaceholder": "VIDEO DE PRESENTACIÓN",
+    "slides": [
+      {
+        "label": "Dashboard operativo principal"
+      },
+      {
+        "label": "Panel de operaciones e inventario"
+      },
+      {
+        "label": "Módulo de administración y reportes"
+      },
+      {
+        "label": "Vista de la plataforma pública"
+      }
+    ]
+  },
+  "stats": {
+    "headline": "La plataforma que transforma cómo operan las empresas",
+    "items": [
+      {
+        "label": "Módulos integrados"
+      },
+      {
+        "label": "Procesos automatizados"
+      },
+      {
+        "label": "Trazabilidad End-to-End"
+      },
+      {
+        "label": "Datos en tiempo real"
+      }
+    ]
+  },
+  "features": {
+    "badge": "Funcionalidades",
+    "title1": "Todo lo que tu operación necesita,",
+    "title2": "en un solo lugar",
+    "subtitle": "Cada módulo está diseñado para conectarse con los demás, creando un flujo operativo completo y sin fricciones.",
+    "f1Title": "Gestión de Inventario",
+    "f1Desc": "Control de stock en tiempo real con alertas de inventario bajo, historial de movimientos y búsqueda avanzada.",
+    "f2Title": "Facturación Automática",
+    "f2Desc": "Genera facturas con cálculos y manejo de impuestos automáticos. Exporta a PDF y controla estados de pago.",
+    "f3Title": "Ventas y Pipeline",
+    "f3Desc": "Gestiona clientes, crea proformas (quotes), y sigue el ciclo de vida completo desde el pedido hasta el despacho.",
+    "f4Title": "Despachos y Trazabilidad",
+    "f4Desc": "Trazabilidad End-to-End en cada despacho. Sigue el estado de cada entrega desde el almacén hasta el cliente.",
+    "f5Title": "Pagos y Cuentas por Cobrar",
+    "f5Desc": "Control detallado de pagos pendientes, historial de transacciones y seguimiento de cuentas por cobrar.",
+    "f6Title": "Reportes Financieros",
+    "f6Desc": "Análisis financiero en tiempo real con reportes exportables. Toma decisiones estratégicas con datos concretos."
+  },
+  "problems": {
+    "badge": "¿Te suena familiar?",
+    "title1": "Los problemas que",
+    "title2": "estamos resolviendo",
+    "subtitle": "Muchas empresas operan con estos problemas a diario sin saber que existe una mejor forma. Nosotros la construimos.",
+    "cta": "Quiero resolverlos →",
+    "items": [
+      "Descontrol total del inventario y la mercancía",
+      "Dependencia excesiva e ineficiente de Excel",
+      "Errores en facturación y cálculos manuales",
+      "Sin seguimiento real a pagos y cobros",
+      "Pérdida de información histórica clave",
+      "Falta de trazabilidad en los despachos",
+      "Procesos lentos que frenan el crecimiento",
+      "Decisiones tomadas sin datos reales",
+      "Duplicidad y contradicción de información",
+      "Errores humanos de transcripción costosos"
+    ]
+  },
+  "howItWorks": {
+    "badge": "Proceso",
+    "title1": "De la implementación",
+    "title2": "a los resultados en 3 pasos",
+    "subtitle": "Diseñado para que cualquier empresa pueda adoptar el sistema rápidamente, sin meses de configuración ni consultoría costosa.",
+    "steps": [
+      {
+        "title": "Centraliza tu información",
+        "desc": "Importa tus datos actuales y conecta todos tus procesos: inventario, clientes, proveedores y productos en una sola plataforma.",
+        "tag": "Configuración inicial"
+      },
+      {
+        "title": "Automatiza tus procesos",
+        "desc": "El sistema genera facturas, actualiza el stock, registra pagos y emite alertas automáticamente. Tú te enfocas en crecer.",
+        "tag": "Automatización"
+      },
+      {
+        "title": "Decide con datos reales",
+        "desc": "Accede a reportes financieros, trazabilidad de despachos y análisis operativo en tiempo real para tomar mejores decisiones.",
+        "tag": "Análisis y control"
+      }
+    ]
+  },
+  "benefits": {
+    "badge": "Beneficios",
+    "title1": "El impacto real en",
+    "title2": "tu operación",
+    "subtitle": "Empresas que implementan el sistema reportan resultados concretos en las primeras semanas.",
+    "items": [
+      {
+        "title": "Centralización total",
+        "desc": "Un solo sistema para toda tu operación. Sin silos de información, sin fricciones entre departamentos."
+      },
+      {
+        "title": "Automatización crítica",
+        "desc": "Los procesos repetitivos corren solos. Tu equipo se enfoca en lo que realmente agrega valor."
+      },
+      {
+        "title": "Cero errores humanos",
+        "desc": "Reducción drástica de errores de transcripción y cálculo que cuestan dinero y tiempo cada día."
+      },
+      {
+        "title": "Decisiones con datos",
+        "desc": "Reportes financieros y operativos en tiempo real para liderar con información, no con intuición."
+      },
+      {
+        "title": "Trazabilidad completa",
+        "desc": "Cada producto, factura y despacho tiene un historial completo. Nunca más pierdas información crítica."
+      },
+      {
+        "title": "Escalabilidad operativa",
+        "desc": "El sistema crece con tu negocio. Agrega módulos y usuarios según las necesidades de tu empresa."
+      },
+      {
+        "title": "Mayor productividad",
+        "desc": "Menos tiempo en tareas manuales, más tiempo en estrategia. Tu equipo hace más con menos esfuerzo."
+      },
+      {
+        "title": "Control financiero total",
+        "desc": "Visibilidad completa sobre ingresos, egresos y cuentas por cobrar. Finanzas siempre bajo control."
+      }
+    ]
+  },
+  "showcase": {
+    "badge": "La plataforma",
+    "title1": "Diseñada para que",
+    "title2": "tu equipo la use desde el día 1",
+    "subtitle": "Interfaz intuitiva, flujos claros y sin curva de aprendizaje larga. Tu equipo empieza a operar desde el primer día.",
+    "h1Title": "Dashboard operativo",
+    "h1Desc": "Vista unificada de todos tus KPIs en un solo panel.",
+    "h2Title": "Inventario en vivo",
+    "h2Desc": "Stock actualizado al instante con cada movimiento.",
+    "h3Title": "Facturación express",
+    "h3Desc": "Genera y envía facturas en segundos, no en horas.",
+    "h4Title": "Reportes listos",
+    "h4Desc": "Exporta reportes financieros con un clic.",
+    "cta": "Ver demo en vivo →"
+  },
+  "ctaBanner": {
+    "eyebrow": "¿Listo para el cambio?",
+    "title1": "Deja de operar con Excel.",
+    "title2": "Empieza a operar con inteligencia.",
+    "subtitle": "Agenda una demo gratuita y descubre cómo el sistema puede transformar tu operación en días, no en meses.",
+    "ctaPrimary": "Ir al Formulario"
+  },
+  "footer": {
+    "tagline": "ADDNEXO ERP: El sistema ligero para centralizar, automatizar y optimizar toda la operación de tu empresa (Inventario, Ventas y Facturación).",
+    "col1": "Plataforma",
+    "col2": "Empresa",
+    "col3": "Legal",
+    "links": {
+      "features": "Características",
+      "modules": "Módulos",
+      "howItWorks": "Cómo funciona",
+      "benefits": "Beneficios",
+      "about": "Acerca de ADD Strategic",
+      "contact": "Contacto",
+      "demo": "Solicitar Demo",
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Uso"
+    },
+    "copyright1": "Todos los derechos reservados."
+  },
+  "contact": {
+    "back": "← Volver al inicio",
+    "title1": "Hablemos sobre tu",
+    "title2": "operación.",
+    "desc": "Déjanos tus datos y un especialista de ADDNEXO se pondrá en contacto contigo para mostrarte cómo podemos transformar tu inventario y facturación.",
+    "formTitle": "Solicita una Demo",
+    "nameLabel": "Nombre completo",
+    "namePh": "Ej. Juan Pérez",
+    "companyLabel": "Empresa",
+    "companyPh": "Nombre de tu empresa",
+    "emailLabel": "Correo electrónico",
+    "emailPh": "tucorreo@empresa.com",
+    "phoneLabel": "Teléfono / WhatsApp",
+    "phonePh": "+1 234 567 890",
+    "messageLabel": "¿Cuál es tu principal desafío actualmente?",
+    "messagePh": "Ej. Llevo el inventario en Excel y tengo descuadres...",
+    "sending": "Enviando...",
+    "sent": "¡Mensaje Enviado!",
+    "submit": "Enviar Solicitud",
+    "success": "Gracias por escribirnos. Nos pondremos en contacto pronto.",
+    "errors": {
+      "name": "Por favor ingresa tu nombre completo.",
+      "company": "Por favor ingresa el nombre de tu empresa.",
+      "email": "Por favor ingresa un correo electrónico válido.",
+      "phone": "Por favor ingresa un número de teléfono válido.",
+      "submit": "Algo salió mal al enviar tu solicitud. Por favor intenta de nuevo."
+    }
+  }
+}

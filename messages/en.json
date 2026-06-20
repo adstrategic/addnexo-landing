@@ -1,0 +1,225 @@
+{
+  "seo": {
+    "homeTitle": "ADDNEXO ERP | Total Control of Inventory and Billing",
+    "homeDesc": "The lightweight ERP to centralize your inventory (Kardex), automatic invoicing, shipping, and financial reports. Say goodbye to Excel and automate today.",
+    "contactTitle": "Contact and Free Demo | ADDNEXO ERP",
+    "contactDesc": "Get in touch with our team and schedule a personalized demo of ADDNEXO ERP. Start optimizing your operations today."
+  },
+  "navbar": {
+    "features": "Features",
+    "modules": "Modules",
+    "howItWorks": "How it works",
+    "benefits": "Benefits",
+    "requestDemo": "Request Demo",
+    "language": "ES"
+  },
+  "hero": {
+    "badge": "ADDNEXO ERP — The evolution of CIMA",
+    "title1": "Centralize your entire",
+    "titleAccent": "operations & finances",
+    "title2": "in a single platform",
+    "subtitle": "The lightweight ERP designed to control inventory, sales, shipments, and billing. Eliminate Excel, automate critical processes, and make data-driven decisions in real time.",
+    "ctaPrimary": "Start now",
+    "ctaSecondary": "See how it works",
+    "videoPlaceholder": "PRESENTATION VIDEO",
+    "slides": [
+      {
+        "label": "Main operational dashboard"
+      },
+      {
+        "label": "Operations and inventory panel"
+      },
+      {
+        "label": "Administration and reports module"
+      },
+      {
+        "label": "Public platform view"
+      }
+    ]
+  },
+  "stats": {
+    "headline": "The platform that transforms how companies operate",
+    "items": [
+      {
+        "label": "Integrated modules"
+      },
+      {
+        "label": "Automated processes"
+      },
+      {
+        "label": "End-to-End traceability"
+      },
+      {
+        "label": "Real-time data"
+      }
+    ]
+  },
+  "features": {
+    "badge": "Features",
+    "title1": "Everything your operations need,",
+    "title2": "in one place",
+    "subtitle": "Each module is designed to connect with the others, creating a complete and frictionless operational flow.",
+    "f1Title": "Inventory Management",
+    "f1Desc": "Real-time stock control with low inventory alerts, movement history, and advanced search.",
+    "f2Title": "Automated Billing",
+    "f2Desc": "Generate invoices with automatic calculations and tax handling. Export to PDF and track payment statuses.",
+    "f3Title": "Sales & Pipeline",
+    "f3Desc": "Manage clients, create quotes, and follow the complete lifecycle from order to shipment.",
+    "f4Title": "Shipments & Traceability",
+    "f4Desc": "End-to-End traceability on every shipment. Track the status of each delivery from the warehouse to the client.",
+    "f5Title": "Payments & Accounts Receivable",
+    "f5Desc": "Detailed control of pending payments, transaction history, and accounts receivable tracking.",
+    "f6Title": "Financial Reports",
+    "f6Desc": "Real-time financial analysis with exportable reports. Make strategic decisions with concrete data."
+  },
+  "problems": {
+    "badge": "Sound familiar?",
+    "title1": "The problems we",
+    "title2": "are solving",
+    "subtitle": "Many companies operate with these problems daily without knowing there is a better way. We built it.",
+    "cta": "I want to solve them →",
+    "items": [
+      "Total lack of inventory and merchandise control",
+      "Excessive and inefficient reliance on Excel",
+      "Errors in billing and manual calculations",
+      "No real tracking of payments and collections",
+      "Loss of key historical information",
+      "Lack of traceability in shipments",
+      "Slow processes that hinder growth",
+      "Decisions made without real data",
+      "Duplication and contradiction of information",
+      "Costly human transcription errors"
+    ]
+  },
+  "howItWorks": {
+    "badge": "Process",
+    "title1": "From implementation",
+    "title2": "to results in 3 steps",
+    "subtitle": "Designed so any company can adopt the system quickly, without months of setup or costly consulting.",
+    "steps": [
+      {
+        "title": "Centralize your information",
+        "desc": "Import your current data and connect all your processes: inventory, clients, suppliers, and products on a single platform.",
+        "tag": "Initial setup"
+      },
+      {
+        "title": "Automate your processes",
+        "desc": "The system generates invoices, updates stock, registers payments, and issues alerts automatically. You focus on growing.",
+        "tag": "Automation"
+      },
+      {
+        "title": "Decide with real data",
+        "desc": "Access financial reports, shipment traceability, and real-time operational analysis to make better decisions.",
+        "tag": "Analysis and control"
+      }
+    ]
+  },
+  "benefits": {
+    "badge": "Benefits",
+    "title1": "The real impact on",
+    "title2": "your operations",
+    "subtitle": "Companies that implement the system report concrete results in the first weeks.",
+    "items": [
+      {
+        "title": "Total centralization",
+        "desc": "A single system for your entire operation. No information silos, no friction between departments."
+      },
+      {
+        "title": "Critical automation",
+        "desc": "Repetitive processes run on their own. Your team focuses on what really adds value."
+      },
+      {
+        "title": "Zero human errors",
+        "desc": "Drastic reduction of transcription and calculation errors that cost money and time every day."
+      },
+      {
+        "title": "Data-driven decisions",
+        "desc": "Real-time financial and operational reports to lead with information, not intuition."
+      },
+      {
+        "title": "Complete traceability",
+        "desc": "Every product, invoice, and shipment has a complete history. Never lose critical information again."
+      },
+      {
+        "title": "Operational scalability",
+        "desc": "The system grows with your business. Add modules and users according to your company's needs."
+      },
+      {
+        "title": "Higher productivity",
+        "desc": "Less time on manual tasks, more time on strategy. Your team does more with less effort."
+      },
+      {
+        "title": "Total financial control",
+        "desc": "Complete visibility over income, expenses, and accounts receivable. Finances always under control."
+      }
+    ]
+  },
+  "showcase": {
+    "badge": "The platform",
+    "title1": "Designed for your team",
+    "title2": "to use from day 1",
+    "subtitle": "Intuitive interface, clear flows, and no steep learning curve. Your team starts operating from the very first day.",
+    "h1Title": "Operational dashboard",
+    "h1Desc": "Unified view of all your KPIs in a single panel.",
+    "h2Title": "Live inventory",
+    "h2Desc": "Stock updated instantly with every movement.",
+    "h3Title": "Express billing",
+    "h3Desc": "Generate and send invoices in seconds, not hours.",
+    "h4Title": "Ready reports",
+    "h4Desc": "Export financial reports with a single click.",
+    "cta": "See live demo →"
+  },
+  "ctaBanner": {
+    "eyebrow": "Ready for a change?",
+    "title1": "Stop operating with Excel.",
+    "title2": "Start operating with intelligence.",
+    "subtitle": "Schedule a free demo and discover how the system can transform your operations in days, not months.",
+    "ctaPrimary": "Go to Form"
+  },
+  "footer": {
+    "tagline": "ADDNEXO ERP: The lightweight system to centralize, automate, and optimize your entire company operation (Inventory, Sales, and Billing).",
+    "col1": "Platform",
+    "col2": "Company",
+    "col3": "Legal",
+    "links": {
+      "features": "Features",
+      "modules": "Modules",
+      "howItWorks": "How it works",
+      "benefits": "Benefits",
+      "about": "About ADD Strategic",
+      "contact": "Contact",
+      "demo": "Request Demo",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use"
+    },
+    "copyright1": "All rights reserved."
+  },
+  "contact": {
+    "back": "← Back to home",
+    "title1": "Let's talk about your",
+    "title2": "operations.",
+    "desc": "Leave us your details and an ADDNEXO specialist will contact you to show you how we can transform your inventory and billing.",
+    "formTitle": "Request a Demo",
+    "nameLabel": "Full Name",
+    "namePh": "e.g. John Doe",
+    "companyLabel": "Company",
+    "companyPh": "Your company name",
+    "emailLabel": "Email address",
+    "emailPh": "youremail@company.com",
+    "phoneLabel": "Phone / WhatsApp",
+    "phonePh": "+1 234 567 890",
+    "messageLabel": "What is your main challenge currently?",
+    "messagePh": "e.g. I keep inventory in Excel and have mismatches...",
+    "sending": "Sending...",
+    "sent": "Message Sent!",
+    "submit": "Submit Request",
+    "success": "Thank you for writing to us. We will get in touch soon.",
+    "errors": {
+      "name": "Please enter your full name.",
+      "company": "Please enter your company name.",
+      "email": "Please enter a valid email address.",
+      "phone": "Please enter a valid phone number.",
+      "submit": "Something went wrong while sending your request. Please try again."
+    }
+  }
+}
