@@ -10,10 +10,11 @@ import { sectionHref } from "@/lib/sections"
 function getFooterLinks(t: ReturnType<typeof useTranslations>) {
   return {
     [t("footer.col1")]: [
-      { label: t("footer.links.features"), href: sectionHref("features") },
+      { label: t("footer.links.flow"), href: sectionHref("flow") },
       { label: t("footer.links.modules"), href: sectionHref("modules") },
-      { label: t("footer.links.howItWorks"), href: sectionHref("howItWorks") },
-      { label: t("footer.links.benefits"), href: sectionHref("benefits") },
+      { label: t("footer.links.industries"), href: sectionHref("industries") },
+      { label: t("footer.links.story"), href: sectionHref("story") },
+      { label: t("footer.links.faq"), href: sectionHref("faq") },
     ],
     [t("footer.col2")]: [
       { label: t("footer.links.about"), href: "https://addstrategic.com" },
@@ -33,18 +34,20 @@ export default function Footer() {
 
   return (
     <footer className="bg-brand-dark pt-20 text-white/70">
-      <div className={`${container} grid grid-cols-1 gap-12 border-b border-white/10 pb-16 lg:grid-cols-[2fr_3fr] lg:gap-16`}>
+      <div
+        className={`${container} grid grid-cols-1 gap-12 border-b border-white/10 pb-16 lg:grid-cols-[2fr_3fr] lg:gap-16`}
+      >
         <div>
           <a href="https://addstrategic.com" className="mb-5 inline-block">
             <Image
               src="/addstrategic-blanco.png"
-              alt="ADDNEXO by ADD Strategic"
+              alt="ADDNEXO by ADDSTRATEGIC"
               width={160}
               height={32}
               className="h-8 w-auto"
             />
           </a>
-          <p className="mb-4 max-w-[300px] text-[0.9rem] leading-[1.65]">
+          <p className="mb-4 max-w-[320px] text-[0.9rem] leading-[1.65]">
             {t("footer.tagline")}
           </p>
           <div className="mt-4 flex flex-col gap-2">
@@ -117,7 +120,9 @@ export default function Footer() {
       </div>
 
       <div className="bg-black/20 py-6">
-        <div className={`${container} flex flex-wrap items-center justify-between gap-4 max-md:flex-col max-md:text-center`}>
+        <div
+          className={`${container} flex flex-wrap items-center justify-between gap-4 max-md:flex-col max-md:text-center`}
+        >
           <p className="text-[0.82rem] text-white/40">
             © {new Date().getFullYear()}{" "}
             <a href="https://addstrategic.com" target="_blank" rel="noreferrer">

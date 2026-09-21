@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const landingButtonVariants = cva(
-  "inline-flex items-center justify-center gap-2 rounded-full text-[0.95rem] font-semibold tracking-[-0.01em] whitespace-nowrap transition-[transform,box-shadow,background,color] duration-200 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5",
+  "inline-flex max-w-full items-center justify-center gap-2 rounded-full text-center text-[0.9rem] font-semibold tracking-[-0.01em] text-balance transition-[transform,box-shadow,background,color] duration-200 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5 active:scale-[0.97] motion-reduce:transition-none motion-reduce:hover:translate-y-0 motion-reduce:active:scale-100 sm:text-[0.95rem] sm:whitespace-nowrap",
   {
     variants: {
       variant: {
@@ -16,12 +16,12 @@ const landingButtonVariants = cva(
         outlineDark:
           "border-[1.5px] border-brand-dark bg-transparent text-brand-dark hover:bg-brand-dark hover:text-white",
         navCta:
-          "rounded-full bg-brand-cyan px-5 py-2.5 text-[0.88rem] font-bold text-brand-dark hover:-translate-y-px hover:bg-brand-cyan",
+          "rounded-full bg-brand-cyan px-4 py-2 text-[0.82rem] font-bold text-brand-dark hover:-translate-y-px hover:bg-brand-cyan sm:px-5 sm:py-2.5 sm:text-[0.88rem]",
       },
       size: {
-        default: "px-7 py-3.5",
-        lg: "px-9 py-4 text-[1.05rem]",
-        full: "w-full px-7 py-4 text-[1.05rem]",
+        default: "px-5 py-3 sm:px-7 sm:py-3.5",
+        lg: "px-5 py-3 text-[0.95rem] sm:px-9 sm:py-4 sm:text-[1.05rem]",
+        full: "w-full px-5 py-3.5 text-[0.95rem] sm:px-7 sm:py-4 sm:text-[1.05rem]",
       },
     },
     defaultVariants: {

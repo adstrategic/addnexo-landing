@@ -1,83 +1,22 @@
 "use client"
 
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useMemo, useState } from "react"
-import { Controller, useForm } from "react-hook-form"
 import { useTranslations } from "next-intl"
 
 import { LandingButton } from "@/components/landing-button"
-import { Field, FieldError, FieldLabel } from "@/components/ui/field"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
 import { Link } from "@/i18n/navigation"
-import {
-  createContactSchema,
-  type ContactFormValues,
-} from "@/lib/contact-schema"
 import { container, sectionTitle } from "@/lib/landing-styles"
+import { CAL_EMBED_URL } from "@/lib/site"
 import { cn } from "@/lib/utils"
-
-const fieldInputClassName =
-  "h-auto w-full rounded-xl border-black/10 bg-muted px-4 py-3.5 font-[inherit] text-[0.95rem] text-foreground shadow-none transition-[border-color,box-shadow,background] focus-visible:border-primary focus-visible:bg-background focus-visible:shadow-[0_0_0_3px_rgba(37,99,235,0.15)] focus-visible:ring-0"
-
-const fieldLabelClassName =
-  "mb-2 block text-[0.88rem] font-semibold text-foreground"
 
 export default function ContactPage() {
   const t = useTranslations("contact")
-  const [isSuccess, setIsSuccess] = useState(false)
-  const [submitError, setSubmitError] = useState("")
-
-  const contactSchema = useMemo(
-    () =>
-      createContactSchema({
-        name: t("errors.name"),
-        company: t("errors.company"),
-        email: t("errors.email"),
-        phone: t("errors.phone"),
-      }),
-    [t]
-  )
-
-  const form = useForm<ContactFormValues>({
-    resolver: zodResolver(contactSchema),
-    defaultValues: {
-      name: "",
-      company: "",
-      email: "",
-      phone: "",
-      message: "",
-    },
-  })
-
-  const isSubmitting = form.formState.isSubmitting
-
-  const onSubmit = async (values: ContactFormValues) => {
-    setSubmitError("")
-
-    try {
-      const response = await fetch("/api/email", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(values),
-      })
-
-      if (!response.ok) {
-        throw new Error("Request failed")
-      }
-
-      setIsSuccess(true)
-    } catch {
-      setSubmitError(t("errors.submit"))
-    }
-  }
 
   return (
     <main className="min-h-screen bg-[radial-gradient(ellipse_at_top,rgba(37,99,235,0.05)_0%,var(--background)_70%)] pt-[calc(var(--nav-h)+4rem)] pb-28">
       <div
         className={cn(
           container,
-          "grid max-w-[1100px] grid-cols-1 items-start gap-12 lg:grid-cols-[1fr_1.2fr] lg:gap-20"
+          "grid max-w-[1100px] grid-cols-1 items-start gap-12 lg:grid-cols-[1fr_1.2fr] lg:gap-16"
         )}
       >
         <div>
@@ -92,8 +31,11 @@ export default function ContactPage() {
             <br />
             {t("title2")}
           </h1>
-          <p className="mt-6 mb-12 max-w-[90%] text-[1.1rem] leading-[1.7] text-muted-foreground">
+          <p className="mt-6 mb-4 max-w-[90%] text-[1.1rem] leading-[1.7] text-muted-foreground">
             {t("desc")}
+          </p>
+          <p className="mb-12 text-[0.9rem] font-medium text-brand-dark">
+            {t("offer")}
           </p>
 
           <div className="flex flex-col gap-6">
@@ -124,184 +66,24 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <div className="rounded-[20px] border border-black/6 bg-background p-8 shadow-[0_20px_40px_rgba(0,0,0,0.06)] md:p-12">
-          {isSuccess ? (
-            <div>
-              <h3 className="mb-8 text-2xl font-extrabold tracking-[-0.02em] text-brand-dark">
-                {t("formTitle")}
-              </h3>
-              <p className="rounded-md bg-emerald-500/10 p-4 text-center text-[0.9rem] font-semibold text-emerald-600">
-                {t("success")}
-              </p>
-            </div>
-          ) : (
-            <form onSubmit={form.handleSubmit(onSubmit)} noValidate>
-              <h3 className="mb-8 text-2xl font-extrabold tracking-[-0.02em] text-brand-dark">
-                {t("formTitle")}
-              </h3>
-
-              <Controller
-                name="name"
-                control={form.control}
-                render={({ field, fieldState }) => (
-                  <Field
-                    data-invalid={fieldState.invalid}
-                    className="mb-6 flex-col gap-0"
-                  >
-                    <FieldLabel
-                      htmlFor={field.name}
-                      className={fieldLabelClassName}
-                    >
-                      {t("nameLabel")}
-                    </FieldLabel>
-                    <Input
-                      {...field}
-                      id={field.name}
-                      type="text"
-                      placeholder={t("namePh")}
-                      aria-invalid={fieldState.invalid}
-                      className={fieldInputClassName}
-                    />
-                    {fieldState.invalid && (
-                      <FieldError errors={[fieldState.error]} />
-                    )}
-                  </Field>
-                )}
-              />
-
-              <Controller
-                name="company"
-                control={form.control}
-                render={({ field, fieldState }) => (
-                  <Field
-                    data-invalid={fieldState.invalid}
-                    className="mb-6 flex-col gap-0"
-                  >
-                    <FieldLabel
-                      htmlFor={field.name}
-                      className={fieldLabelClassName}
-                    >
-                      {t("companyLabel")}
-                    </FieldLabel>
-                    <Input
-                      {...field}
-                      id={field.name}
-                      type="text"
-                      placeholder={t("companyPh")}
-                      aria-invalid={fieldState.invalid}
-                      className={fieldInputClassName}
-                    />
-                    {fieldState.invalid && (
-                      <FieldError errors={[fieldState.error]} />
-                    )}
-                  </Field>
-                )}
-              />
-
-              <Controller
-                name="email"
-                control={form.control}
-                render={({ field, fieldState }) => (
-                  <Field
-                    data-invalid={fieldState.invalid}
-                    className="mb-6 flex-col gap-0"
-                  >
-                    <FieldLabel
-                      htmlFor={field.name}
-                      className={fieldLabelClassName}
-                    >
-                      {t("emailLabel")}
-                    </FieldLabel>
-                    <Input
-                      {...field}
-                      id={field.name}
-                      type="email"
-                      placeholder={t("emailPh")}
-                      aria-invalid={fieldState.invalid}
-                      className={fieldInputClassName}
-                    />
-                    {fieldState.invalid && (
-                      <FieldError errors={[fieldState.error]} />
-                    )}
-                  </Field>
-                )}
-              />
-
-              <Controller
-                name="phone"
-                control={form.control}
-                render={({ field, fieldState }) => (
-                  <Field
-                    data-invalid={fieldState.invalid}
-                    className="mb-6 flex-col gap-0"
-                  >
-                    <FieldLabel
-                      htmlFor={field.name}
-                      className={fieldLabelClassName}
-                    >
-                      {t("phoneLabel")}
-                    </FieldLabel>
-                    <Input
-                      {...field}
-                      id={field.name}
-                      type="tel"
-                      placeholder={t("phonePh")}
-                      aria-invalid={fieldState.invalid}
-                      className={fieldInputClassName}
-                    />
-                    {fieldState.invalid && (
-                      <FieldError errors={[fieldState.error]} />
-                    )}
-                  </Field>
-                )}
-              />
-
-              <Controller
-                name="message"
-                control={form.control}
-                render={({ field, fieldState }) => (
-                  <Field
-                    data-invalid={fieldState.invalid}
-                    className="mb-6 flex-col gap-0"
-                  >
-                    <FieldLabel
-                      htmlFor={field.name}
-                      className={fieldLabelClassName}
-                    >
-                      {t("messageLabel")}
-                    </FieldLabel>
-                    <Textarea
-                      {...field}
-                      id={field.name}
-                      rows={4}
-                      placeholder={t("messagePh")}
-                      aria-invalid={fieldState.invalid}
-                      className={cn(fieldInputClassName, "min-h-0")}
-                    />
-                    {fieldState.invalid && (
-                      <FieldError errors={[fieldState.error]} />
-                    )}
-                  </Field>
-                )}
-              />
-
-              <LandingButton
-                type="submit"
-                variant="lime"
-                size="full"
-                className="mt-4"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? t("sending") : t("submit")}
-              </LandingButton>
-
-              {submitError ? (
-                <p className="mt-5 rounded-md bg-destructive/10 p-4 text-center text-[0.9rem] font-semibold text-destructive">
-                  {submitError}
-                </p>
-              ) : null}
-            </form>
-          )}
+        <div className="overflow-hidden rounded-[20px] border border-black/6 bg-background shadow-[0_20px_40px_rgba(0,0,0,0.06)]">
+          <p className="border-b border-brand-dark/6 bg-muted/50 px-5 py-3.5 text-[0.9rem] font-semibold text-brand-dark">
+            {t("calendarLabel")}
+          </p>
+          <iframe
+            src={CAL_EMBED_URL}
+            title={t("calendarLabel")}
+            className="h-[700px] w-full border-0"
+            loading="lazy"
+            allow="camera; microphone; fullscreen"
+          />
+          <div className="border-t border-brand-dark/6 px-5 py-4 text-center">
+            <LandingButton asChild variant="outlineDark">
+              <a href={CAL_EMBED_URL} target="_blank" rel="noreferrer">
+                {t("calendarOpen")}
+              </a>
+            </LandingButton>
+          </div>
         </div>
       </div>
     </main>

@@ -1,194 +1,416 @@
 {
   "seo": {
-    "homeTitle": "ADDNEXO ERP | Control Total de Inventario y Facturación",
-    "homeDesc": "El ERP ligero para centralizar tu inventario (Kardex), facturación digital automática, despachos y reportes financieros. Dile adiós al Excel y automatiza hoy.",
-    "contactTitle": "Contacto y Demo Gratis | ADDNEXO ERP",
-    "contactDesc": "Ponte en contacto con nuestro equipo y programa una demostración personalizada de ADDNEXO ERP. Comienza a optimizar tu operación hoy."
+    "homeTitle": "ADDNEXO | ERP de Distribución para Inventario, Ventas, Trazabilidad y Rentabilidad",
+    "homeDesc": "ADDNEXO conecta compras, inventario, pedidos, despacho, facturación, cobros y rentabilidad en una plataforma de distribución trazable. Demo gratis. Implementación incluida.",
+    "contactTitle": "Solicita una Demo Gratis | ADDNEXO",
+    "contactDesc": "Agenda una demo gratuita de ADDNEXO y revisa tu operación de distribución con nosotros. Implementación incluida. Sin costo adicional de implementación.",
+    "thanksTitle": "Solicitud de Demo Recibida | ADDNEXO",
+    "thanksDesc": "Gracias por solicitar una demo de ADDNEXO. Agenda tu llamada de descubrimiento."
   },
   "navbar": {
-    "features": "Características",
+    "flow": "Flujo",
     "modules": "Módulos",
-    "howItWorks": "Cómo funciona",
-    "benefits": "Beneficios",
-    "requestDemo": "Solicitar Demo",
+    "industries": "Industrias",
+    "story": "Historia",
+    "faq": "FAQ",
+    "requestDemo": "Solicitar Demo Gratis",
     "language": "EN"
   },
   "hero": {
-    "badge": "ADDNEXO ERP — La evolución de CIMA",
-    "title1": "Centraliza toda tu",
-    "titleAccent": "operación y finanzas",
-    "title2": "en una sola plataforma",
-    "subtitle": "El ERP ligero diseñado para controlar inventario, ventas, despachos y facturación. Elimina el Excel, automatiza procesos críticos y toma decisiones con datos en tiempo real.",
-    "ctaPrimary": "Comenzar ahora",
-    "ctaSecondary": "Ver cómo funciona",
-    "videoPlaceholder": "VIDEO DE PRESENTACIÓN",
+    "eyebrow": "ADDNEXO | La Evolución de CIMA",
+    "headline": "El Sistema Operativo y Financiero para la Distribución",
+    "subheadline": "Conecta compras, inventario, pedidos de clientes, despacho, facturación, cobros y rentabilidad en un solo flujo de negocio trazable.",
+    "supporting": "Diseñado para distribuidores, importadores, mayoristas y negocios intensivos en inventario que necesitan más que hojas de cálculo y sistemas desconectados.",
+    "ctaPrimary": "Solicitar Demo Gratis",
+    "ctaSecondary": "Ver Cómo Funciona ADDNEXO",
+    "microcopy": "Demo gratis. Implementación incluida. Sin costo adicional de implementación.",
     "slides": [
+      { "label": "Dashboard operativo de ADDNEXO" },
+      { "label": "Panel de operaciones e inventario" },
+      { "label": "Módulo de administración y reportes" },
+      { "label": "Vista general de la plataforma ADDNEXO" }
+    ]
+  },
+  "origin": {
+    "headline": "Construido desde el conocimiento operativo real.",
+    "content": "ADDNEXO es la evolución de CIMA, un sistema desarrollado alrededor de las realidades operativas de un negocio de distribución intensivo en inventario. Su base nace de entender cómo se mueven los productos, cómo se acumulan los costos, cómo se cumplen los pedidos, cómo pagan los clientes y dónde puede desaparecer el margen.",
+    "highlight": "El software nació de la operación. La operación no nació del software.",
+    "timeline": ["SICOM", "CIMA", "ADDNEXO"],
+    "cta": "Descubre la Historia de ADDNEXO"
+  },
+  "realProblem": {
+    "headline": "La distribución no es solo inventario.",
+    "content": "Un distribuidor puede tener proveedores, órdenes de compra, embarques entrantes, bodegas, pedidos de clientes, despachos, facturas, cobros y costos que cambian constantemente.",
+    "body": "El problema no es simplemente saber cuántas cajas hay disponibles. El problema es saber cuánto costaron realmente esas cajas, de dónde vinieron, qué está comprometido, qué se vendió, qué se cobró y si la transacción generó el margen que el negocio esperaba."
+  },
+  "painQuestions": {
+    "headline": "¿Tu operación se ve así?",
+    "intro": "Hazte cuatro preguntas simples.",
+    "cta": "Muéstrame Cómo ADDNEXO lo Resuelve",
+    "items": [
       {
-        "label": "Dashboard operativo principal"
+        "question": "¿Puede tu equipo ver inventario, pedidos comprometidos, despachos y stock disponible sin revisar múltiples hojas de cálculo o sistemas?",
+        "solution": "ADDNEXO conecta inventario, pedidos, despachos y movimientos de producto en un solo registro operativo."
       },
       {
-        "label": "Panel de operaciones e inventario"
+        "question": "Cuando llega una compra o importación, ¿sabes cuánto costó realmente ese inventario después de logística, manejo, aduanas y otros gastos asociados?",
+        "solution": "ADDNEXO organiza los costos relacionados con la compra para una visión más completa del costo landed."
       },
       {
-        "label": "Módulo de administración y reportes"
+        "question": "Cuando la gerencia pregunta qué productos, clientes o lotes generan margen, ¿puede tu equipo responder con datos operativos en lugar de conciliar registros manualmente?",
+        "solution": "ADDNEXO conecta compras, inventario, ventas e información financiera para el análisis económico."
       },
       {
-        "label": "Vista de la plataforma pública"
+        "question": "¿Puede tu equipo comercial seguir el camino desde el prospecto comprador hasta el pedido, el envío, la factura y el cobro?",
+        "solution": "ADDNEXO conecta flujos comerciales y operativos y puede ser la base para futuras capacidades de desarrollo de clientes."
       }
     ]
   },
-  "stats": {
-    "headline": "La plataforma que transforma cómo operan las empresas",
+  "distributionFlow": {
+    "headline": "La distribución tiene una cadena económica, no solo una transacción de venta.",
+    "content": "Una compra afecta el inventario. El inventario afecta los pedidos. Los pedidos afectan el despacho. El despacho afecta la facturación. Las facturas llevan a la liquidación. Y todos esos eventos afectan el margen.",
+    "flow": [
+      "Compras",
+      "Recepción",
+      "Inventario",
+      "Pedido",
+      "Despacho",
+      "Factura",
+      "Liquidación"
+    ],
+    "closing": "ADDNEXO conecta estos eventos para que el negocio entienda la operación como un sistema, no como transacciones aisladas.",
+    "coreHeadline": "Un flujo conectado. Un registro operativo.",
+    "commercialLabel": "Flujo comercial",
+    "financialLabel": "Flujo financiero",
+    "commercialFlow": [
+      "Compra",
+      "Orden de compra",
+      "Inventario entrante",
+      "Lote / Producto",
+      "Pedido de cliente",
+      "Despacho",
+      "Factura",
+      "Liquidación"
+    ],
+    "financialFlow": [
+      "Compra / Importación",
+      "Costos asociados",
+      "Cuentas por pagar",
+      "Pagos",
+      "Control financiero"
+    ],
+    "mergeLabel": "Liquidación",
+    "cta": "Explorar los Módulos"
+  },
+  "economics": {
+    "eyebrow": "La Economía de la Distribución",
+    "headline": "La factura del proveedor no siempre es el costo real.",
+    "content": "Para mercancía importada y comprada localmente, la economía puede incluir transporte, aduanas, seguros, almacenamiento, manejo, corretaje, logística y otros gastos de adquisición.",
+    "secondaryHeadline": "ADDNEXO ayuda a incorporar esos costos al panorama operativo.",
+    "costComponents": [
+      "Costo de compra",
+      "Transporte",
+      "Costos de importación",
+      "Manejo",
+      "Almacenamiento",
+      "Corretaje",
+      "Logística",
+      "Pérdidas o merma",
+      "Costo final del lote o compra"
+    ],
+    "closing": "Pasa de '¿cuánto le pagamos al proveedor?' a '¿cuánto le costó realmente este inventario al negocio?'",
+    "lotHeadline": "De cada lote a la economía de cada venta.",
+    "lotContent": "ADDNEXO conecta la información de compras e inventario con registros de ventas y finanzas para que la gerencia analice cómo se mueve la mercancía comprada a través del negocio.",
+    "lotSecondary": "Convierte el inventario en información económica medible.",
+    "metrics": [
+      "Costo de compra",
+      "Costos asociados",
+      "Cantidad en inventario",
+      "Pérdidas / ajustes",
+      "Cantidad vendida",
+      "Clientes que compraron",
+      "Ingresos generados",
+      "Cuentas por cobrar",
+      "Rentabilidad bruta"
+    ]
+  },
+  "modules": {
+    "headline": "Todo lo que la operación necesita, conectado.",
+    "cta": "Explorar ADDNEXO",
     "items": [
       {
-        "label": "Módulos integrados"
+        "title": "Compras",
+        "desc": "Gestiona compras y flujos de adquisición como punto de partida del ciclo de inventario y finanzas."
       },
       {
-        "label": "Procesos automatizados"
+        "title": "Inventario y Lotes",
+        "desc": "Rastrea productos, cantidades, movimientos, bodegas e historial operativo."
       },
       {
-        "label": "Trazabilidad End-to-End"
+        "title": "Pedidos y Ventas",
+        "desc": "Gestiona clientes, pedidos y el ciclo de vida comercial."
       },
       {
-        "label": "Datos en tiempo real"
+        "title": "Despacho y Envíos",
+        "desc": "Conecta pedidos de clientes con el cumplimiento y la trazabilidad de envíos."
+      },
+      {
+        "title": "Facturación",
+        "desc": "Genera facturas y conecta la facturación con las transacciones operativas."
+      },
+      {
+        "title": "Cuentas por Cobrar",
+        "desc": "Sigue facturas pendientes, cobros y estado de pagos."
+      },
+      {
+        "title": "Cuentas por Pagar",
+        "desc": "Gestiona obligaciones con proveedores y el control financiero del lado de compras."
+      },
+      {
+        "title": "Control Financiero",
+        "desc": "Une información operativa y financiera para visibilidad gerencial."
+      },
+      {
+        "title": "Dashboards y Analítica",
+        "desc": "Convierte registros operativos en reportes e inteligencia de gestión."
       }
     ]
   },
-  "features": {
-    "badge": "Funcionalidades",
-    "title1": "Todo lo que tu operación necesita,",
-    "title2": "en un solo lugar",
-    "subtitle": "Cada módulo está diseñado para conectarse con los demás, creando un flujo operativo completo y sin fricciones.",
-    "f1Title": "Gestión de Inventario",
-    "f1Desc": "Control de stock en tiempo real con alertas de inventario bajo, historial de movimientos y búsqueda avanzada.",
-    "f2Title": "Facturación Automática",
-    "f2Desc": "Genera facturas con cálculos y manejo de impuestos automáticos. Exporta a PDF y controla estados de pago.",
-    "f3Title": "Ventas y Pipeline",
-    "f3Desc": "Gestiona clientes, crea proformas (quotes), y sigue el ciclo de vida completo desde el pedido hasta el despacho.",
-    "f4Title": "Despachos y Trazabilidad",
-    "f4Desc": "Trazabilidad End-to-End en cada despacho. Sigue el estado de cada entrega desde el almacén hasta el cliente.",
-    "f5Title": "Pagos y Cuentas por Cobrar",
-    "f5Desc": "Control detallado de pagos pendientes, historial de transacciones y seguimiento de cuentas por cobrar.",
-    "f6Title": "Reportes Financieros",
-    "f6Desc": "Análisis financiero en tiempo real con reportes exportables. Toma decisiones estratégicas con datos concretos."
-  },
-  "problems": {
-    "badge": "¿Te suena familiar?",
-    "title1": "Los problemas que",
-    "title2": "estamos resolviendo",
-    "subtitle": "Muchas empresas operan con estos problemas a diario sin saber que existe una mejor forma. Nosotros la construimos.",
-    "cta": "Quiero resolverlos →",
-    "items": [
-      "Descontrol total del inventario y la mercancía",
-      "Dependencia excesiva e ineficiente de Excel",
-      "Errores en facturación y cálculos manuales",
-      "Sin seguimiento real a pagos y cobros",
-      "Pérdida de información histórica clave",
-      "Falta de trazabilidad en los despachos",
-      "Procesos lentos que frenan el crecimiento",
-      "Decisiones tomadas sin datos reales",
-      "Duplicidad y contradicción de información",
-      "Errores humanos de transcripción costosos"
+  "markets": {
+    "industriesHeadline": "Diseñado para negocios donde los productos, el movimiento y el margen importan.",
+    "industriesCta": "Encuentra Tu Industria",
+    "industries": [
+      {
+        "title": "Distribución de Productos Frescos",
+        "desc": "Mayoristas de produce, importadores, exportadores, distribuidores y operaciones que gestionan lotes, inventario, pedidos, despacho y cobros."
+      },
+      {
+        "title": "Distribución de Alimentos",
+        "desc": "Distribuidores de alimentos que gestionan productos, proveedores, clientes, envíos, facturas y cuentas por cobrar."
+      },
+      {
+        "title": "Importación y Exportación",
+        "desc": "Negocios donde compras, logística internacional, inventario y pedidos de clientes deben permanecer conectados."
+      },
+      {
+        "title": "Distribución Mayorista",
+        "desc": "Distribuidores mayoristas que necesitan visibilidad operativa y financiera."
+      },
+      {
+        "title": "Productos Agrícolas",
+        "desc": "Negocios que manejan productos agrícolas donde el origen, lote, movimiento, inventario y trazabilidad comercial importan."
+      },
+      {
+        "title": "Operaciones Intensivas en Inventario",
+        "desc": "Negocios donde el inventario es central para la generación de ingresos y el control operativo."
+      }
+    ],
+    "geoHeadline": "Diseñado para mercados de distribución en las Américas.",
+    "geoNote": "Mercados objetivo y de servicio — no ubicaciones de clientes verificadas.",
+    "regions": [
+      {
+        "id": "south-florida",
+        "name": "Sur de Florida",
+        "cities": "Miami, Doral, Hialeah, Homestead, Immokalee, Fort Lauderdale, West Palm Beach",
+        "positioning": "Importadores de produce, mayoristas, distribuidores, proveedores de foodservice y negocios conectados al comercio internacional."
+      },
+      {
+        "id": "california",
+        "name": "California",
+        "cities": "Los Angeles, Fresno, Salinas, Bakersfield, San Diego",
+        "positioning": "Productos frescos, agricultura, distribución de alimentos, mayoreo y negocios intensivos en inventario."
+      },
+      {
+        "id": "colombia",
+        "name": "Colombia",
+        "cities": "Bogotá, Medellín, Cali, Cartagena, Barranquilla",
+        "positioning": "Productores agrícolas, exportadores, distribuidores de alimentos, mayoristas y empresas que conectan la oferta colombiana con mercados internacionales."
+      },
+      {
+        "id": "latin-america",
+        "name": "Latinoamérica",
+        "cities": "",
+        "positioning": "Negocios de distribución, alimentos, agricultura e importación/exportación en mercados latinoamericanos."
+      }
     ]
   },
-  "howItWorks": {
-    "badge": "Proceso",
-    "title1": "De la implementación",
-    "title2": "a los resultados en 3 pasos",
-    "subtitle": "Diseñado para que cualquier empresa pueda adoptar el sistema rápidamente, sin meses de configuración ni consultoría costosa.",
+  "operationalExample": {
+    "headline": "Cómo se ve la trazabilidad en el mundo real.",
+    "content": "Una caja de limones no es simplemente 'limones'. En un entorno real de distribución, el negocio puede necesitar saber origen, lote, fecha de empaque, cantidad, empaque, tratamiento, ubicación en bodega, asignación a cliente, estado de envío y resultado financiero.",
+    "privacy": "Escenario operativo ilustrativo — no es un caso de cliente.",
+    "product": "Limones",
+    "origin": "Colombia",
+    "lot": "J2602448",
+    "packDate": "17/09/2026",
+    "labels": {
+      "product": "Producto",
+      "origin": "Origen",
+      "lot": "Lote",
+      "packDate": "Fecha de empaque"
+    },
+    "chain": [
+      "Producto",
+      "Lote",
+      "Inventario",
+      "Pedido",
+      "Despacho",
+      "Factura",
+      "Liquidación"
+    ]
+  },
+  "history": {
+    "headline": "ADDNEXO no empezó con software. Empezó con conocimiento operativo.",
+    "keyStatement": "La parte difícil del software vertical no es solo escribir el código. Es entender la operación con suficiente profundidad para saber qué debe registrar, conectar y automatizar el software.",
+    "cta": "Conoce Por Qué Se Construyó ADDNEXO",
+    "timeline": [
+      {
+        "name": "SICOM",
+        "desc": "Fundamento histórico de conocimiento e IP que precedió a ADDNEXO. No es un producto comercial de ADDNEXO."
+      },
+      {
+        "name": "CIMA",
+        "desc": "Software operativo construido alrededor de las realidades de un negocio de distribución."
+      },
+      {
+        "name": "ADDNEXO",
+        "desc": "Evolución moderna de ese conocimiento operativo en una plataforma de negocio escalable."
+      }
+    ]
+  },
+  "implementation": {
+    "headline": "De la implementación al valor operativo.",
+    "offer": "Demo gratis. Implementación incluida. Sin costo adicional de implementación.",
+    "cta": "Agenda Tu Demo Gratis",
     "steps": [
       {
-        "title": "Centraliza tu información",
-        "desc": "Importa tus datos actuales y conecta todos tus procesos: inventario, clientes, proveedores y productos en una sola plataforma.",
-        "tag": "Configuración inicial"
+        "num": "01",
+        "title": "Entender la operación",
+        "desc": "Aprender cómo la empresa compra, recibe, almacena, vende, despacha, factura y cobra."
       },
       {
-        "title": "Automatiza tus procesos",
-        "desc": "El sistema genera facturas, actualiza el stock, registra pagos y emite alertas automáticamente. Tú te enfocas en crecer.",
-        "tag": "Automatización"
+        "num": "02",
+        "title": "Configurar y centralizar",
+        "desc": "Llevar productos, clientes, proveedores e información operativa al sistema."
       },
       {
-        "title": "Decide con datos reales",
-        "desc": "Accede a reportes financieros, trazabilidad de despachos y análisis operativo en tiempo real para tomar mejores decisiones.",
-        "tag": "Análisis y control"
+        "num": "03",
+        "title": "Conectar el flujo de trabajo",
+        "desc": "Conectar compras, inventario, pedidos, despacho, facturación y cobros."
+      },
+      {
+        "num": "04",
+        "title": "Medir la operación",
+        "desc": "Usar dashboards, reportes y trazabilidad para entender qué está pasando."
+      },
+      {
+        "num": "05",
+        "title": "Desarrollar lo que falta",
+        "desc": "Si el negocio requiere funcionalidad más allá de la plataforma central, ADDSTRATEGIC puede desarrollarla."
+      }
+    ],
+    "customHeadline": "Tu negocio no tiene que encajar en el software. El software puede evolucionar con tu negocio.",
+    "customContent": "ADDSTRATEGIC es una empresa de desarrollo tecnológico. ADDNEXO ofrece una base operativa sólida, mientras el equipo de desarrollo puede trabajar con los clientes para identificar y desarrollar flujos adicionales, integraciones, automatizaciones y funcionalidad específica del negocio.",
+    "customHighlight": "Si ADDNEXO resuelve el 80% de tus necesidades, queremos entender el otro 20%.",
+    "customCta": "Hablar con ADDSTRATEGIC",
+    "buyerStatus": "En Desarrollo",
+    "buyerHeadline": "De gestionar tu operación a desarrollar nuevo negocio.",
+    "buyerContent": "ADDSTRATEGIC está desarrollando una capacidad de Desarrollo de Compradores y Clientes diseñada para ayudar a las empresas a identificar compradores potenciales según su mercado objetivo, iniciar outreach personalizado, comunicar actualizaciones de producto y precio, y construir un embudo estructurado hacia relaciones comerciales.",
+    "buyerFlow": [
+      "Definir cliente objetivo",
+      "Identificar compradores potenciales",
+      "Organizar prospectos",
+      "Iniciar outreach personalizado",
+      "Compartir actualizaciones de producto y precio",
+      "Seguir conversaciones",
+      "Desarrollar relaciones comerciales"
+    ],
+    "buyerCta": "Háblanos de Tu Estrategia de Crecimiento"
+  },
+  "proof": {
+    "headline": "Construido alrededor de la complejidad operativa real.",
+    "cta": "Ver ADDNEXO",
+    "points": [
+      "Flujos reales de inventario",
+      "Kardex e historial de movimientos",
+      "Flujos de despacho",
+      "Flujos de facturación",
+      "Cuentas por cobrar",
+      "Registros de proveedores y clientes",
+      "Dashboards operativos",
+      "Dashboards financieros",
+      "Análisis económico a nivel de lote",
+      "Trazabilidad operativa de punta a punta"
+    ],
+    "shots": [
+      {
+        "title": "Dashboard operativo",
+        "desc": "Vista unificada de KPIs y estado operativo."
+      },
+      {
+        "title": "Inventario y lotes",
+        "desc": "Stock y movimientos de lote en un solo registro."
+      },
+      {
+        "title": "Administración",
+        "desc": "Reportes y visibilidad financiera."
       }
     ]
   },
-  "benefits": {
-    "badge": "Beneficios",
-    "title1": "El impacto real en",
-    "title2": "tu operación",
-    "subtitle": "Empresas que implementan el sistema reportan resultados concretos en las primeras semanas.",
+  "faq": {
+    "headline": "Preguntas que hacen las empresas de distribución antes de cambiar de sistema.",
     "items": [
       {
-        "title": "Centralización total",
-        "desc": "Un solo sistema para toda tu operación. Sin silos de información, sin fricciones entre departamentos."
+        "q": "¿ADDNEXO es solo para empresas de productos frescos?",
+        "a": "No. Los productos frescos son un caso de uso importante porque la plataforma se desarrolló alrededor de operaciones reales de distribución intensivas en inventario, pero los flujos subyacentes también aplican a distribución de alimentos, mayoreo, importación/exportación y otros negocios intensivos en inventario."
       },
       {
-        "title": "Automatización crítica",
-        "desc": "Los procesos repetitivos corren solos. Tu equipo se enfoca en lo que realmente agrega valor."
+        "q": "¿La demo es gratis?",
+        "a": "Sí. La demostración de ADDNEXO es gratis."
       },
       {
-        "title": "Cero errores humanos",
-        "desc": "Reducción drástica de errores de transcripción y cálculo que cuestan dinero y tiempo cada día."
+        "q": "¿La implementación está incluida?",
+        "a": "Sí. La implementación está incluida sin costo adicional de implementación bajo la oferta actual."
       },
       {
-        "title": "Decisiones con datos",
-        "desc": "Reportes financieros y operativos en tiempo real para liderar con información, no con intuición."
+        "q": "¿Se puede personalizar ADDNEXO?",
+        "a": "Sí. ADDSTRATEGIC es una empresa de desarrollo tecnológico y puede desarrollar funcionalidad adicional según requisitos operativos específicos."
       },
       {
-        "title": "Trazabilidad completa",
-        "desc": "Cada producto, factura y despacho tiene un historial completo. Nunca más pierdas información crítica."
+        "q": "¿ADDNEXO puede ayudar a entender el costo real del inventario comprado?",
+        "a": "ADDNEXO está diseñado para capturar costos de compra y costos operativos asociados, de modo que las empresas puedan construir una visión más completa del costo landed y la rentabilidad."
       },
       {
-        "title": "Escalabilidad operativa",
-        "desc": "El sistema crece con tu negocio. Agrega módulos y usuarios según las necesidades de tu empresa."
+        "q": "¿ADDNEXO puede gestionar clientes y cuentas por cobrar?",
+        "a": "Sí. Registros de clientes, facturas, estado de pagos y cuentas por cobrar forman parte del flujo operativo y financiero de la plataforma."
       },
       {
-        "title": "Mayor productividad",
-        "desc": "Menos tiempo en tareas manuales, más tiempo en estrategia. Tu equipo hace más con menos esfuerzo."
-      },
-      {
-        "title": "Control financiero total",
-        "desc": "Visibilidad completa sobre ingresos, egresos y cuentas por cobrar. Finanzas siempre bajo control."
+        "q": "¿ADDNEXO puede soportar operaciones de importación y exportación?",
+        "a": "La plataforma está diseñada para negocios donde compras, logística, inventario, pedidos de clientes, facturación y cobros deben permanecer conectados. Los requisitos exactos se revisan durante el discovery."
       }
     ]
   },
-  "showcase": {
-    "badge": "La plataforma",
-    "title1": "Diseñada para que",
-    "title2": "tu equipo la use desde el día 1",
-    "subtitle": "Interfaz intuitiva, flujos claros y sin curva de aprendizaje larga. Tu equipo empieza a operar desde el primer día.",
-    "h1Title": "Dashboard operativo",
-    "h1Desc": "Vista unificada de todos tus KPIs en un solo panel.",
-    "h2Title": "Inventario en vivo",
-    "h2Desc": "Stock actualizado al instante con cada movimiento.",
-    "h3Title": "Facturación express",
-    "h3Desc": "Genera y envía facturas en segundos, no en horas.",
-    "h4Title": "Reportes listos",
-    "h4Desc": "Exporta reportes financieros con un clic.",
-    "cta": "Ver demo en vivo →"
-  },
-  "ctaBanner": {
-    "eyebrow": "¿Listo para el cambio?",
-    "title1": "Deja de operar con Excel.",
-    "title2": "Empieza a operar con inteligencia.",
-    "subtitle": "Agenda una demo gratuita y descubre cómo el sistema puede transformar tu operación en días, no en meses.",
-    "ctaPrimary": "Ir al Formulario"
+  "finalCta": {
+    "headline": "Mira cómo se ve tu operación cuando la información está conectada.",
+    "subheadline": "Agenda una demo gratuita de ADDNEXO y revisa tu operación con nosotros.",
+    "primary": "Solicitar Demo Gratis",
+    "secondary": "Ver ADDNEXO",
+    "supporting": "Demostración sin costo. Implementación incluida. Sin costo adicional de implementación.",
+    "finalMessage": "El objetivo no es simplemente darte otro sistema. Es ayudarte a entender mejor tu operación, eliminar fricción y construir tecnología alrededor de cómo tu negocio realmente funciona."
   },
   "footer": {
-    "tagline": "ADDNEXO ERP: El sistema ligero para centralizar, automatizar y optimizar toda la operación de tu empresa (Inventario, Ventas y Facturación).",
+    "tagline": "ADDNEXO conecta la economía y las operaciones de la distribución — desde compras e inventario hasta pedidos, despacho, facturación, cobros y rentabilidad.",
     "col1": "Plataforma",
     "col2": "Empresa",
     "col3": "Legal",
     "links": {
-      "features": "Características",
+      "flow": "Flujo",
       "modules": "Módulos",
-      "howItWorks": "Cómo funciona",
-      "benefits": "Beneficios",
-      "about": "Acerca de ADD Strategic",
+      "industries": "Industrias",
+      "story": "Historia",
+      "faq": "FAQ",
+      "about": "Acerca de ADDSTRATEGIC",
       "contact": "Contacto",
-      "demo": "Solicitar Demo",
+      "demo": "Solicitar Demo Gratis",
       "privacy": "Política de Privacidad",
       "terms": "Términos de Uso"
     },
@@ -196,30 +418,51 @@
   },
   "contact": {
     "back": "← Volver al inicio",
-    "title1": "Hablemos sobre tu",
-    "title2": "operación.",
-    "desc": "Déjanos tus datos y un especialista de ADDNEXO se pondrá en contacto contigo para mostrarte cómo podemos transformar tu inventario y facturación.",
-    "formTitle": "Solicita una Demo",
-    "nameLabel": "Nombre completo",
+    "title1": "Solicita una demo",
+    "title2": "gratis de ADDNEXO.",
+    "desc": "Elige un horario que te funcione. Revisaremos cómo ADDNEXO conecta compras, inventario, pedidos, despacho, facturación y cobros alrededor de tu operación.",
+    "calendarLabel": "Agenda tu demo gratis",
+    "calendarOpen": "Abrir calendario en una nueva pestaña",
+    "formTitle": "Solicitar Demo Gratis",
+    "nameLabel": "Nombre",
     "namePh": "Ej. Juan Pérez",
     "companyLabel": "Empresa",
     "companyPh": "Nombre de tu empresa",
-    "emailLabel": "Correo electrónico",
-    "emailPh": "tucorreo@empresa.com",
-    "phoneLabel": "Teléfono / WhatsApp",
+    "emailLabel": "Correo",
+    "emailPh": "tu@empresa.com",
+    "phoneLabel": "Teléfono",
     "phonePh": "+1 234 567 890",
-    "messageLabel": "¿Cuál es tu principal desafío actualmente?",
-    "messagePh": "Ej. Llevo el inventario en Excel y tengo descuadres...",
+    "industryLabel": "Industria",
+    "industryPh": "Selecciona tu industria",
+    "industries": {
+      "fresh-produce": "Distribución de Productos Frescos",
+      "food-distribution": "Distribución de Alimentos",
+      "import-export": "Importación y Exportación",
+      "wholesale": "Distribución Mayorista",
+      "agricultural": "Productos Agrícolas",
+      "inventory-intensive": "Operaciones Intensivas en Inventario",
+      "other": "Otra"
+    },
+    "challengeLabel": "Mayor Desafío Operativo",
+    "challengePh": "Ej. No vemos el costo landed real después de importaciones...",
     "sending": "Enviando...",
-    "sent": "¡Mensaje Enviado!",
-    "submit": "Enviar Solicitud",
-    "success": "Gracias por escribirnos. Nos pondremos en contacto pronto.",
+    "submit": "Solicitar Demo Gratis",
+    "offer": "Demo gratis. Implementación incluida. Sin costo adicional de implementación.",
     "errors": {
-      "name": "Por favor ingresa tu nombre completo.",
+      "name": "Por favor ingresa tu nombre.",
       "company": "Por favor ingresa el nombre de tu empresa.",
-      "email": "Por favor ingresa un correo electrónico válido.",
-      "phone": "Por favor ingresa un número de teléfono válido.",
+      "email": "Por favor ingresa un correo válido.",
+      "phone": "Por favor ingresa un teléfono válido.",
+      "industry": "Por favor selecciona una industria.",
+      "challenge": "Por favor describe tu mayor desafío operativo.",
       "submit": "Algo salió mal al enviar tu solicitud. Por favor intenta de nuevo."
     }
+  },
+  "thanks": {
+    "title": "Tu solicitud de demo llegó.",
+    "subtitle": "Siguiente paso: elige un horario que te funcione. Revisaremos tu operación juntos.",
+    "supporting": "Demo gratis. Implementación incluida. Sin costo adicional de implementación.",
+    "backHome": "Volver al inicio",
+    "calendarLabel": "Agenda tu llamada de descubrimiento"
   }
 }

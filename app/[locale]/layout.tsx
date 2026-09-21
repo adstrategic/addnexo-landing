@@ -1,9 +1,11 @@
+import type { Metadata } from "next"
 import { Outfit } from "next/font/google"
 import { NextIntlClientProvider, hasLocale } from "next-intl"
 import { getMessages, setRequestLocale } from "next-intl/server"
 import { notFound } from "next/navigation"
 
 import "../globals.css"
+import { getSiteUrl } from "@/lib/email-brand"
 import { routing } from "@/i18n/routing"
 import { cn } from "@/lib/utils"
 
@@ -11,6 +13,14 @@ const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-sans",
 })
+
+export const metadata: Metadata = {
+  metadataBase: new URL(getSiteUrl()),
+  icons: {
+    icon: [{ url: "/favicon.ico", sizes: "any" }],
+    apple: [{ url: "/favicon.ico" }],
+  },
+}
 
 type Props = {
   children: React.ReactNode

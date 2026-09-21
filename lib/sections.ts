@@ -1,10 +1,12 @@
 export const sections = {
   home: "home",
-  features: "features",
+  flow: "flow",
   modules: "modules",
-  howItWorks: "how-it-works",
-  benefits: "benefits",
+  industries: "industries",
+  story: "story",
+  faq: "faq",
   contact: "contact",
+  proof: "proof",
 } as const
 
 export function sectionHref(section: keyof typeof sections) {

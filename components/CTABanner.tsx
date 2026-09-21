@@ -1,97 +1,57 @@
 "use client"
 
-import { useEffect, useRef } from "react"
 import { useTranslations } from "next-intl"
-import gsap from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 import { LandingButton } from "@/components/landing-button"
+import { useRevealOnScroll } from "@/hooks/useRevealOnScroll"
 import { Link } from "@/i18n/navigation"
-import { sections } from "@/lib/sections"
-
-gsap.registerPlugin(ScrollTrigger)
+import { container } from "@/lib/landing-styles"
+import { sectionHref } from "@/lib/sections"
 
 export default function CTABanner() {
-  const t = useTranslations()
-  const sectionRef = useRef<HTMLElement>(null)
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.from("[data-cta-animate]", {
-        opacity: 0,
-        y: 30,
-        stagger: 0.12,
-        duration: 0.7,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 75%",
-          once: true,
-        },
-      })
-    }, sectionRef)
-    return () => ctx.revert()
-  }, [])
+  const t = useTranslations("finalCta")
+  const sectionRef = useRevealOnScroll()
 
   return (
     <section
-      id={sections.contact}
-      ref={sectionRef}
-      className="relative overflow-hidden bg-gradient-to-br from-brand-cyan to-sky-500 px-8 py-28 text-center before:pointer-events-none before:absolute before:top-[-50%] before:left-[-10%] before:h-[200%] before:w-1/2 before:rotate-30 before:bg-white/10 before:content-['']"
+      id="contact"
+      ref={sectionRef as React.RefObject<HTMLElement>}
+      className="bg-brand-bg-dark py-24 text-center text-white"
     >
-      <div className="relative mx-auto max-w-[720px]">
-        <p
-          data-cta-animate
-          className="mb-4 text-[0.82rem] font-bold tracking-[0.12em] text-brand-dark/70 uppercase"
-        >
-          {t("ctaBanner.eyebrow")}
-        </p>
+      <div className={container}>
         <h2
-          data-cta-animate
-          className="mb-5 text-[clamp(2rem,4.5vw,3.2rem)] leading-[1.12] font-black tracking-[-0.04em] text-brand-dark"
+          data-reveal
+          className="mx-auto mb-5 max-w-[800px] text-[clamp(2rem,4vw,3rem)] leading-[1.15] font-extrabold tracking-[-0.03em] text-white"
         >
-          {t("ctaBanner.title1")}
-          <br />
-          {t("ctaBanner.title2")}
+          {t("headline")}
         </h2>
         <p
-          data-cta-animate
-          className="mb-10 text-[1.05rem] leading-[1.7] text-brand-dark/75"
+          data-reveal
+          className="mx-auto mb-4 max-w-[560px] text-[1.1rem] leading-[1.7] text-white/70"
         >
-          {t("ctaBanner.subtitle")}
+          {t("subheadline")}
         </p>
-        <div data-cta-animate className="flex flex-wrap items-center justify-center gap-4">
-          <LandingButton asChild variant="dark" size="lg">
-            <Link href="/contact">{t("ctaBanner.ctaPrimary")}</Link>
+        <p data-reveal className="mx-auto mb-10 max-w-[480px] text-[0.9rem] text-white/50">
+          {t("supporting")}
+        </p>
+
+        <div
+          data-reveal
+          className="mb-10 flex flex-wrap items-center justify-center gap-4 max-md:flex-col max-md:items-stretch"
+        >
+          <LandingButton asChild variant="lime" size="lg" className="max-md:w-full max-md:justify-center">
+            <Link href="/contact">{t("primary")}</Link>
           </LandingButton>
-          <LandingButton asChild variant="outlineDark" size="lg">
-            <a
-              href="https://wa.me/17542549069"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              +1 (754) 254-9069
-            </a>
+          <LandingButton asChild variant="ghost" size="lg" className="max-md:w-full max-md:justify-center">
+            <Link href={sectionHref("proof")}>{t("secondary")}</Link>
           </LandingButton>
         </div>
-        <p data-cta-animate className="mt-6 text-[0.84rem] text-brand-dark/60">
-          <a
-            href="https://addstrategic.com"
-            target="_blank"
-            rel="noreferrer"
-            className="underline"
-          >
-            addstrategic.com
-          </a>{" "}
-          •{" "}
-          <a
-            href="https://instagram.com/addstrategic"
-            target="_blank"
-            rel="noreferrer"
-            className="ml-2.5 underline"
-          >
-            @addstrategic
-          </a>
+
+        <p
+          data-reveal
+          className="mx-auto max-w-[640px] text-[0.98rem] leading-[1.7] text-white/60"
+        >
+          {t("finalMessage")}
         </p>
       </div>
     </section>

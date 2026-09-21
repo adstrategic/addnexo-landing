@@ -5,6 +5,7 @@ import { z } from "zod"
 import NewUser from "@/components/Emails/NewUser"
 import WelcomeEmail from "@/components/Emails/Welcome"
 import { CONTACT_NOTIFY_EMAIL, EMAIL_FROM } from "@/lib/email-brand"
+import { INDUSTRY_OPTIONS } from "@/lib/site"
 
 function getResendClient() {
   const apiKey = process.env.RESEND_API_KEY
@@ -21,7 +22,8 @@ const contactPayloadSchema = z.object({
   company: z.string().trim().min(1),
   email: z.email(),
   phone: z.string().trim().min(5),
-  message: z.string().trim().optional(),
+  industry: z.enum(INDUSTRY_OPTIONS),
+  challenge: z.string().trim().min(5),
 })
 
 export async function POST(request: Request) {
@@ -40,7 +42,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid request body" }, { status: 400 })
   }
 
-  const { name, company, email, phone, message } = parsed.data
+  const { name, company, email, phone, industry, challenge } = parsed.data
 
   const { data, error } = await resend.batch.send([
     {
@@ -58,7 +60,8 @@ export async function POST(request: Request) {
         userCompany: company,
         userEmail: email,
         userPhone: phone,
-        userMessage: message,
+        userIndustry: industry,
+        userChallenge: challenge,
       }),
     },
   ])

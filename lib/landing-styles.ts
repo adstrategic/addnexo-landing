@@ -1,4 +1,4 @@
-export const container = "mx-auto w-full max-w-[1280px] px-8"
+export const container = "mx-auto w-full max-w-[1280px] px-4 sm:px-6 md:px-8"
 
 export const sectionHeader =
   "mx-auto mb-16 max-w-[680px] text-center"

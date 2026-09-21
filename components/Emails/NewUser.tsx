@@ -7,7 +7,8 @@ interface NewUserProps {
   userCompany: string
   userEmail: string
   userPhone: string
-  userMessage?: string
+  userIndustry: string
+  userChallenge: string
 }
 
 export function NewUser({
@@ -15,7 +16,8 @@ export function NewUser({
   userCompany,
   userEmail,
   userPhone,
-  userMessage,
+  userIndustry,
+  userChallenge,
 }: NewUserProps) {
   return (
     <EmailLayout preview="New ADDNEXO demo request">
@@ -34,11 +36,12 @@ export function NewUser({
       <Text className="m-0 mb-2 text-base leading-relaxed text-gray-800">
         <strong>Phone:</strong> {userPhone}
       </Text>
-      {userMessage ? (
-        <Text className="m-0 mb-4 text-base leading-relaxed text-gray-800">
-          <strong>Message:</strong> {userMessage}
-        </Text>
-      ) : null}
+      <Text className="m-0 mb-2 text-base leading-relaxed text-gray-800">
+        <strong>Industry:</strong> {userIndustry}
+      </Text>
+      <Text className="m-0 mb-4 text-base leading-relaxed text-gray-800">
+        <strong>Biggest operational challenge:</strong> {userChallenge}
+      </Text>
       <Text className="m-0 text-base leading-relaxed text-gray-800">
         Please follow up with this lead as soon as possible.
       </Text>
@@ -51,7 +54,8 @@ NewUser.PreviewProps = {
   userCompany: "Acme Corp",
   userEmail: "mail@gmail.com",
   userPhone: "3165382781",
-  userMessage: "I need help managing inventory and billing.",
+  userIndustry: "fresh-produce",
+  userChallenge: "We cannot see true landed cost after imports.",
 } satisfies NewUserProps
 
 export default NewUser

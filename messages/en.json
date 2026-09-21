@@ -1,194 +1,416 @@
 {
   "seo": {
-    "homeTitle": "ADDNEXO ERP | Total Control of Inventory and Billing",
-    "homeDesc": "The lightweight ERP to centralize your inventory (Kardex), automatic invoicing, shipping, and financial reports. Say goodbye to Excel and automate today.",
-    "contactTitle": "Contact and Free Demo | ADDNEXO ERP",
-    "contactDesc": "Get in touch with our team and schedule a personalized demo of ADDNEXO ERP. Start optimizing your operations today."
+    "homeTitle": "ADDNEXO | Distribution ERP for Inventory, Sales, Traceability & Profitability",
+    "homeDesc": "ADDNEXO connects purchasing, inventory, orders, dispatch, invoicing, collections and profitability in one traceable distribution platform. Free demo. Implementation included.",
+    "contactTitle": "Request a Free Demo | ADDNEXO",
+    "contactDesc": "Schedule a free ADDNEXO demo and walk through your distribution operation with us. Implementation included. No additional implementation fee.",
+    "thanksTitle": "Demo Request Received | ADDNEXO",
+    "thanksDesc": "Thank you for requesting an ADDNEXO demo. Schedule your discovery call."
   },
   "navbar": {
-    "features": "Features",
+    "flow": "Flow",
     "modules": "Modules",
-    "howItWorks": "How it works",
-    "benefits": "Benefits",
-    "requestDemo": "Request Demo",
+    "industries": "Industries",
+    "story": "Story",
+    "faq": "FAQ",
+    "requestDemo": "Request a Free Demo",
     "language": "ES"
   },
   "hero": {
-    "badge": "ADDNEXO ERP — The evolution of CIMA",
-    "title1": "Centralize your entire",
-    "titleAccent": "operations & finances",
-    "title2": "in a single platform",
-    "subtitle": "The lightweight ERP designed to control inventory, sales, shipments, and billing. Eliminate Excel, automate critical processes, and make data-driven decisions in real time.",
-    "ctaPrimary": "Start now",
-    "ctaSecondary": "See how it works",
-    "videoPlaceholder": "PRESENTATION VIDEO",
+    "eyebrow": "ADDNEXO | The Evolution of CIMA",
+    "headline": "The Operating and Financial System for Distribution",
+    "subheadline": "Connect purchasing, inventory, customer orders, dispatch, invoicing, collections and profitability in one traceable business flow.",
+    "supporting": "Built for distributors, importers, wholesalers and inventory-intensive businesses that need more than disconnected spreadsheets and systems.",
+    "ctaPrimary": "Request a Free Demo",
+    "ctaSecondary": "See How ADDNEXO Works",
+    "microcopy": "Free demo. Implementation included. No additional implementation fee.",
     "slides": [
+      { "label": "ADDNEXO operational dashboard" },
+      { "label": "Operations and inventory panel" },
+      { "label": "Administration and reports module" },
+      { "label": "ADDNEXO platform overview" }
+    ]
+  },
+  "origin": {
+    "headline": "Built from real operational knowledge.",
+    "content": "ADDNEXO is the evolution of CIMA, a system developed around the operational realities of an inventory-intensive distribution business. Its foundation comes from understanding how products move, how costs accumulate, how orders are fulfilled, how customers pay and where margin can disappear.",
+    "highlight": "The software came from the operation. The operation did not come from the software.",
+    "timeline": ["SICOM", "CIMA", "ADDNEXO"],
+    "cta": "Discover the ADDNEXO Story"
+  },
+  "realProblem": {
+    "headline": "Distribution is not just inventory.",
+    "content": "A distributor can have suppliers, purchase orders, inbound shipments, warehouses, customer orders, dispatches, invoices, collections and constantly changing costs.",
+    "body": "The problem is not simply knowing how many boxes are available. The problem is knowing what those boxes actually cost, where they came from, what has been committed, what has been sold, what has been collected and whether the transaction generated the margin the business expected."
+  },
+  "painQuestions": {
+    "headline": "Does your operation look like this?",
+    "intro": "Ask yourself four simple questions.",
+    "cta": "Show Me How ADDNEXO Solves This",
+    "items": [
       {
-        "label": "Main operational dashboard"
+        "question": "Can your team see inventory, committed orders, shipments and available stock without checking multiple spreadsheets or systems?",
+        "solution": "ADDNEXO connects inventory, orders, dispatches and product movements in one operational record."
       },
       {
-        "label": "Operations and inventory panel"
+        "question": "When a purchase or import arrives, do you know what that inventory really cost after logistics, handling, customs and other associated expenses?",
+        "solution": "ADDNEXO organizes purchase-related costs to support a more complete landed-cost view."
       },
       {
-        "label": "Administration and reports module"
+        "question": "When management asks which products, customers or lots are generating margin, can your team answer with operational data instead of manually reconciling records?",
+        "solution": "ADDNEXO connects purchasing, inventory, sales and financial information for economic analysis."
       },
       {
-        "label": "Public platform view"
+        "question": "Can your commercial team follow the path from buyer prospect to order, shipment, invoice and collection?",
+        "solution": "ADDNEXO connects sales and operational workflows and can provide the foundation for future customer-development capabilities."
       }
     ]
   },
-  "stats": {
-    "headline": "The platform that transforms how companies operate",
+  "distributionFlow": {
+    "headline": "Distribution has an economic chain, not just a sales transaction.",
+    "content": "A purchase affects inventory. Inventory affects orders. Orders affect dispatch. Dispatch affects invoicing. Invoices lead to liquidation. And all of those events affect margin.",
+    "flow": [
+      "Procurement",
+      "Inbound",
+      "Inventory",
+      "Customer Order",
+      "Dispatch",
+      "Invoice",
+      "Liquidation"
+    ],
+    "closing": "ADDNEXO connects these events so the business can understand the operation as one system instead of a collection of isolated transactions.",
+    "coreHeadline": "One connected flow. One operational record.",
+    "commercialLabel": "Commercial flow",
+    "financialLabel": "Financial flow",
+    "commercialFlow": [
+      "Purchase",
+      "Purchase Order",
+      "Inbound Inventory",
+      "Lot / Product",
+      "Customer Order",
+      "Dispatch",
+      "Invoice",
+      "Liquidation"
+    ],
+    "financialFlow": [
+      "Purchase / Import",
+      "Associated Costs",
+      "Accounts Payable",
+      "Payments",
+      "Financial Control"
+    ],
+    "mergeLabel": "Liquidation",
+    "cta": "Explore the Modules"
+  },
+  "economics": {
+    "eyebrow": "The Economics of Distribution",
+    "headline": "The supplier invoice is not always the true cost.",
+    "content": "For imported and locally purchased merchandise, the economics can include transportation, customs, insurance, warehousing, handling, brokerage, logistics and other acquisition-related expenses.",
+    "secondaryHeadline": "ADDNEXO helps bring those costs into the operational picture.",
+    "costComponents": [
+      "Purchase cost",
+      "Transportation",
+      "Import-related costs",
+      "Handling",
+      "Warehousing",
+      "Brokerage",
+      "Logistics",
+      "Losses or waste",
+      "Final lot or purchase cost"
+    ],
+    "closing": "Move from 'what did we pay the supplier?' to 'what did this inventory actually cost the business?'",
+    "lotHeadline": "From every lot to the economics of every sale.",
+    "lotContent": "ADDNEXO connects purchasing and inventory information with sales and financial records so management can analyze how purchased merchandise moves through the business.",
+    "lotSecondary": "Turn inventory into measurable economic information.",
+    "metrics": [
+      "Purchase cost",
+      "Associated costs",
+      "Inventory quantity",
+      "Losses / adjustments",
+      "Quantity sold",
+      "Customers who purchased",
+      "Revenue generated",
+      "Outstanding receivables",
+      "Gross profitability"
+    ]
+  },
+  "modules": {
+    "headline": "Everything the operation needs, connected.",
+    "cta": "Explore ADDNEXO",
     "items": [
       {
-        "label": "Integrated modules"
+        "title": "Procurement",
+        "desc": "Manage purchases and purchasing workflows as the starting point of the inventory and financial cycle."
       },
       {
-        "label": "Automated processes"
+        "title": "Inventory & Lots",
+        "desc": "Track products, quantities, movements, warehouses and operational history."
       },
       {
-        "label": "End-to-End traceability"
+        "title": "Orders & Sales",
+        "desc": "Manage customers, orders and the commercial lifecycle."
       },
       {
-        "label": "Real-time data"
+        "title": "Dispatch & Shipments",
+        "desc": "Connect customer orders with fulfillment and shipment traceability."
+      },
+      {
+        "title": "Billing",
+        "desc": "Generate invoices and connect billing with operational transactions."
+      },
+      {
+        "title": "Accounts Receivable",
+        "desc": "Track outstanding invoices, collections and payment status."
+      },
+      {
+        "title": "Accounts Payable",
+        "desc": "Manage supplier obligations and purchasing-side financial control."
+      },
+      {
+        "title": "Financial Control",
+        "desc": "Bring operational and financial information together for management visibility."
+      },
+      {
+        "title": "Dashboards & Analytics",
+        "desc": "Turn operational records into reports and management intelligence."
       }
     ]
   },
-  "features": {
-    "badge": "Features",
-    "title1": "Everything your operations need,",
-    "title2": "in one place",
-    "subtitle": "Each module is designed to connect with the others, creating a complete and frictionless operational flow.",
-    "f1Title": "Inventory Management",
-    "f1Desc": "Real-time stock control with low inventory alerts, movement history, and advanced search.",
-    "f2Title": "Automated Billing",
-    "f2Desc": "Generate invoices with automatic calculations and tax handling. Export to PDF and track payment statuses.",
-    "f3Title": "Sales & Pipeline",
-    "f3Desc": "Manage clients, create quotes, and follow the complete lifecycle from order to shipment.",
-    "f4Title": "Shipments & Traceability",
-    "f4Desc": "End-to-End traceability on every shipment. Track the status of each delivery from the warehouse to the client.",
-    "f5Title": "Payments & Accounts Receivable",
-    "f5Desc": "Detailed control of pending payments, transaction history, and accounts receivable tracking.",
-    "f6Title": "Financial Reports",
-    "f6Desc": "Real-time financial analysis with exportable reports. Make strategic decisions with concrete data."
-  },
-  "problems": {
-    "badge": "Sound familiar?",
-    "title1": "The problems we",
-    "title2": "are solving",
-    "subtitle": "Many companies operate with these problems daily without knowing there is a better way. We built it.",
-    "cta": "I want to solve them →",
-    "items": [
-      "Total lack of inventory and merchandise control",
-      "Excessive and inefficient reliance on Excel",
-      "Errors in billing and manual calculations",
-      "No real tracking of payments and collections",
-      "Loss of key historical information",
-      "Lack of traceability in shipments",
-      "Slow processes that hinder growth",
-      "Decisions made without real data",
-      "Duplication and contradiction of information",
-      "Costly human transcription errors"
+  "markets": {
+    "industriesHeadline": "Built for businesses where products, movement and margin matter.",
+    "industriesCta": "Find Your Industry",
+    "industries": [
+      {
+        "title": "Fresh Produce Distribution",
+        "desc": "Wholesale produce, importers, exporters, distributors and produce operations managing lots, inventory, orders, dispatch and collections."
+      },
+      {
+        "title": "Food Distribution",
+        "desc": "Food distributors managing products, suppliers, customers, shipments, invoices and receivables."
+      },
+      {
+        "title": "Import & Export",
+        "desc": "Businesses where procurement, international logistics, inventory and customer orders need to remain connected."
+      },
+      {
+        "title": "Wholesale Distribution",
+        "desc": "Wholesale distributors that need operational and financial visibility."
+      },
+      {
+        "title": "Agricultural Products",
+        "desc": "Businesses handling agricultural products where origin, lot, movement, inventory and commercial traceability matter."
+      },
+      {
+        "title": "Inventory-Intensive Operations",
+        "desc": "Businesses where inventory is central to revenue generation and operational control."
+      }
+    ],
+    "geoHeadline": "Built for distribution markets across the Americas.",
+    "geoNote": "Target and service markets — not claimed customer locations.",
+    "regions": [
+      {
+        "id": "south-florida",
+        "name": "South Florida",
+        "cities": "Miami, Doral, Hialeah, Homestead, Immokalee, Fort Lauderdale, West Palm Beach",
+        "positioning": "Produce importers, wholesalers, distributors, foodservice suppliers and businesses connected to international trade."
+      },
+      {
+        "id": "california",
+        "name": "California",
+        "cities": "Los Angeles, Fresno, Salinas, Bakersfield, San Diego",
+        "positioning": "Fresh produce, agriculture, food distribution, wholesale and inventory-intensive businesses."
+      },
+      {
+        "id": "colombia",
+        "name": "Colombia",
+        "cities": "Bogotá, Medellín, Cali, Cartagena, Barranquilla",
+        "positioning": "Agricultural producers, exporters, food distributors, wholesalers and companies connecting Colombian supply with international markets."
+      },
+      {
+        "id": "latin-america",
+        "name": "Latin America",
+        "cities": "",
+        "positioning": "Distribution, food, agricultural and import/export businesses across Latin American markets."
+      }
     ]
   },
-  "howItWorks": {
-    "badge": "Process",
-    "title1": "From implementation",
-    "title2": "to results in 3 steps",
-    "subtitle": "Designed so any company can adopt the system quickly, without months of setup or costly consulting.",
+  "operationalExample": {
+    "headline": "What traceability looks like in the real world.",
+    "content": "A box of limes is not simply 'limes'. In a real distribution environment, the business may need to know origin, lot, pack date, quantity, packaging, treatment, warehouse location, customer allocation, shipment status and financial outcome.",
+    "privacy": "Illustrative operational scenario — not a client case study.",
+    "product": "Limes",
+    "origin": "Colombia",
+    "lot": "J2602448",
+    "packDate": "09/17/2026",
+    "labels": {
+      "product": "Product",
+      "origin": "Origin",
+      "lot": "Lot",
+      "packDate": "Pack date"
+    },
+    "chain": [
+      "Product",
+      "Lot",
+      "Inventory",
+      "Order",
+      "Dispatch",
+      "Invoice",
+      "Liquidation"
+    ]
+  },
+  "history": {
+    "headline": "ADDNEXO did not start with software. It started with operational knowledge.",
+    "keyStatement": "The difficult part of vertical software is not only writing the code. It is understanding the operation deeply enough to know what the software needs to record, connect and automate.",
+    "cta": "Learn Why ADDNEXO Was Built",
+    "timeline": [
+      {
+        "name": "SICOM",
+        "desc": "Historical knowledge and IP foundation that preceded ADDNEXO. Not a commercial ADDNEXO product."
+      },
+      {
+        "name": "CIMA",
+        "desc": "Operational software built around the realities of a distribution business."
+      },
+      {
+        "name": "ADDNEXO",
+        "desc": "Modern evolution of that operational knowledge into a scalable business platform."
+      }
+    ]
+  },
+  "implementation": {
+    "headline": "From implementation to operational value.",
+    "offer": "Free demo. Implementation included. No additional implementation fee.",
+    "cta": "Book Your Free Demo",
     "steps": [
       {
-        "title": "Centralize your information",
-        "desc": "Import your current data and connect all your processes: inventory, clients, suppliers, and products on a single platform.",
-        "tag": "Initial setup"
+        "num": "01",
+        "title": "Understand the operation",
+        "desc": "Learn how the company purchases, receives, stores, sells, dispatches, invoices and collects."
       },
       {
-        "title": "Automate your processes",
-        "desc": "The system generates invoices, updates stock, registers payments, and issues alerts automatically. You focus on growing.",
-        "tag": "Automation"
+        "num": "02",
+        "title": "Configure and centralize",
+        "desc": "Bring products, customers, suppliers and operational information into the system."
       },
       {
-        "title": "Decide with real data",
-        "desc": "Access financial reports, shipment traceability, and real-time operational analysis to make better decisions.",
-        "tag": "Analysis and control"
+        "num": "03",
+        "title": "Connect the workflow",
+        "desc": "Connect purchasing, inventory, orders, dispatch, billing and collections."
+      },
+      {
+        "num": "04",
+        "title": "Measure the operation",
+        "desc": "Use dashboards, reports and traceability to understand what is happening."
+      },
+      {
+        "num": "05",
+        "title": "Develop what is missing",
+        "desc": "If the business requires functionality beyond the core platform, ADDSTRATEGIC can develop it."
+      }
+    ],
+    "customHeadline": "Your business does not have to fit the software. The software can evolve with your business.",
+    "customContent": "ADDSTRATEGIC is a technology development company. ADDNEXO provides a strong operational foundation, while the development team can work with customers to identify and develop additional workflows, integrations, automations and business-specific functionality.",
+    "customHighlight": "If ADDNEXO solves 80% of your needs, we want to understand the other 20%.",
+    "customCta": "Talk to ADDSTRATEGIC",
+    "buyerStatus": "In Development",
+    "buyerHeadline": "From managing your operation to developing new business.",
+    "buyerContent": "ADDSTRATEGIC is developing a Buyer & Customer Development capability designed to help companies identify potential buyers according to their target market, initiate personalized outreach, communicate product and pricing updates and build a structured funnel toward commercial relationships.",
+    "buyerFlow": [
+      "Define target customer",
+      "Identify potential buyers",
+      "Organize prospects",
+      "Initiate personalized outreach",
+      "Share product and pricing updates",
+      "Track conversations",
+      "Develop commercial relationships"
+    ],
+    "buyerCta": "Talk to Us About Your Growth Strategy"
+  },
+  "proof": {
+    "headline": "Built around real operational complexity.",
+    "cta": "View ADDNEXO",
+    "points": [
+      "Real inventory workflows",
+      "Kardex and movement history",
+      "Dispatch workflows",
+      "Invoice workflows",
+      "Accounts receivable",
+      "Supplier and customer records",
+      "Operational dashboards",
+      "Financial dashboards",
+      "Lot-level economic analysis",
+      "End-to-end operational traceability"
+    ],
+    "shots": [
+      {
+        "title": "Operational dashboard",
+        "desc": "Unified view of KPIs and operational status."
+      },
+      {
+        "title": "Inventory & lots",
+        "desc": "Stock and lot movements in one record."
+      },
+      {
+        "title": "Administration",
+        "desc": "Reports and financial visibility."
       }
     ]
   },
-  "benefits": {
-    "badge": "Benefits",
-    "title1": "The real impact on",
-    "title2": "your operations",
-    "subtitle": "Companies that implement the system report concrete results in the first weeks.",
+  "faq": {
+    "headline": "Questions distribution companies ask before changing systems.",
     "items": [
       {
-        "title": "Total centralization",
-        "desc": "A single system for your entire operation. No information silos, no friction between departments."
+        "q": "Is ADDNEXO only for produce companies?",
+        "a": "No. Produce is an important use case because the platform was developed around real inventory-intensive distribution operations, but the underlying workflows also apply to food distribution, wholesale distribution, import/export and other inventory-intensive businesses."
       },
       {
-        "title": "Critical automation",
-        "desc": "Repetitive processes run on their own. Your team focuses on what really adds value."
+        "q": "Is the demo free?",
+        "a": "Yes. The ADDNEXO demonstration is free."
       },
       {
-        "title": "Zero human errors",
-        "desc": "Drastic reduction of transcription and calculation errors that cost money and time every day."
+        "q": "Is implementation included?",
+        "a": "Yes. Implementation is included with no additional implementation fee under the current offer."
       },
       {
-        "title": "Data-driven decisions",
-        "desc": "Real-time financial and operational reports to lead with information, not intuition."
+        "q": "Can ADDNEXO be customized?",
+        "a": "Yes. ADDSTRATEGIC is a technology development company and can develop additional functionality around specific operational requirements."
       },
       {
-        "title": "Complete traceability",
-        "desc": "Every product, invoice, and shipment has a complete history. Never lose critical information again."
+        "q": "Can ADDNEXO help us understand the real cost of purchased inventory?",
+        "a": "ADDNEXO is designed to capture purchase-related and associated operational costs so businesses can build a more complete landed-cost and profitability view."
       },
       {
-        "title": "Operational scalability",
-        "desc": "The system grows with your business. Add modules and users according to your company's needs."
+        "q": "Can ADDNEXO manage customers and accounts receivable?",
+        "a": "Yes. Customer records, invoices, payment status and accounts receivable are part of the platform's operational and financial workflow."
       },
       {
-        "title": "Higher productivity",
-        "desc": "Less time on manual tasks, more time on strategy. Your team does more with less effort."
-      },
-      {
-        "title": "Total financial control",
-        "desc": "Complete visibility over income, expenses, and accounts receivable. Finances always under control."
+        "q": "Can ADDNEXO support import and export operations?",
+        "a": "The platform is designed for businesses where procurement, logistics, inventory, customer orders, invoicing and collections need to remain connected. Exact requirements should be reviewed during discovery."
       }
     ]
   },
-  "showcase": {
-    "badge": "The platform",
-    "title1": "Designed for your team",
-    "title2": "to use from day 1",
-    "subtitle": "Intuitive interface, clear flows, and no steep learning curve. Your team starts operating from the very first day.",
-    "h1Title": "Operational dashboard",
-    "h1Desc": "Unified view of all your KPIs in a single panel.",
-    "h2Title": "Live inventory",
-    "h2Desc": "Stock updated instantly with every movement.",
-    "h3Title": "Express billing",
-    "h3Desc": "Generate and send invoices in seconds, not hours.",
-    "h4Title": "Ready reports",
-    "h4Desc": "Export financial reports with a single click.",
-    "cta": "See live demo →"
-  },
-  "ctaBanner": {
-    "eyebrow": "Ready for a change?",
-    "title1": "Stop operating with Excel.",
-    "title2": "Start operating with intelligence.",
-    "subtitle": "Schedule a free demo and discover how the system can transform your operations in days, not months.",
-    "ctaPrimary": "Go to Form"
+  "finalCta": {
+    "headline": "See what your operation looks like when the information is connected.",
+    "subheadline": "Schedule a free ADDNEXO demo and walk through your operation with us.",
+    "primary": "Request a Free Demo",
+    "secondary": "View ADDNEXO",
+    "supporting": "No-cost demonstration. Implementation included. No additional implementation fee.",
+    "finalMessage": "The goal is not simply to give you another system. It is to help you understand your operation better, remove friction and build technology around the way your business actually works."
   },
   "footer": {
-    "tagline": "ADDNEXO ERP: The lightweight system to centralize, automate, and optimize your entire company operation (Inventory, Sales, and Billing).",
+    "tagline": "ADDNEXO connects the economics and operations of distribution — from purchasing and inventory to orders, dispatch, invoicing, collections and profitability.",
     "col1": "Platform",
     "col2": "Company",
     "col3": "Legal",
     "links": {
-      "features": "Features",
+      "flow": "Flow",
       "modules": "Modules",
-      "howItWorks": "How it works",
-      "benefits": "Benefits",
-      "about": "About ADD Strategic",
+      "industries": "Industries",
+      "story": "Story",
+      "faq": "FAQ",
+      "about": "About ADDSTRATEGIC",
       "contact": "Contact",
-      "demo": "Request Demo",
+      "demo": "Request a Free Demo",
       "privacy": "Privacy Policy",
       "terms": "Terms of Use"
     },
@@ -196,30 +418,51 @@
   },
   "contact": {
     "back": "← Back to home",
-    "title1": "Let's talk about your",
-    "title2": "operations.",
-    "desc": "Leave us your details and an ADDNEXO specialist will contact you to show you how we can transform your inventory and billing.",
-    "formTitle": "Request a Demo",
-    "nameLabel": "Full Name",
+    "title1": "Request a free",
+    "title2": "ADDNEXO demo.",
+    "desc": "Pick a time that works for you. We will walk through how ADDNEXO connects purchasing, inventory, orders, dispatch, invoicing and collections around your operation.",
+    "calendarLabel": "Schedule your free demo",
+    "calendarOpen": "Open calendar in a new tab",
+    "formTitle": "Request a Free Demo",
+    "nameLabel": "Name",
     "namePh": "e.g. John Doe",
     "companyLabel": "Company",
     "companyPh": "Your company name",
-    "emailLabel": "Email address",
-    "emailPh": "youremail@company.com",
-    "phoneLabel": "Phone / WhatsApp",
+    "emailLabel": "Email",
+    "emailPh": "you@company.com",
+    "phoneLabel": "Phone",
     "phonePh": "+1 234 567 890",
-    "messageLabel": "What is your main challenge currently?",
-    "messagePh": "e.g. I keep inventory in Excel and have mismatches...",
+    "industryLabel": "Industry",
+    "industryPh": "Select your industry",
+    "industries": {
+      "fresh-produce": "Fresh Produce Distribution",
+      "food-distribution": "Food Distribution",
+      "import-export": "Import & Export",
+      "wholesale": "Wholesale Distribution",
+      "agricultural": "Agricultural Products",
+      "inventory-intensive": "Inventory-Intensive Operations",
+      "other": "Other"
+    },
+    "challengeLabel": "Biggest Operational Challenge",
+    "challengePh": "e.g. We cannot see true landed cost after imports...",
     "sending": "Sending...",
-    "sent": "Message Sent!",
-    "submit": "Submit Request",
-    "success": "Thank you for writing to us. We will get in touch soon.",
+    "submit": "Request a Free Demo",
+    "offer": "Free demo. Implementation included. No additional implementation fee.",
     "errors": {
-      "name": "Please enter your full name.",
+      "name": "Please enter your name.",
       "company": "Please enter your company name.",
       "email": "Please enter a valid email address.",
       "phone": "Please enter a valid phone number.",
+      "industry": "Please select an industry.",
+      "challenge": "Please describe your biggest operational challenge.",
       "submit": "Something went wrong while sending your request. Please try again."
     }
+  },
+  "thanks": {
+    "title": "Your demo request is in.",
+    "subtitle": "Next step: pick a time that works for you. We will walk through your operation together.",
+    "supporting": "Free demo. Implementation included. No additional implementation fee.",
+    "backHome": "Back to home",
+    "calendarLabel": "Schedule your discovery call"
   }
 }

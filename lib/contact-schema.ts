@@ -1,10 +1,14 @@
 import { z } from "zod"
 
+import { INDUSTRY_OPTIONS } from "@/lib/site"
+
 export type ContactSchemaMessages = {
   name: string
   company: string
   email: string
   phone: string
+  industry: string
+  challenge: string
 }
 
 export function createContactSchema(messages: ContactSchemaMessages) {
@@ -13,7 +17,8 @@ export function createContactSchema(messages: ContactSchemaMessages) {
     company: z.string().trim().min(1, messages.company),
     email: z.email(messages.email),
     phone: z.string().trim().min(5, messages.phone),
-    message: z.string().trim().optional(),
+    industry: z.enum(INDUSTRY_OPTIONS, { message: messages.industry }),
+    challenge: z.string().trim().min(5, messages.challenge),
   })
 }
 

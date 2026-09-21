@@ -11,10 +11,11 @@ import { cn } from "@/lib/utils"
 
 function getNavLinks(t: ReturnType<typeof useTranslations>) {
   return [
-    { label: t("navbar.features"), href: sectionHref("features") },
+    { label: t("navbar.flow"), href: sectionHref("flow") },
     { label: t("navbar.modules"), href: sectionHref("modules") },
-    { label: t("navbar.howItWorks"), href: sectionHref("howItWorks") },
-    { label: t("navbar.benefits"), href: sectionHref("benefits") },
+    { label: t("navbar.industries"), href: sectionHref("industries") },
+    { label: t("navbar.story"), href: sectionHref("story") },
+    { label: t("navbar.faq"), href: sectionHref("faq") },
   ]
 }
 
@@ -52,11 +53,11 @@ export default function Navbar() {
         scrolled && "bg-brand-dark/97 shadow-[0_2px_20px_rgba(0,0,0,0.25)] backdrop-blur-xl"
       )}
     >
-      <div className="mx-auto flex h-full max-w-[1280px] items-center gap-8 px-8">
-        <Link href="/" className="shrink-0" aria-label="ADDNEXO ERP inicio">
+      <div className="mx-auto flex h-full max-w-[1280px] items-center gap-4 px-4 sm:gap-8 sm:px-6 md:px-8">
+        <Link href="/" className="shrink-0" aria-label="ADDNEXO">
           <Image
             src="/addnexo.png"
-            alt="ADDNEXO ERP - Gestión Operativa"
+            alt="ADDNEXO — Operating and Financial System for Distribution"
             width={160}
             height={48}
             className="h-12 w-auto object-contain"
@@ -66,10 +67,10 @@ export default function Navbar() {
 
         <nav
           className={cn(
-            "ml-auto flex items-center gap-8 max-md:fixed max-md:inset-x-0 max-md:top-[var(--nav-h)] max-md:bottom-0 max-md:z-[999] max-md:flex-col max-md:justify-center max-md:gap-8 max-md:bg-brand-dark max-md:text-[1.3rem] max-md:transition-transform max-md:duration-350 max-md:ease-[cubic-bezier(0.16,1,0.3,1)]",
+            "ml-auto flex items-center gap-7 max-md:fixed max-md:inset-x-0 max-md:top-[var(--nav-h)] max-md:bottom-0 max-md:z-[999] max-md:flex-col max-md:justify-center max-md:gap-8 max-md:bg-brand-dark max-md:text-[1.3rem] max-md:transition-transform max-md:duration-350 max-md:ease-[cubic-bezier(0.16,1,0.3,1)]",
             menuOpen ? "max-md:translate-x-0" : "max-md:translate-x-full"
           )}
-          aria-label="Navegación principal"
+          aria-label="Main navigation"
         >
           {getNavLinks(t).map((link) => (
             <Link
@@ -95,7 +96,7 @@ export default function Navbar() {
         <div className="ml-8 flex shrink-0 items-center gap-4">
           <button
             type="button"
-            className="rounded-md border border-white/20 px-2 py-2 text-[0.9rem] font-bold text-white/80 transition-colors hover:text-white"
+            className="rounded-md border border-white/20 px-2 py-2 text-[0.9rem] font-bold text-white/80 transition-colors hover:text-white active:scale-[0.97]"
             onClick={toggleLanguage}
           >
             {locale === "es" ? "EN" : "ES"}
@@ -107,10 +108,11 @@ export default function Navbar() {
             type="button"
             className={cn(
               "hidden h-7 w-7 flex-col justify-center gap-1.5 p-0 max-md:flex",
-              menuOpen && "[&>span:nth-child(1)]:translate-y-[7px] [&>span:nth-child(1)]:rotate-45 [&>span:nth-child(2)]:opacity-0 [&>span:nth-child(3)]:-translate-y-[7px] [&>span:nth-child(3)]:-rotate-45"
+              menuOpen &&
+                "[&>span:nth-child(1)]:translate-y-[7px] [&>span:nth-child(1)]:rotate-45 [&>span:nth-child(2)]:opacity-0 [&>span:nth-child(3)]:-translate-y-[7px] [&>span:nth-child(3)]:-rotate-45"
             )}
             onClick={() => setMenuOpen((open) => !open)}
-            aria-label="Menú"
+            aria-label="Menu"
             aria-expanded={menuOpen}
           >
             <span className="block h-0.5 w-full origin-center rounded-sm bg-white transition-[transform,opacity] duration-300" />
