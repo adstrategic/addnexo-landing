@@ -35,5 +35,7 @@ pnpm-debug.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# impeccable headless browser temp profiles
-.impeccable/review/tmp-profile-*
+# impeccable artifacts & headless browser temp profiles
+/.impeccable/
+/DESIGN.md
+/PRODUCT.md

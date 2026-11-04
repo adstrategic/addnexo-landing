@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server"
 import ProduceLandingPage, {
   type HeroVariantKey,
 } from "@/components/ProduceLandingPage"
+import { getSiteUrl } from "@/lib/email-brand"
 
 function normalizeVariant(raw?: string | string[] | null): HeroVariantKey {
   const val = Array.isArray(raw) ? raw[0] : raw
@@ -32,15 +33,30 @@ export async function generateMetadata({
   const variantH1 = tProduce(`hero.variants.${variant}.h1`)
   const title = `${variantH1} | ADDNEXO`
   const description = tSeo("produceDesc")
+  const siteUrl = getSiteUrl()
+  const path = `/${locale}/produce`
 
   return {
     title,
     description,
+    alternates: {
+      canonical: `${siteUrl}${path}`,
+      languages: {
+        en: `${siteUrl}/en/produce`,
+        es: `${siteUrl}/es/produce`,
+        "x-default": `${siteUrl}/en/produce`,
+      },
+    },
     openGraph: {
       title,
       description,
+      url: `${siteUrl}${path}`,
+      siteName: "ADDNEXO",
+      locale: locale === "es" ? "es_ES" : "en_US",
+      type: "website",
     },
     twitter: {
+      card: "summary_large_image",
       title,
       description,
     },
