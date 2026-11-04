@@ -2,11 +2,13 @@
 
 import Image from "next/image"
 import { useMemo, useState } from "react"
+import { Calendar, ExternalLink, Play } from "lucide-react"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Controller, useForm } from "react-hook-form"
 import { useLocale, useTranslations } from "next-intl"
 
 import { LandingButton } from "@/components/landing-button"
+import VideoModal from "@/components/VideoModal"
 import { Field, FieldError, FieldLabel } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -114,6 +116,8 @@ export default function ProduceLandingPage({
   const [openFaq, setOpenFaq] = useState<number | null>(0)
   const [isSuccess, setIsSuccess] = useState(false)
   const [submitError, setSubmitError] = useState("")
+  const [videoOpen, setVideoOpen] = useState(false)
+  const [ctaMode, setCtaMode] = useState<"form" | "calendar">("form")
 
 
   const toggleLanguage = () => {
@@ -320,6 +324,17 @@ export default function ProduceLandingPage({
                       />
                     </svg>
                   </a>
+                </LandingButton>
+
+                <LandingButton
+                  type="button"
+                  variant="ghost"
+                  size="lg"
+                  onClick={() => setVideoOpen(true)}
+                  className="justify-center border border-white/20 bg-white/5 font-semibold text-white hover:bg-white/10 hover:text-white"
+                >
+                  <Play className="mr-1.5 size-4 fill-brand-cyan text-brand-cyan" aria-hidden="true" />
+                  {t("watchVideo")}
                 </LandingButton>
               </div>
 
@@ -1079,7 +1094,62 @@ export default function ProduceLandingPage({
 
             <div className="lg:col-span-7">
               <div className="rounded-2xl border border-white/15 bg-[#060b19] p-6 shadow-[0_24px_60px_rgba(0,0,0,0.55)] sm:p-10">
-                {isSuccess ? (
+                {/* Tabs to choose between Quick Form or Instant Calendar */}
+                <div className="mb-6 flex rounded-xl border border-white/12 bg-white/5 p-1">
+                  <button
+                    type="button"
+                    onClick={() => setCtaMode("form")}
+                    className={cn(
+                      "flex-1 rounded-lg py-2.5 text-xs sm:text-sm font-semibold transition-all",
+                      ctaMode === "form"
+                        ? "bg-brand-cyan text-brand-dark shadow-md"
+                        : "text-slate-300 hover:text-white"
+                    )}
+                  >
+                    {t("finalCta.tabs.form")}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setCtaMode("calendar")}
+                    className={cn(
+                      "flex-1 rounded-lg py-2.5 text-xs sm:text-sm font-semibold transition-all flex items-center justify-center gap-1.5",
+                      ctaMode === "calendar"
+                        ? "bg-brand-cyan text-brand-dark shadow-md"
+                        : "text-slate-300 hover:text-white"
+                    )}
+                  >
+                    <Calendar className="size-3.5" aria-hidden="true" />
+                    {t("finalCta.tabs.cal")}
+                  </button>
+                </div>
+
+                {ctaMode === "calendar" ? (
+                  <div className="space-y-4">
+                    <div className="rounded-xl border border-white/10 bg-[#0c1528] p-4 text-center">
+                      <p className="text-sm font-medium text-slate-200">
+                        {t("finalCta.immediateBookingNotice")}
+                      </p>
+                      <a
+                        href="https://cal.com/adstrategic-mml9qb/30min"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-3 inline-flex items-center gap-1.5 rounded-lg bg-brand-cyan px-4 py-2 text-xs font-bold text-brand-dark transition-opacity hover:opacity-90"
+                      >
+                        {t("finalCta.immediateBookingButton")}
+                        <ExternalLink className="size-3.5" />
+                      </a>
+                    </div>
+                    <div className="overflow-hidden rounded-xl border border-white/10 bg-[#090f1d]">
+                      <iframe
+                        src="https://cal.com/adstrategic-mml9qb/30min"
+                        title="Cal.com Booking"
+                        className="h-[600px] w-full border-0"
+                        loading="lazy"
+                        allow="camera; microphone; fullscreen"
+                      />
+                    </div>
+                  </div>
+                ) : isSuccess ? (
                   <div className="py-8 text-center">
                     <div className="mx-auto mb-4 flex size-12 items-center justify-center rounded-full border border-brand-cyan/40 bg-brand-cyan/15 text-brand-cyan">
                       <svg
@@ -1103,9 +1173,42 @@ export default function ProduceLandingPage({
                     <p className="mx-auto mt-3 max-w-[420px] text-base leading-relaxed text-pretty text-slate-200">
                       {t("finalCta.form.successBody")}
                     </p>
+
+                    {/* Instant booking option after form */}
+                    <div className="mt-8 rounded-xl border border-brand-cyan/30 bg-brand-cyan/10 p-5 text-center">
+                      <p className="text-sm font-semibold text-white">
+                        {t("finalCta.successCalPrompt")}
+                      </p>
+                      <a
+                        href="https://cal.com/adstrategic-mml9qb/30min"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-3 inline-flex items-center gap-2 rounded-lg bg-brand-cyan px-5 py-2.5 text-xs sm:text-sm font-bold text-brand-dark transition-opacity hover:opacity-90"
+                      >
+                        {t("finalCta.successCalButton")}
+                        <ExternalLink className="size-4" />
+                      </a>
+                    </div>
                   </div>
                 ) : (
-                  <form onSubmit={form.handleSubmit(onSubmit)} noValidate>
+                  <div>
+                    {/* Instant Booking Banner */}
+                    <div className="mb-6 flex flex-col sm:flex-row items-center justify-between gap-3 rounded-xl border border-brand-cyan/25 bg-brand-cyan/10 px-4 py-3 text-left">
+                      <span className="text-xs sm:text-sm font-semibold text-white">
+                        {t("finalCta.immediateBookingNotice")}
+                      </span>
+                      <a
+                        href="https://cal.com/adstrategic-mml9qb/30min"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex shrink-0 items-center gap-1.5 rounded-lg bg-brand-cyan px-3.5 py-1.5 text-xs font-bold text-brand-dark transition-opacity hover:opacity-90"
+                      >
+                        {t("finalCta.immediateBookingButton")}
+                        <ExternalLink className="size-3.5" />
+                      </a>
+                    </div>
+
+                    <form onSubmit={form.handleSubmit(onSubmit)} noValidate>
                     <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                       <Controller
                         name="name"
@@ -1255,6 +1358,7 @@ export default function ProduceLandingPage({
                       </p>
                     ) : null}
                   </form>
+                </div>
                 )}
               </div>
             </div>
@@ -1298,6 +1402,12 @@ export default function ProduceLandingPage({
           </div>
         </div>
       </footer>
+
+      <VideoModal
+        isOpen={videoOpen}
+        onClose={() => setVideoOpen(false)}
+        title="ADDNEXO Platform Walkthrough"
+      />
     </div>
   )
 }

@@ -35,6 +35,7 @@
     "supporting": "Diseñado para distribuidores, importadores, mayoristas y negocios intensivos en inventario que necesitan más que hojas de cálculo y sistemas desconectados.",
     "ctaPrimary": "Solicitar Demo Gratis",
     "ctaSecondary": "Ver Cómo Funciona ADDNEXO",
+    "ctaVideo": "Ver Demo en Video (3 min)",
     "microcopy": "Demo gratis. Implementación incluida. Sin costo adicional de implementación.",
     "slides": [
       {
@@ -466,6 +467,11 @@
     "desc": "Elige un horario que te funcione. Revisaremos cómo ADDNEXO conecta compras, inventario, pedidos, despacho, facturación y cobros alrededor de tu operación.",
     "calendarLabel": "Agenda tu demo gratis",
     "calendarOpen": "Abrir calendario en una nueva pestaña",
+    "tabs": {
+      "calendar": "Agendar en Calendario",
+      "form": "Dejarnos un Mensaje"
+    },
+    "immediateCal": "¿Prefieres agendar directamente en el calendario? Elige un espacio de 30 minutos en Cal.com",
     "formTitle": "Solicitar Demo Gratis",
     "nameLabel": "Nombre",
     "namePh": "Ej. Juan Pérez",
@@ -517,6 +523,7 @@
       "cta": "Agendar llamada de diagnóstico gratis"
     },
     "ctaPrimary": "Agendar llamada de diagnóstico gratis",
+    "watchVideo": "Ver Demo en Video (3 min)",
     "socialProof": "Mercado mayorista de produce de $90B en EE. UU., construido por quienes lo operaron, no por quienes lo estudiaron.",
     "hero": {
       "variants": {
@@ -794,6 +801,14 @@
     "finalCta": {
       "h2": "Descubre exactamente cuánto te cuesta cada lote.",
       "subtitle": "Agenda una llamada de diagnóstico de 15 minutos con operadores que conocen la distribución mayorista de produce por dentro.",
+      "immediateBookingNotice": "¿Necesitas un espacio inmediato en el calendario?",
+      "immediateBookingButton": "Agendar cita de 30 min en Cal.com",
+      "successCalPrompt": "¿Quieres asegurar tu espacio en el calendario de una vez?",
+      "successCalButton": "Elegir fecha y hora en Cal.com",
+      "tabs": {
+        "form": "Formulario de diagnóstico",
+        "cal": "Calendario directo (Cal.com)"
+      },
       "bullets": [
         "Revisamos cómo calculas hoy el landed cost y la merma por contenedor.",
         "Vemos cómo se conectan el flujo comercial y financiero en un lote real.",

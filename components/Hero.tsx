@@ -2,10 +2,12 @@
 
 import Image from "next/image"
 import { useEffect, useRef, useState } from "react"
+import { Play } from "lucide-react"
 import { useTranslations } from "next-intl"
 import gsap from "gsap"
 
 import { LandingButton } from "@/components/landing-button"
+import VideoModal from "@/components/VideoModal"
 import { Link } from "@/i18n/navigation"
 import { sectionHref } from "@/lib/sections"
 import { cn } from "@/lib/utils"
@@ -20,6 +22,7 @@ const SLIDE_IMAGES = [
 export default function Hero() {
   const t = useTranslations("hero")
   const [activeSlide, setActiveSlide] = useState(0)
+  const [videoOpen, setVideoOpen] = useState(false)
 
   const badgeRef = useRef<HTMLDivElement>(null)
   const titleRef = useRef<HTMLHeadingElement>(null)
@@ -122,6 +125,15 @@ export default function Hero() {
         >
           <LandingButton asChild variant="lime" className="max-md:w-full max-md:justify-center">
             <Link href="/contact">{t("ctaPrimary")}</Link>
+          </LandingButton>
+          <LandingButton
+            type="button"
+            variant="ghost"
+            onClick={() => setVideoOpen(true)}
+            className="border border-white/20 bg-white/5 text-white hover:bg-white/10 hover:text-white max-md:w-full max-md:justify-center"
+          >
+            <Play className="mr-1.5 size-4 fill-brand-cyan text-brand-cyan" aria-hidden />
+            {t("ctaVideo")}
           </LandingButton>
           <LandingButton asChild variant="ghost" className="max-md:w-full max-md:justify-center">
             <Link href={sectionHref("flow")}>
@@ -253,6 +265,12 @@ export default function Hero() {
           />
         </svg>
       </div>
+
+      <VideoModal
+        isOpen={videoOpen}
+        onClose={() => setVideoOpen(false)}
+        title="ADDNEXO — Operating and Financial System"
+      />
     </section>
   )
 }

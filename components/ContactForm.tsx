@@ -83,9 +83,24 @@ export default function ContactForm() {
   return (
     <div className="rounded-[20px] border border-black/6 bg-background p-8 shadow-[0_20px_40px_rgba(0,0,0,0.06)] md:p-12">
       <form onSubmit={form.handleSubmit(onSubmit)} noValidate>
-        <h2 className="mb-8 text-2xl font-extrabold tracking-[-0.02em] text-brand-dark">
+        <h2 className="mb-6 text-2xl font-extrabold tracking-[-0.02em] text-brand-dark">
           {t("formTitle")}
         </h2>
+
+        {/* Immediate Cal.com booking option */}
+        <div className="mb-6 flex flex-col sm:flex-row items-center justify-between gap-3 rounded-xl border border-primary/20 bg-primary/5 p-3.5 text-left">
+          <span className="text-xs sm:text-sm font-semibold text-brand-dark">
+            {t("immediateCal")}
+          </span>
+          <a
+            href="https://cal.com/adstrategic-mml9qb/30min"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex shrink-0 items-center gap-1.5 rounded-lg bg-primary px-3.5 py-1.5 text-xs font-bold text-white transition-opacity hover:opacity-90"
+          >
+            Cal.com ↗
+          </a>
+        </div>
 
         <Controller
           name="name"
