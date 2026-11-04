@@ -129,23 +129,35 @@
   * {
     @apply border-border outline-ring/50;
   }
+  ::selection {
+    background-color: rgba(56, 189, 248, 0.28);
+    color: #f8fafc;
+  }
   html {
     @apply scroll-smooth font-sans;
+    scrollbar-color: #1e293b #060b19;
+    scrollbar-width: thin;
   }
   body {
     @apply overflow-x-hidden bg-background text-foreground text-base leading-relaxed;
+    caret-color: #38bdf8;
   }
   img {
     @apply block h-auto max-w-full;
   }
   a {
-    @apply text-inherit no-underline;
+    @apply text-inherit no-underline underline-offset-4;
   }
   ul {
     @apply list-none;
   }
   button {
     @apply cursor-pointer border-none bg-transparent font-[inherit];
+  }
+  input,
+  textarea,
+  select {
+    caret-color: #38bdf8;
   }
 }
 

@@ -3,7 +3,9 @@
     "homeTitle": "ADDNEXO ERP | Control Total de Inventario y Facturación",
     "homeDesc": "El ERP ligero para centralizar tu inventario (Kardex), facturación digital automática, despachos y reportes financieros. Dile adiós al Excel y automatiza hoy.",
     "contactTitle": "Contacto y Demo Gratis | ADDNEXO ERP",
-    "contactDesc": "Ponte en contacto con nuestro equipo y programa una demostración personalizada de ADDNEXO ERP. Comienza a optimizar tu operación hoy."
+    "contactDesc": "Ponte en contacto con nuestro equipo y programa una demostración personalizada de ADDNEXO ERP. Comienza a optimizar tu operación hoy.",
+    "produceTitle": "ADDNEXO | Sistema Operativo y Financiero para Distribuidores de Produce",
+    "produceDesc": "Conoce tu costo real (landed cost) por lote antes de fijar precios. Construido para distribuidores mayoristas de produce en EE. UU. ($5M–$100M/año). Agenda una llamada de diagnóstico gratuita de 15 minutos."
   },
   "navbar": {
     "features": "Características",
@@ -220,6 +222,320 @@
       "email": "Por favor ingresa un correo electrónico válido.",
       "phone": "Por favor ingresa un número de teléfono válido.",
       "submit": "Algo salió mal al enviar tu solicitud. Por favor intenta de nuevo."
+    }
+  },
+  "produce": {
+    "nav": {
+      "problem": "El Punto Ciego de $42K",
+      "howItWorks": "Cómo Funciona",
+      "pricing": "Precios",
+      "faq": "Preguntas",
+      "cta": "Agendar llamada de diagnóstico gratis"
+    },
+    "ctaPrimary": "Agendar llamada de diagnóstico gratis",
+    "socialProof": "Mercado mayorista de produce de $90B en EE. UU., construido por quienes lo operaron, no por quienes lo estudiaron.",
+    "hero": {
+      "variants": {
+        "cost": {
+          "h1": "La factura del proveedor no es el costo.",
+          "subheadline": "Fletes, aduana, bróker, seguro, cuarto frío y merma se suman después—y nadie conoce el costo real (landed cost) del lote hasta 3 semanas después de haberlo vendido."
+        },
+        "excel": {
+          "h1": "¿Sigues operando tu distribuidora en hojas de cálculo, libretas y WhatsApp?",
+          "subheadline": "Cuando compras, cuarto frío, despacho y contabilidad viven en archivos desconectados, una sola factura de flete no asignada o ajuste por merma borra en silencio tu margen en toda la carga."
+        },
+        "erp": {
+          "h1": "El sistema operativo y financiero construido para distribuidores mayoristas de produce.",
+          "subheadline": "Conecta costos reales por lote (landed cost), inventario perecedero, pedidos, despacho y cuentas por pagar en un solo sistema en tiempo real—para distribuidores de $5M a $100M en EE. UU."
+        }
+      },
+      "ledgerPreview": {
+        "header": "UNIDAD ECONÓMICA DE LOTE — #AVO-4029",
+        "origin": "Contenedor 40ft · Michoacán → McAllen → Cuarto Frío Miami",
+        "colItem": "Componente de Costo",
+        "colSheet": "Vista en Excel",
+        "colAddnexo": "Lote en Vivo ADDNEXO",
+        "growerLabel": "Factura del Grower (1,600 cajas)",
+        "growerSheet": "$42,000",
+        "growerLive": "$42,000",
+        "postInvoiceLabel": "Flete, Aduana, Frío y 4.5% Merma",
+        "postInvoiceSheet": "Sin asignar (3 sem. tarde)",
+        "postInvoiceLive": "+$9,870 asignados",
+        "unitCostLabel": "Costo Real por Caja Vendible",
+        "unitCostSheet": "$26.25 (Falso)",
+        "unitCostLive": "$33.95 (Exacto)",
+        "marginVerdictLabel": "Vendido a $31.50 / caja",
+        "marginVerdictSheet": "Parece +20% de margen",
+        "marginVerdictLive": "Realidad: -$2.45/caja pérdida"
+      }
+    },
+    "problem": {
+      "h2": "La factura del grower dice $42,000. ¿Cuánto te costó realmente ese contenedor de aguacates?",
+      "lead": "Recibes un contenedor de aguacates con una factura del productor por $42,000. Tu equipo de ventas calcula el precio sobre esa factura y vende la carga en cuatro días. Tres semanas después llegan a contabilidad las facturas de flete, aduana, cuarto frío y la merma de reempaque.",
+      "body": "Para cuando tu contador concilia el mes en QuickBooks y Excel, la fruta ya se vendió, el cliente ya pagó y no tienes idea de qué lotes ganaron dinero y cuáles perdieron efectivo.",
+      "marginCallout": "En un negocio con márgenes netos de 2–4%, esa asignación de costos decide si el contenedor ganó o perdió dinero.",
+      "receipt": {
+        "title": "RECIBO DE COSTO REAL (LANDED COST)",
+        "meta": "LOTE #AVO-4200 · 1,600 CAJAS AGUACATE HASS · PUERTO: PHARR / MIAMI",
+        "unlinkedTag": "(sin vincular)",
+        "toggleBlind": "Lo que Excel y QuickBooks muestran el Día 1",
+        "toggleTrue": "Lo que ADDNEXO calcula en Tiempo Real",
+        "lines": [
+          {
+            "label": "Factura del Grower (FOB Origen — 1,600 cajas @ $26.25)",
+            "timing": "Registrado el Día 1",
+            "amount": "$42,000.00",
+            "type": "base"
+          },
+          {
+            "label": "+ Flete Refrigerado Cruce e Interior",
+            "timing": "Factura llega el Día 14",
+            "amount": "+ $4,200.00",
+            "type": "hidden"
+          },
+          {
+            "label": "+ Aranceles de Aduana e Inspección USDA",
+            "timing": "Liquidación llega el Día 18",
+            "amount": "+ $1,150.00",
+            "type": "hidden"
+          },
+          {
+            "label": "+ Agente Aduanal y Trámites de Entrada",
+            "timing": "Estado de cuenta Día 18",
+            "amount": "+ $490.00",
+            "type": "hidden"
+          },
+          {
+            "label": "+ Seguro de Carga y Tránsito",
+            "timing": "Facturado a fin de mes",
+            "amount": "+ $380.00",
+            "type": "hidden"
+          },
+          {
+            "label": "+ Cuarto Frío, Pre-Enfriado y Cross-Docking",
+            "timing": "Factura llega el Día 30",
+            "amount": "+ $1,120.00",
+            "type": "hidden"
+          },
+          {
+            "label": "+ Manejo en Bodega, Clasificación y Reempaque",
+            "timing": "Mano de obra no asignada",
+            "amount": "+ $640.00",
+            "type": "hidden"
+          },
+          {
+            "label": "+ Merma, Daño y Rechazos de Calidad (72 cajas perdidas)",
+            "timing": "Descubierto tras el despacho",
+            "amount": "+ $1,890.00",
+            "type": "shrink"
+          }
+        ],
+        "blindTotalLabel": "TRUE LANDED COST (REALIDAD EN EXCEL)",
+        "blindTotalValue": "DESCONOCIDO",
+        "blindSub": "Conciliado 21 días después de haber vendido la fruta al precio equivocado.",
+        "trueTotalLabel": "TRUE LANDED COST (LOTE EN VIVO ADDNEXO)",
+        "trueTotalValue": "$51,870.00",
+        "trueSub": "$33.95 por caja vendible (1,528 cajas netas) — conocido antes de despachar el primer pallet."
+      }
+    },
+    "whyUnsolved": {
+      "h2": "Por qué nadie ha resuelto esto para el distribuidor de $5M–$100M.",
+      "subtitle": "Hasta hoy, estabas obligado a elegir entre sistemas corporativos de seis cifras o manejar una operación multimillonaria en hojas de cálculo frágiles.",
+      "colCost": "Costo",
+      "colTimeline": "Implementación",
+      "competitors": [
+        {
+          "name": "NetSuite / Famous Software / Silo / Prophet",
+          "verdict": "Hechos para corporativos de $250M+, fuera de alcance",
+          "cost": "$60,000 – $150,000+ de implementación",
+          "timeline": "6 a 12 meses de puesta en marcha",
+          "reality": "Sí, los ERPs tradicionales calculan landed cost—si tienes un presupuesto de 6 cifras en consultoría, un departamento de IT dedicado y un año para sobrevivir la implementación."
+        },
+        {
+          "name": "Tu Verdadero Competidor Hoy: QuickBooks + Excel + WhatsApp",
+          "verdict": "Cero visibilidad por lote, 3 semanas de atraso contable",
+          "cost": "Fugas silenciosas de margen en cada contenedor",
+          "timeline": "Conciliación manual una vez al mes",
+          "reality": "QuickBooks solo ve totales contables semanas después. Excel cuenta cajas en bodega sin control financiero. WhatsApp guarda cambios de despacho que nadie transcribió."
+        },
+        {
+          "name": "Sistema Operativo y Financiero ADDNEXO",
+          "verdict": "Costo de cambio casi cero — reemplaza a Excel",
+          "cost": "$90 / usuario / mes",
+          "timeline": "En producción en días, no en semestres",
+          "reality": "Tu costo de cambio es prácticamente cero porque no estás reemplazando un ERP complejo—estás reemplazando hojas de cálculo desconectadas por un solo flujo operativo y financiero."
+        }
+      ],
+      "callout": "No estás reemplazando un ERP. Estás reemplazando el vacío entre QuickBooks, Excel y el piso de bodega."
+    },
+    "howItWorks": {
+      "h2": "Dos flujos paralelos corriendo como un solo sistema—no dos mundos que se concilian una vez al mes.",
+      "subtitle": "Cada movimiento comercial en bodega actualiza automáticamente su contraparte financiera a nivel de lote. Sin doble captura, sin sorpresas a fin de mes.",
+      "commercialTitle": "Flujo Comercial (Bodega y Ventas)",
+      "commercialSteps": [
+        "Compra",
+        "Orden de Compra",
+        "Inventario",
+        "Pedido de Cliente",
+        "Despacho",
+        "Factura",
+        "Cobranza"
+      ],
+      "financialTitle": "Flujo Financiero (Costeo y Control)",
+      "financialSteps": [
+        "Compra / Importación",
+        "Costos Asociados",
+        "Cuentas por Pagar",
+        "Pago",
+        "Control Financiero"
+      ],
+      "syncNote": "Sincronización en Vivo por Lote: Cuando el flete, aduana o cuarto frío entra a Cuentas por Pagar, ADDNEXO actualiza al instante el costo unitario en Inventario y recalcula el margen real en cada Factura."
+    },
+    "differentiator": {
+      "h2": "El inventario deja de ser una cantidad física y se convierte en una unidad económica medible.",
+      "subtitle": "Contar cajas solo te dice qué hay en el cuarto frío. ADDNEXO te muestra el desempeño financiero exacto de cada lote desde la rampa de recepción hasta el cobro final:",
+      "metrics": [
+        {
+          "code": "LOT.COST",
+          "title": "Qué costó realmente el lote",
+          "desc": "Factura del productor más cada flete, arancel aduanal, bróker, seguro y cargo de cuarto frío vinculado directamente a ese lote."
+        },
+        {
+          "code": "LOT.SHRINK",
+          "title": "Qué se perdió",
+          "desc": "Merma exacta, daño, pérdida por reempaque y rechazos de calidad medidos tanto en cajas físicas como en impacto real en dólares."
+        },
+        {
+          "code": "LOT.BUYERS",
+          "title": "Quién lo compró",
+          "desc": "Asignación completa por cliente mostrando qué cuentas llevaron qué pallets, a qué nivel de precio y con qué historial de reclamos."
+        },
+        {
+          "code": "LOT.REVENUE",
+          "title": "Qué ganó",
+          "desc": "Ingreso real cobrado después de notas de crédito, ajustes de precio y descuentos—no solo totales facturados optimistas."
+        },
+        {
+          "code": "LOT.MARGIN",
+          "title": "Cuál fue el margen bruto real",
+          "desc": "Contribución neta real por contenedor, por productor y por vendedor mientras aún estás a tiempo de ajustar precios."
+        }
+      ]
+    },
+    "credibility": {
+      "quote": "“La parte difícil de un ERP vertical no es escribir el software — es saber qué hace un distribuidor a las 4 a.m. cuando un camión llega con faltantes.”",
+      "h2": "Nacido dentro de una distribuidora mayorista en Miami—no como teoría de software.",
+      "p1": "ADDNEXO no nació como una idea de software buscando una industria. Nació en la rampa de un distribuidor mayorista de produce en Miami que pagó cerca de $6,000 para que le resolvieran primero este problema exacto de costeo y control por lote.",
+      "p2": "Ese primer cliente en Miami sigue hoy en producción operando el ciclo comercial y financiero completo en ADDNEXO todos los días.",
+      "p3": "Detrás del sistema hay un equipo que acumula décadas de conocimiento operativo real en distribución (base SICOM)—gente que entiende de reempaque, camiones con faltantes, retenciones de USDA y recepción a las 4 a.m."
+    },
+    "capabilities": {
+      "h2": "Inteligencia artificial y voz diseñadas para la rampa de bodega—no para demos.",
+      "subtitle": "Tu equipo no tiene tiempo de llenar formularios eternos mientras descargan camiones. Estas tres funciones aceleran la recepción, el despacho y las decisiones de compra sin reemplazar la operación tradicional.",
+      "cards": [
+        {
+          "tag": "Rampa de Recepción",
+          "title": "Reportes de calidad con IA en recepción",
+          "desc": "Toma fotos de los pallets y agrega notas rápidas al abrir el camión. ADDNEXO genera automáticamente un reporte estructurado de calidad vinculado al lote—listo para respaldar reclamos al proveedor."
+        },
+        {
+          "tag": "Operación Manos Libres",
+          "title": "Operación por voz",
+          "desc": "Crea órdenes de compra, despachos y facturas hablando con naturalidad, funcionando en paralelo con la entrada manual tradicional cuando tienes las manos ocupadas en el cuarto frío."
+        },
+        {
+          "tag": "Inteligencia de Margen",
+          "title": "Analista financiero conversacional",
+          "desc": "Haz preguntas libres sobre tu negocio en cualquier momento y recibe respuestas inmediatas sobre márgenes reales y recomendaciones de qué comprar y a quién no comprarle."
+        }
+      ]
+    },
+    "pricing": {
+      "h2": "$90 por usuario al mes. Control operativo y financiero completo.",
+      "subtitle": "Con 5 usuarios ya puedes cubrir ventas, administración, contabilidad, finanzas y operación completa dentro de un solo sistema.",
+      "colUsers": "Usuarios",
+      "colMonthly": "Inversión Mensual",
+      "colCoverage": "Cobertura Operativa",
+      "rows": [
+        {
+          "users": "5 Usuarios",
+          "price": "$450 / mes",
+          "desc": "Cubre ventas, administración, contabilidad, finanzas y operación completa en un solo sistema.",
+          "highlight": true
+        },
+        {
+          "users": "8 Usuarios",
+          "price": "$720 / mes",
+          "desc": "Ideal para mesas de varios compradores, jefes de rampa y operación de alta rotación.",
+          "highlight": false
+        },
+        {
+          "users": "20 Usuarios",
+          "price": "$1,800 / mes",
+          "desc": "Operación mayorista regional multi-bodega con acceso completo para cada área.",
+          "highlight": false
+        }
+      ],
+      "footnote": "Todos los módulos incluidos en cada usuario: Compras, Landed Costing, Inventario por Lote, Ventas y Despacho, Facturación, Cuentas por Cobrar/Pagar, Reportes de Calidad con IA, Operación por Voz y Control Financiero."
+    },
+    "faq": {
+      "h2": "Respuestas directas antes de agendar tu llamada.",
+      "items": [
+        {
+          "q": "¿Solo sirve para produce fresco?",
+          "a": "Fue diseñado específicamente alrededor de los problemas más críticos en distribución mayorista de produce fresco—trazabilidad por lote, costos asociados post-factura (fletes, aduana, cuarto frío), perecibilidad y merma. Si distribuyes frutas, verduras, carnes, mariscos, lácteos o perecederos importados donde el margen por lote cambia a diario, se adapta de inmediato."
+        },
+        {
+          "q": "¿Cuánto tarda la implementación?",
+          "a": "Días o un par de semanas—no los 6 a 12 meses que exigen NetSuite, Famous o Prophet. Importamos tus productos, proveedores y clientes activos, configuramos tus rubros de landed cost y ponemos a tu equipo a operar lotes reales de inmediato."
+        },
+        {
+          "q": "¿Tengo que dejar Excel de un día para otro?",
+          "a": "No. Hacemos una transición progresiva—empezando por compras, recepción de lotes y costeo real para detener las fugas de margen desde la primera semana, importando tus hojas actuales sin frenar el despacho diario."
+        },
+        {
+          "q": "¿Es personalizable a mi operación específica?",
+          "a": "Sí. Como construimos la plataforma mano a mano con distribuidores reales, adaptamos reglas de prorrateo de costos, flujos de recepción, formatos de facturación y reportes operativos a la forma real en que trabaja tu bodega."
+        },
+        {
+          "q": "¿Calcula el costo real del inventario automáticamente?",
+          "a": "Sí. En cuanto vinculas fletes, aduana, bróker, cuarto frío, manejo o merma a una compra o lote de importación—incluso si las facturas llegan semanas después—ADDNEXO recalcula automáticamente el costo unitario exacto y el margen bruto real de cada caja."
+        },
+        {
+          "q": "¿Qué pasa en la llamada de diagnóstico?",
+          "a": "Cero presentaciones genéricas y cero discurso de ventas. Revisamos cómo controlas hoy tus lotes, cómo asignas fletes/aduana/merma y cómo concilias facturas entre bodega y contabilidad. En 15 minutos te diremos con total honestidad dónde se está fugando el margen y si ADDNEXO encaja con tu operación."
+        }
+      ]
+    },
+    "finalCta": {
+      "h2": "Descubre exactamente cuánto te cuesta cada lote.",
+      "subtitle": "Agenda una llamada de diagnóstico de 15 minutos con operadores que conocen la distribución mayorista de produce por dentro.",
+      "bullets": [
+        "Revisamos cómo calculas hoy el landed cost y la merma por contenedor.",
+        "Vemos cómo se conectan el flujo comercial y financiero en un lote real.",
+        "Te decimos con total honestidad si ADDNEXO se adapta a tu operación."
+      ],
+      "form": {
+        "nameLabel": "Nombre",
+        "namePh": "Ej. Carlos Mendoza",
+        "companyLabel": "Nombre del Negocio",
+        "companyPh": "Ej. SunCoast Produce Wholesale",
+        "contactLabel": "Teléfono o Email",
+        "contactPh": "+1 (305) 555-0192 o carlos@empresa.com",
+        "painLabel": "¿Qué es eso que hoy te está costando dinero y no logras detectar con exactitud?",
+        "painPh": "Ej. Las facturas de flete y la merma de reempaque llegan semanas después de haber puesto precio y vendido el aguacate...",
+        "submit": "Agendar mi llamada de diagnóstico gratis",
+        "submitting": "Agendando tu llamada...",
+        "expectation": "15 minutos. Sin discurso de ventas. Te diremos con honestidad si esto encaja con tu operación.",
+        "successTitle": "Solicitud de diagnóstico recibida.",
+        "successBody": "Hemos recibido tus datos y te contactaremos en breve para confirmar tu espacio de 15 minutos.",
+        "errors": {
+          "name": "Por favor ingresa tu nombre.",
+          "company": "Por favor ingresa el nombre de tu negocio.",
+          "contact": "Por favor ingresa un teléfono o correo electrónico válido.",
+          "submit": "No pudimos enviar tu solicitud en este momento. Intenta de nuevo o escríbenos por WhatsApp al +1 (754) 254-9069."
+        }
+      }
     }
   }
 }
