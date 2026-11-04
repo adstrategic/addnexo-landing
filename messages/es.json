@@ -16,6 +16,15 @@
     "industries": "Industrias",
     "story": "Historia",
     "faq": "FAQ",
+    "landings": "Landings",
+    "landingsDropdown": {
+      "title": "Landings de Anuncios",
+      "produce": "Produce Fresco Mayorista",
+      "produceDesc": "Página principal de campaña",
+      "variantCost": "Costo Real (?v=cost)",
+      "variantExcel": "Alternativa a Excel (?v=excel)",
+      "variantErp": "ERP para Produce (?v=erp)"
+    },
     "requestDemo": "Solicitar Demo Gratis",
     "language": "EN"
   },

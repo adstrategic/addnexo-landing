@@ -1,7 +1,8 @@
 "use client"
 
 import Image from "next/image"
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
+import { ChevronDown } from "lucide-react"
 import { useLocale, useTranslations } from "next-intl"
 
 import { LandingButton } from "@/components/landing-button"
@@ -27,6 +28,8 @@ export default function Navbar() {
   const pathname = usePathname()
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [landingsOpen, setLandingsOpen] = useState(false)
+  const dropdownRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 30)
@@ -41,7 +44,32 @@ export default function Navbar() {
     }
   }, [menuOpen])
 
-  const handleNavClick = () => setMenuOpen(false)
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setLandingsOpen(false)
+      }
+    }
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setLandingsOpen(false)
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside)
+    document.addEventListener("keydown", handleKeyDown)
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+      document.removeEventListener("keydown", handleKeyDown)
+    }
+  }, [])
+
+  const handleNavClick = () => {
+    setMenuOpen(false)
+    setLandingsOpen(false)
+  }
 
   const toggleLanguage = () => {
     router.replace(pathname, { locale: locale === "es" ? "en" : "es" })
@@ -83,6 +111,75 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
+
+          {/* Desplegable de Landings para Ads */}
+          <div className="relative" ref={dropdownRef}>
+            <button
+              type="button"
+              className="flex items-center gap-1.5 text-[0.9rem] text-white/80 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-brand-cyan max-md:text-[1.3rem]"
+              onClick={() => setLandingsOpen((prev) => !prev)}
+              aria-expanded={landingsOpen}
+              aria-haspopup="true"
+            >
+              <span>{t("navbar.landings")}</span>
+              <ChevronDown
+                className={cn(
+                  "size-3.5 transition-transform duration-200 text-white/60",
+                  landingsOpen && "rotate-180 text-brand-cyan"
+                )}
+                aria-hidden
+              />
+            </button>
+
+            {landingsOpen && (
+              <div className="w-72 rounded-xl border border-white/12 bg-[#0c1528] p-2 shadow-[0_20px_40px_rgba(0,0,0,0.5)] backdrop-blur-xl max-md:mt-2 max-md:w-full max-md:max-w-xs md:absolute md:top-[calc(100%+14px)] md:left-1/2 md:-translate-x-1/2">
+                <div className="px-3 py-1.5 text-[0.72rem] font-bold tracking-[0.08em] text-brand-cyan uppercase">
+                  {t("navbar.landingsDropdown.title")}
+                </div>
+                <div className="mt-1 flex flex-col gap-1">
+                  <Link
+                    href="/produce"
+                    onClick={handleNavClick}
+                    className="flex flex-col rounded-lg px-3 py-2 text-left transition-colors hover:bg-white/6"
+                  >
+                    <span className="text-[0.88rem] font-bold text-white max-md:text-[1rem]">
+                      {t("navbar.landingsDropdown.produce")}
+                    </span>
+                    <span className="text-[0.75rem] text-white/60">
+                      {t("navbar.landingsDropdown.produceDesc")}
+                    </span>
+                  </Link>
+
+                  <div className="my-1 border-t border-white/8" />
+
+                  <Link
+                    href="/produce?v=cost"
+                    onClick={handleNavClick}
+                    className="flex items-center justify-between rounded-lg px-3 py-2 text-[0.84rem] text-white/85 transition-colors hover:bg-white/6 hover:text-white max-md:text-[0.95rem]"
+                  >
+                    <span>{t("navbar.landingsDropdown.variantCost")}</span>
+                  </Link>
+
+                  <Link
+                    href="/produce?v=excel"
+                    onClick={handleNavClick}
+                    className="flex items-center justify-between rounded-lg px-3 py-2 text-[0.84rem] text-white/85 transition-colors hover:bg-white/6 hover:text-white max-md:text-[0.95rem]"
+                  >
+                    <span>{t("navbar.landingsDropdown.variantExcel")}</span>
+                  </Link>
+
+                  <Link
+                    href="/produce?v=erp"
+                    onClick={handleNavClick}
+                    className="flex items-center justify-between rounded-lg px-3 py-2 text-[0.84rem] text-white/85 transition-colors hover:bg-white/6 hover:text-white max-md:text-[0.95rem]"
+                  >
+                    <span>{t("navbar.landingsDropdown.variantErp")}</span>
+                  </Link>
+                </div>
+              </div>
+            )}
+          </div>
+
           <LandingButton
             asChild
             variant="navCta"

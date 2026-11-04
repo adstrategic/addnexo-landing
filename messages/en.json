@@ -16,6 +16,15 @@
     "industries": "Industries",
     "story": "Story",
     "faq": "FAQ",
+    "landings": "Landings",
+    "landingsDropdown": {
+      "title": "Ad Landings",
+      "produce": "Fresh Produce Wholesale",
+      "produceDesc": "Main campaign page",
+      "variantCost": "True Landed Cost (?v=cost)",
+      "variantExcel": "Excel Alternative (?v=excel)",
+      "variantErp": "Produce ERP (?v=erp)"
+    },
     "requestDemo": "Request a Free Demo",
     "language": "ES"
   },
