@@ -12,6 +12,7 @@ function getFooterLinks(t: ReturnType<typeof useTranslations>) {
     [t("footer.col1")]: [
       { label: t("footer.links.flow"), href: sectionHref("flow") },
       { label: t("footer.links.modules"), href: sectionHref("modules") },
+      { label: t("footer.links.innovation"), href: sectionHref("innovation") },
       { label: t("footer.links.industries"), href: sectionHref("industries") },
       { label: t("footer.links.story"), href: sectionHref("story") },
       { label: t("footer.links.faq"), href: sectionHref("faq") },

@@ -12,6 +12,7 @@
   "navbar": {
     "flow": "Flujo",
     "modules": "Módulos",
+    "innovation": "Innovación",
     "industries": "Industrias",
     "story": "Historia",
     "faq": "FAQ",
@@ -39,6 +40,12 @@
       {
         "label": "Vista general de la plataforma ADDNEXO"
       }
+    ],
+    "chips": [
+      "Opera por voz",
+      "Pregúntale lo que quieras a tu negocio",
+      "Reportes de calidad con IA",
+      "Alcance a compradores"
     ]
   },
   "origin": {
@@ -76,7 +83,7 @@
       },
       {
         "question": "¿Puede tu equipo comercial seguir el camino desde el prospecto comprador hasta el pedido, el envío, la factura y el cobro?",
-        "solution": "ADDNEXO conecta flujos comerciales y operativos y puede ser la base para futuras capacidades de desarrollo de clientes."
+        "solution": "ADDNEXO conecta los flujos comerciales y operativos con una lista filtrada de compradores y envíos automáticos de presentación y lista diaria de precios."
       }
     ]
   },
@@ -326,17 +333,13 @@
     "customContent": "ADDSTRATEGIC es una empresa de desarrollo tecnológico. ADDNEXO ofrece una base operativa sólida, mientras el equipo de desarrollo puede trabajar con los clientes para identificar y desarrollar flujos adicionales, integraciones, automatizaciones y funcionalidad específica del negocio.",
     "customHighlight": "Si ADDNEXO resuelve el 80% de tus necesidades, queremos entender el otro 20%.",
     "customCta": "Hablar con ADDSTRATEGIC",
-    "buyerStatus": "En Desarrollo",
     "buyerHeadline": "De gestionar tu operación a desarrollar nuevo negocio.",
-    "buyerContent": "ADDSTRATEGIC está desarrollando una capacidad de Desarrollo de Compradores y Clientes diseñada para ayudar a las empresas a identificar compradores potenciales según su mercado objetivo, iniciar outreach personalizado, comunicar actualizaciones de producto y precio, y construir un embudo estructurado hacia relaciones comerciales.",
+    "buyerContent": "ADDNEXO se conecta a bases de datos de empresas de produce a nivel nacional y las filtra por score, para que tu lista esté formada por compradores relevantes y no por contactos al azar. Todas las personas de tu lista reciben automáticamente la presentación de tu empresa con la frecuencia que configures. Cada mañana, carga tus precios y productos disponibles y envíalos a toda la lista.",
     "buyerFlow": [
-      "Definir cliente objetivo",
-      "Identificar compradores potenciales",
-      "Organizar prospectos",
-      "Iniciar outreach personalizado",
-      "Compartir actualizaciones de producto y precio",
-      "Seguir conversaciones",
-      "Desarrollar relaciones comerciales"
+      "Definir objetivo",
+      "Lista filtrada de compradores",
+      "Correos automáticos de presentación",
+      "Actualizaciones diarias de precios y disponibilidad"
     ],
     "buyerCta": "Háblanos de Tu Estrategia de Crecimiento"
   },
@@ -400,6 +403,22 @@
       {
         "q": "¿ADDNEXO puede soportar operaciones de importación y exportación?",
         "a": "La plataforma está diseñada para negocios donde compras, logística, inventario, pedidos de clientes, facturación y cobros deben permanecer conectados. Los requisitos exactos se revisan durante el discovery."
+      },
+      {
+        "q": "¿Puedo crear documentos por voz?",
+        "a": "Sí. Cada módulo donde se crea algo — despachos, facturas, clientes, catálogo y más — tiene su propio comando de voz. La entrada manual sigue siempre disponible para que cada usuario elija cómo trabajar."
+      },
+      {
+        "q": "¿Qué le puedo preguntar al asistente?",
+        "a": "Puedes preguntarle cualquier cosa sobre tu negocio. Al estar anclado en tus dashboards y toda la información del ERP, responde quién te compra más y da orientación según tu historial: qué comprar y qué no, a quién comprarle y a quién no, cómo va el negocio, estrategias mensuales y consejos de logística, contabilidad y finanzas."
+      },
+      {
+        "q": "¿Cómo funciona el reporte de calidad?",
+        "a": "Se toman fotos de la mercancía al recibirla o al enviarla. La IA genera un resumen de cómo llegó o salió y coloca las fotos en un documento preestablecido que se descarga o se envía directo desde la app."
+      },
+      {
+        "q": "¿Cómo funciona el alcance a compradores?",
+        "a": "ADDNEXO se conecta a bases de datos de empresas de produce a nivel nacional y las filtra por score para crear una lista de compradores relevantes. Las personas de esa lista reciben automáticamente el correo de presentación de tu empresa con la frecuencia configurada y, cada mañana, puedes cargar tus precios y productos disponibles del día para enviarlos a toda la lista."
       }
     ]
   },
@@ -419,6 +438,7 @@
     "links": {
       "flow": "Flujo",
       "modules": "Módulos",
+      "innovation": "Innovación",
       "industries": "Industrias",
       "story": "Historia",
       "faq": "FAQ",
@@ -792,5 +812,24 @@
         }
       }
     }
+  },
+  "beyondErp": {
+    "eyebrow": "Más allá del ERP",
+    "headline": "Un ERP con el que puedes hablar.",
+    "subheadline": "Crea documentos por voz, pregúntale cualquier cosa a tu negocio y deja que la IA documente cada entrega, todo sobre el mismo registro operativo.",
+    "cards": [
+      {
+        "title": "Creación por voz",
+        "desc": "Cada módulo donde se crea algo tiene su propio comando de voz: despachos, facturas, clientes, catálogo y más. Dilo en lugar de escribirlo. La entrada manual siempre está disponible."
+      },
+      {
+        "title": "Pregúntale a tu negocio",
+        "desc": "Un asistente conversacional conectado a tus dashboards y datos operativos. Pregunta quién te compra más, a quién comprarle, qué comprar y cómo va el mes, y recibe orientación sobre logística, contabilidad y finanzas basada en tu propio historial."
+      },
+      {
+        "title": "Reporte de calidad con IA",
+        "desc": "Toma fotos cuando la mercancía llega o sale. La IA redacta el resumen, coloca las fotos en un documento preestablecido y lo descargas o envías directo desde la app."
+      }
+    ]
   }
 }

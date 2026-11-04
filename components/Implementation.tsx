@@ -3,7 +3,6 @@
 import { useTranslations } from "next-intl"
 
 import { LandingButton } from "@/components/landing-button"
-import { FlowRail } from "@/components/visuals/FlowRail"
 import { useRevealOnScroll } from "@/hooks/useRevealOnScroll"
 import { Link } from "@/i18n/navigation"
 import {
@@ -17,7 +16,6 @@ export default function Implementation() {
   const t = useTranslations("implementation")
   const sectionRef = useRevealOnScroll()
   const steps = t.raw("steps") as Array<{ num: string; title: string; desc: string }>
-  const buyerFlow = t.raw("buyerFlow") as string[]
 
   return (
     <section
@@ -62,7 +60,7 @@ export default function Implementation() {
 
         <div
           data-reveal
-          className="mb-10 rounded-3xl border border-brand-dark/8 bg-muted/40 p-8 md:p-12"
+          className="rounded-3xl border border-brand-dark/8 bg-muted/40 p-8 md:p-12"
         >
           <h3 className="mb-4 text-[clamp(1.4rem,2.5vw,1.9rem)] font-extrabold tracking-[-0.02em] text-brand-dark">
             {t("customHeadline")}
@@ -81,25 +79,6 @@ export default function Implementation() {
             >
               {t("customCta")}
             </a>
-          </LandingButton>
-        </div>
-
-        <div
-          data-reveal
-          className="rounded-3xl border border-brand-cyan/30 bg-brand-bg-dark p-8 text-white md:p-12"
-        >
-          <span className="mb-4 inline-block rounded-full border border-brand-cyan/40 bg-brand-cyan/15 px-3.5 py-1.5 text-[0.75rem] font-bold tracking-[0.1em] text-brand-cyan uppercase">
-            {t("buyerStatus")}
-          </span>
-          <h3 className="mb-4 text-[clamp(1.4rem,2.5vw,1.9rem)] font-extrabold tracking-[-0.02em] text-white">
-            {t("buyerHeadline")}
-          </h3>
-          <p className="mb-8 max-w-[720px] text-[1.02rem] leading-[1.7] text-white/65">
-            {t("buyerContent")}
-          </p>
-          <FlowRail items={buyerFlow} variant="dark" className="mb-8 justify-start" />
-          <LandingButton asChild variant="lime" className="max-md:w-full">
-            <Link href="/contact">{t("buyerCta")}</Link>
           </LandingButton>
         </div>
       </div>

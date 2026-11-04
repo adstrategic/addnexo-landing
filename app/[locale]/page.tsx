@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 
 import AppShowcase from "@/components/AppShowcase"
+import BeyondErp from "@/components/BeyondErp"
 import CTABanner from "@/components/CTABanner"
 import DistributionFlow from "@/components/DistributionFlow"
 import Economics from "@/components/Economics"
@@ -71,6 +72,7 @@ export default async function HomePage({ params }: Props) {
         <DistributionFlow />
         <Economics />
         <Modules />
+        <BeyondErp />
         <Markets />
         <OperationalExample />
         <History />

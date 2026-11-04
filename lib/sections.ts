@@ -2,6 +2,7 @@ export const sections = {
   home: "home",
   flow: "flow",
   modules: "modules",
+  innovation: "innovation",
   industries: "industries",
   story: "story",
   faq: "faq",

@@ -13,6 +13,7 @@ function getNavLinks(t: ReturnType<typeof useTranslations>) {
   return [
     { label: t("navbar.flow"), href: sectionHref("flow") },
     { label: t("navbar.modules"), href: sectionHref("modules") },
+    { label: t("navbar.innovation"), href: sectionHref("innovation") },
     { label: t("navbar.industries"), href: sectionHref("industries") },
     { label: t("navbar.story"), href: sectionHref("story") },
     { label: t("navbar.faq"), href: sectionHref("faq") },

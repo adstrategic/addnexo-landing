@@ -12,6 +12,7 @@
   "navbar": {
     "flow": "Flow",
     "modules": "Modules",
+    "innovation": "Innovation",
     "industries": "Industries",
     "story": "Story",
     "faq": "FAQ",
@@ -39,6 +40,12 @@
       {
         "label": "ADDNEXO platform overview"
       }
+    ],
+    "chips": [
+      "Operate by voice",
+      "Ask your business anything",
+      "AI quality reports",
+      "Buyer outreach"
     ]
   },
   "origin": {
@@ -76,7 +83,7 @@
       },
       {
         "question": "Can your commercial team follow the path from buyer prospect to order, shipment, invoice and collection?",
-        "solution": "ADDNEXO connects sales and operational workflows and can provide the foundation for future customer-development capabilities."
+        "solution": "ADDNEXO connects sales and operational workflows with a filtered buyer list and automated presentation and daily price outreach."
       }
     ]
   },
@@ -326,17 +333,13 @@
     "customContent": "ADDSTRATEGIC is a technology development company. ADDNEXO provides a strong operational foundation, while the development team can work with customers to identify and develop additional workflows, integrations, automations and business-specific functionality.",
     "customHighlight": "If ADDNEXO solves 80% of your needs, we want to understand the other 20%.",
     "customCta": "Talk to ADDSTRATEGIC",
-    "buyerStatus": "In Development",
     "buyerHeadline": "From managing your operation to developing new business.",
-    "buyerContent": "ADDSTRATEGIC is developing a Buyer & Customer Development capability designed to help companies identify potential buyers according to their target market, initiate personalized outreach, communicate product and pricing updates and build a structured funnel toward commercial relationships.",
+    "buyerContent": "ADDNEXO connects to databases of produce companies nationwide and filters them by score, so your list is made of relevant buyers, not random contacts. Everyone on your list automatically receives your company presentation on the cadence you set. Each morning, load your prices and available products and send them to the whole list.",
     "buyerFlow": [
-      "Define target customer",
-      "Identify potential buyers",
-      "Organize prospects",
-      "Initiate personalized outreach",
-      "Share product and pricing updates",
-      "Track conversations",
-      "Develop commercial relationships"
+      "Define target",
+      "Filtered buyer list",
+      "Automatic presentation emails",
+      "Daily price and availability updates"
     ],
     "buyerCta": "Talk to Us About Your Growth Strategy"
   },
@@ -400,6 +403,22 @@
       {
         "q": "Can ADDNEXO support import and export operations?",
         "a": "The platform is designed for businesses where procurement, logistics, inventory, customer orders, invoicing and collections need to remain connected. Exact requirements should be reviewed during discovery."
+      },
+      {
+        "q": "Can I create documents by voice?",
+        "a": "Yes. Every module that creates records — dispatches, invoices, customers, catalog items and more — has its own voice command. Manual entry is always available so each user can choose how to work."
+      },
+      {
+        "q": "What can I ask the assistant?",
+        "a": "You can ask anything about your business. Because it is grounded in your dashboards and ERP data, it answers questions like who buys the most and provides guidance based on your history: what to buy and what not to buy, who to buy from and who not to buy from, how the business is performing, monthly strategies, and advice on logistics, accounting and finance."
+      },
+      {
+        "q": "How does the quality report work?",
+        "a": "Take photos of merchandise when receiving or shipping it. AI generates a summary of how it arrived or left and places the photos into a ready-made document that you can download or send directly from the app."
+      },
+      {
+        "q": "How does buyer outreach work?",
+        "a": "ADDNEXO connects to nationwide databases of produce companies and filters them by score so your list is made of relevant buyers. Contacts on that list automatically receive your company presentation on the cadence you configure, and each morning you can load your daily prices and available products to send to the entire list."
       }
     ]
   },
@@ -419,6 +438,7 @@
     "links": {
       "flow": "Flow",
       "modules": "Modules",
+      "innovation": "Innovation",
       "industries": "Industries",
       "story": "Story",
       "faq": "FAQ",
@@ -792,5 +812,24 @@
         }
       }
     }
+  },
+  "beyondErp": {
+    "eyebrow": "Beyond the ERP",
+    "headline": "An ERP you can talk to.",
+    "subheadline": "Create documents by voice, ask your business anything, and let AI document every delivery, all on the same operational record.",
+    "cards": [
+      {
+        "title": "Create by voice",
+        "desc": "Every module that creates something has its own voice command: dispatches, invoices, customers, catalog items and more. Say it instead of typing it. Manual entry is always available."
+      },
+      {
+        "title": "Ask your business",
+        "desc": "A conversational assistant grounded in your dashboards and operational data. Ask who buys the most, who to buy from, what to buy and how the month is going, and get guidance on logistics, accounting and finance based on your own history."
+      },
+      {
+        "title": "AI quality report",
+        "desc": "Take photos when merchandise arrives or ships. AI writes the summary, places the photos in a ready-made document, and you download or send it from the app."
+      }
+    ]
   }
 }

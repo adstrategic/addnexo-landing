@@ -30,6 +30,7 @@ export default function Hero() {
   const scrollHintRef = useRef<HTMLDivElement>(null)
 
   const slides = t.raw("slides") as Array<{ label: string }>
+  const chips = t.raw("chips") as string[]
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -144,7 +145,21 @@ export default function Hero() {
             </Link>
           </LandingButton>
         </div>
-        <p className="mt-5 text-[0.85rem] text-white/55">{t("microcopy")}</p>
+
+        <div className="mt-5 flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1.5 text-[0.85rem] text-white/70">
+          {chips.map((chip, idx) => (
+            <span key={chip} className="inline-flex items-center gap-2.5">
+              <span>{chip}</span>
+              {idx < chips.length - 1 ? (
+                <span className="text-brand-cyan/70" aria-hidden>
+                  ·
+                </span>
+              ) : null}
+            </span>
+          ))}
+        </div>
+
+        <p className="mt-3 text-[0.85rem] text-white/55">{t("microcopy")}</p>
       </div>
 
       <div
