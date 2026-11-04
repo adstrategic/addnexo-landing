@@ -20,51 +20,103 @@ function getResendClient() {
 const contactPayloadSchema = z.object({
   name: z.string().trim().min(2),
   company: z.string().trim().min(1),
-  email: z.email(),
-  phone: z.string().trim().min(5),
-  industry: z.enum(INDUSTRY_OPTIONS),
-  challenge: z.string().trim().min(5),
+  email: z.email().optional(),
+  phone: z.string().trim().min(5).optional(),
+  industry: z.enum(INDUSTRY_OPTIONS).optional(),
+  challenge: z.string().trim().min(5).optional(),
+  contact: z.string().trim().min(3).optional(),
+  message: z.string().trim().optional(),
+  variant: z.string().trim().optional(),
+  source: z.string().trim().optional(),
 })
 
 export async function POST(request: Request) {
-  const resend = getResendClient()
-
-  if (!resend) {
-    return NextResponse.json(
-      { error: "Email service is not configured" },
-      { status: 503 }
-    )
-  }
-
   const parsed = contactPayloadSchema.safeParse(await request.json())
 
   if (!parsed.success) {
     return NextResponse.json({ error: "Invalid request body" }, { status: 400 })
   }
 
-  const { name, company, email, phone, industry, challenge } = parsed.data
+  const {
+    name,
+    company,
+    email,
+    phone,
+    industry,
+    challenge,
+    contact,
+    message,
+    variant,
+    source,
+  } = parsed.data
 
-  const { data, error } = await resend.batch.send([
-    {
-      from: `ADDNEXO <${EMAIL_FROM}>`,
-      to: [email],
-      subject: "Thanks for requesting an ADDNEXO demo",
-      react: WelcomeEmail({ userFirstName: name }),
-    },
+  const resolvedEmail =
+    email ??
+    (contact && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact) ? contact : undefined)
+  const resolvedPhone =
+    phone ?? (contact && !resolvedEmail ? contact : "Not provided")
+
+  if (!resolvedEmail && resolvedPhone === "Not provided") {
+    return NextResponse.json(
+      { error: "A valid email or phone number is required" },
+      { status: 400 }
+    )
+  }
+
+  const formattedMessage = [
+    source
+      ? `[Source: ${source}${variant ? ` | Variant: ${variant}` : ""}]`
+      : null,
+    challenge ?? message,
+  ]
+    .filter(Boolean)
+    .join("\n\n")
+
+  const resend = getResendClient()
+
+  if (!resend) {
+    if (process.env.NODE_ENV !== "production") {
+      return NextResponse.json({ ok: true, simulated: true })
+    }
+    return NextResponse.json(
+      { error: "Email service is not configured" },
+      { status: 503 }
+    )
+  }
+
+  const emailsToSend = [
+    ...(resolvedEmail
+      ? [
+          {
+            from: `ADDNEXO <${EMAIL_FROM}>`,
+            to: [resolvedEmail],
+            subject:
+              source === "produce-diagnostic"
+                ? "Your 15-minute ADDNEXO diagnostic call"
+                : "Thanks for requesting an ADDNEXO demo",
+            react: WelcomeEmail({ userFirstName: name }),
+          },
+        ]
+      : []),
     {
       from: `ADDNEXO Website <${EMAIL_FROM}>`,
       to: [CONTACT_NOTIFY_EMAIL],
-      subject: "New ADDNEXO demo request",
+      subject:
+        source === "produce-diagnostic"
+          ? `New Produce Diagnostic Call Request (${company})`
+          : "New ADDNEXO demo request",
       react: NewUser({
         userFirstName: name,
         userCompany: company,
-        userEmail: email,
-        userPhone: phone,
-        userIndustry: industry,
-        userChallenge: challenge,
+        userEmail: resolvedEmail ?? "Phone-only lead",
+        userPhone: resolvedPhone,
+        userIndustry: industry ?? "fresh-produce",
+        userChallenge: formattedMessage || "Diagnostic call request",
       }),
     },
-  ])
+  ]
+
+  const { data, error } = await resend.batch.send(emailsToSend)
 
   if (error) {
     return NextResponse.json({ error: error.message }, { status: 500 })

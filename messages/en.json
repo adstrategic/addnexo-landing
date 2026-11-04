@@ -5,7 +5,9 @@
     "contactTitle": "Request a Free Demo | ADDNEXO",
     "contactDesc": "Schedule a free ADDNEXO demo and walk through your distribution operation with us. Implementation included. No additional implementation fee.",
     "thanksTitle": "Demo Request Received | ADDNEXO",
-    "thanksDesc": "Thank you for requesting an ADDNEXO demo. Schedule your discovery call."
+    "thanksDesc": "Thank you for requesting an ADDNEXO demo. Schedule your discovery call.",
+    "produceTitle": "ADDNEXO | Operating & Financial System for Wholesale Produce Distributors",
+    "produceDesc": "Know your true landed cost per lot before you price the load. Built for $5M–$100M US wholesale fresh produce distributors. Book a free 15-minute diagnostic call."
   },
   "navbar": {
     "flow": "Flow",
@@ -25,17 +27,29 @@
     "ctaSecondary": "See How ADDNEXO Works",
     "microcopy": "Free demo. Implementation included. No additional implementation fee.",
     "slides": [
-      { "label": "ADDNEXO operational dashboard" },
-      { "label": "Operations and inventory panel" },
-      { "label": "Administration and reports module" },
-      { "label": "ADDNEXO platform overview" }
+      {
+        "label": "ADDNEXO operational dashboard"
+      },
+      {
+        "label": "Operations and inventory panel"
+      },
+      {
+        "label": "Administration and reports module"
+      },
+      {
+        "label": "ADDNEXO platform overview"
+      }
     ]
   },
   "origin": {
     "headline": "Built from real operational knowledge.",
     "content": "ADDNEXO is the evolution of CIMA, a system developed around the operational realities of an inventory-intensive distribution business. Its foundation comes from understanding how products move, how costs accumulate, how orders are fulfilled, how customers pay and where margin can disappear.",
     "highlight": "The software came from the operation. The operation did not come from the software.",
-    "timeline": ["SICOM", "CIMA", "ADDNEXO"],
+    "timeline": [
+      "SICOM",
+      "CIMA",
+      "ADDNEXO"
+    ],
     "cta": "Discover the ADDNEXO Story"
   },
   "realProblem": {
@@ -464,5 +478,319 @@
     "supporting": "Free demo. Implementation included. No additional implementation fee.",
     "backHome": "Back to home",
     "calendarLabel": "Schedule your discovery call"
+  },
+  "produce": {
+    "nav": {
+      "problem": "The $42K Blind Spot",
+      "howItWorks": "How It Works",
+      "pricing": "Pricing",
+      "faq": "FAQ",
+      "cta": "Book a free diagnostic call"
+    },
+    "ctaPrimary": "Book a free diagnostic call",
+    "socialProof": "$90B US produce wholesale market, built by people who ran it, not studied it.",
+    "hero": {
+      "variants": {
+        "cost": {
+          "h1": "The supplier invoice is not the cost.",
+          "subheadline": "Freight, customs, brokerage, insurance, cold storage, and shrink get added later—and nobody knows the true landed cost of a lot until 3 weeks after it's already sold."
+        },
+        "excel": {
+          "h1": "Still running your distribution business on spreadsheets, notebooks, and WhatsApp?",
+          "subheadline": "When purchasing, cold storage, dispatch, and accounting live in disconnected files, one unallocated freight bill or shrink adjustment silently wipes out your margin on the entire load."
+        },
+        "erp": {
+          "h1": "The operating and financial system built for wholesale produce distribution.",
+          "subheadline": "Connect lot-level landed costs, perishable inventory, customer orders, dispatch, and accounts payable in one real-time system—built for $5M to $100M US produce distributors."
+        }
+      },
+      "ledgerPreview": {
+        "header": "LOT ECONOMIC UNIT — #AVO-4029",
+        "origin": "40ft Reefer · Michoacán → McAllen → Miami Cooler",
+        "colItem": "Cost Component",
+        "colSheet": "Spreadsheet View",
+        "colAddnexo": "ADDNEXO Live Lot",
+        "growerLabel": "Grower Invoice (1,600 boxes)",
+        "growerSheet": "$42,000",
+        "growerLive": "$42,000",
+        "postInvoiceLabel": "Freight, Customs, Storage & 4.5% Shrink",
+        "postInvoiceSheet": "Unassigned (3 wks late)",
+        "postInvoiceLive": "+$9,870 allocated",
+        "unitCostLabel": "True Cost per Sellable Box",
+        "unitCostSheet": "$26.25 (False)",
+        "unitCostLive": "$33.95 (Exact)",
+        "marginVerdictLabel": "Quoted at $31.50 / box",
+        "marginVerdictSheet": "Looks like +20% margin",
+        "marginVerdictLive": "Actual: -$2.45/box loss"
+      }
+    },
+    "problem": {
+      "h2": "Your grower invoice says $42,000. What did that container of avocados actually cost you?",
+      "lead": "You receive a container of avocados with a $42,000 grower invoice. Your sales team prices the load off that invoice and moves it in four days. Three weeks later, the freight bill, customs entry, cold storage invoice, and repacking shrink land on accounting's desk.",
+      "body": "By the time your bookkeeper reconciles the month in QuickBooks and Excel, the fruit is long gone, the customer paid, and you have no idea which lots made money and which ones bled cash.",
+      "marginCallout": "In a business operating on 2–4% net margins, how you allocate those costs decides whether that container made money or lost money.",
+      "receipt": {
+        "title": "CONTAINER LANDED COST STATEMENT",
+        "meta": "LOT #AVO-4200 · 1,600 CASES HASS AVOCADOS · ENTRY PORT: PHARR / MIAMI",
+        "unlinkedTag": "(unlinked)",
+        "toggleBlind": "What Excel & QuickBooks Show Day 1",
+        "toggleTrue": "What ADDNEXO Calculates in Real Time",
+        "lines": [
+          {
+            "label": "Grower Invoice (FOB Origin — 1,600 boxes @ $26.25)",
+            "timing": "Entered Day 1",
+            "amount": "$42,000.00",
+            "type": "base"
+          },
+          {
+            "label": "+ Cross-Border & Inland Reefer Freight",
+            "timing": "Carrier invoice arrives Day 14",
+            "amount": "+ $4,200.00",
+            "type": "hidden"
+          },
+          {
+            "label": "+ Customs Duties, Harbor & USDA Inspection",
+            "timing": "Entry summary arrives Day 18",
+            "amount": "+ $1,150.00",
+            "type": "hidden"
+          },
+          {
+            "label": "+ Customs Brokerage & Entry Filing",
+            "timing": "Broker statement arrives Day 18",
+            "amount": "+ $490.00",
+            "type": "hidden"
+          },
+          {
+            "label": "+ Transit & Cargo Insurance",
+            "timing": "Billed monthly",
+            "amount": "+ $380.00",
+            "type": "hidden"
+          },
+          {
+            "label": "+ Cold Storage, Pre-Cooling & Cross-Docking",
+            "timing": "Cooler invoice arrives Day 30",
+            "amount": "+ $1,120.00",
+            "type": "hidden"
+          },
+          {
+            "label": "+ Warehouse Handling, Grading & Repacking",
+            "timing": "Unallocated floor labor",
+            "amount": "+ $640.00",
+            "type": "hidden"
+          },
+          {
+            "label": "+ Shrink, Spoilage & Quality Rejections (72 boxes lost)",
+            "timing": "Discovered after dispatch",
+            "amount": "+ $1,890.00",
+            "type": "shrink"
+          }
+        ],
+        "blindTotalLabel": "TRUE LANDED COST (SPREADSHEET REALITY)",
+        "blindTotalValue": "UNKNOWN",
+        "blindSub": "Reconciled 21 days after the fruit was sold at the wrong price.",
+        "trueTotalLabel": "TRUE LANDED COST (ADDNEXO LIVE LOT)",
+        "trueTotalValue": "$51,870.00",
+        "trueSub": "$33.95 per sellable box (1,528 net boxes) — known before the first pallet ships."
+      }
+    },
+    "whyUnsolved": {
+      "h2": "Why no one has solved this for the $5M–$100M distributor.",
+      "subtitle": "Until now, you were forced to choose between six-figure enterprise bloatware and running a multi-million-dollar operation on fragile spreadsheets.",
+      "colCost": "Cost",
+      "colTimeline": "Timeline",
+      "competitors": [
+        {
+          "name": "NetSuite / Famous Software / Silo / Prophet",
+          "verdict": "Built for $250M+ conglomerates, priced out of reach",
+          "cost": "$60,000 – $150,000+ upfront",
+          "timeline": "6 to 12 months implementation",
+          "reality": "Yes, legacy produce ERPs calculate landed cost—if you have a six-figure consulting budget, a dedicated IT department, and a year to survive a painful rollout."
+        },
+        {
+          "name": "Your Real Competitor Today: QuickBooks + Excel + WhatsApp",
+          "verdict": "Zero lot visibility, 3-week accounting lag",
+          "cost": "Hidden margin leaks on every truckload",
+          "timeline": "Manual monthly reconciliation",
+          "reality": "QuickBooks only sees accounting totals after the fact. Excel tracks boxes on the floor without financial controls. WhatsApp holds the dispatch changes nobody typed in."
+        },
+        {
+          "name": "ADDNEXO Wholesale Produce System",
+          "verdict": "Near-zero switching cost — replaces Excel, not an ERP",
+          "cost": "$90 / user / month",
+          "timeline": "Live in days, not quarters",
+          "reality": "Your switching cost is practically zero because you aren't ripping out an entrenched ERP—you are replacing disconnected spreadsheets with one unified operational and financial flow."
+        }
+      ],
+      "callout": "You aren't replacing an ERP. You're replacing the gap between QuickBooks, Excel, and the cooler floor."
+    },
+    "howItWorks": {
+      "h2": "Two parallel flows running as one system—not two worlds reconciled once a month.",
+      "subtitle": "Every commercial movement on the warehouse floor automatically updates its financial counterpart at the lot level. No double entry, no end-of-month surprises.",
+      "commercialTitle": "Commercial Flow (Warehouse & Sales)",
+      "commercialSteps": [
+        "Purchase",
+        "Purchase Order",
+        "Inventory",
+        "Customer Order",
+        "Dispatch",
+        "Invoice",
+        "Collection"
+      ],
+      "financialTitle": "Financial Flow (Costing & Control)",
+      "financialSteps": [
+        "Purchase / Import",
+        "Associated Costs",
+        "Accounts Payable",
+        "Payment",
+        "Financial Control"
+      ],
+      "syncNote": "Live Lot-Level Sync: When freight, customs, or cold storage hits Accounts Payable, ADDNEXO immediately updates the unit cost in Inventory and recalculates net margin on every Customer Invoice."
+    },
+    "differentiator": {
+      "h2": "Inventory stops being a quantity on hand and becomes a measurable economic unit.",
+      "subtitle": "Counting boxes tells you what is sitting in the cooler. ADDNEXO tells you the exact financial performance of every single lot from receiving dock to final collection:",
+      "metrics": [
+        {
+          "code": "LOT.COST",
+          "title": "What the lot truly cost",
+          "desc": "Grower invoice plus every freight bill, customs duty, brokerage fee, insurance policy, and cold storage charge tied directly to that lot."
+        },
+        {
+          "code": "LOT.SHRINK",
+          "title": "What was lost",
+          "desc": "Exact shrink, spoilage, repacking loss, and customer quality rejections measured in both physical cases and real dollar impact."
+        },
+        {
+          "code": "LOT.BUYERS",
+          "title": "Who bought it",
+          "desc": "Complete customer allocation showing which accounts took which pallets, at what price tier, and with what claim history."
+        },
+        {
+          "code": "LOT.REVENUE",
+          "title": "What it earned",
+          "desc": "Actual collected revenue after credits, price adjustments, and short-pay deductions—not just optimistic invoiced totals."
+        },
+        {
+          "code": "LOT.MARGIN",
+          "title": "What the real gross margin was",
+          "desc": "True net contribution per container, per grower, and per salesperson while you still have time to adjust pricing."
+        }
+      ]
+    },
+    "credibility": {
+      "quote": "“The hard part of vertical ERP is not writing the software — it's knowing what a distributor does at 4 a.m. when a truck arrives short.”",
+      "h2": "Born inside a Miami wholesale produce distributor—not a Silicon Valley incubator.",
+      "p1": "ADDNEXO didn't start as a generic software idea looking for an industry. It started on the dock of a wholesale produce distributor in Miami who was tired of flying blind on container margins and paid nearly $6,000 upfront to get this exact problem solved first.",
+      "p2": "That first Miami distributor is still in production today, running their complete purchasing, landed costing, inventory, dispatch, invoicing, and financial cycle on ADDNEXO every single day.",
+      "p3": "Behind the platform is a team with decades of real operational distribution experience (built on our SICOM operational foundation)—people who understand repacking, short trucks, USDA holds, and 4 a.m. receiving."
+    },
+    "capabilities": {
+      "h2": "Practical AI and voice tools built for a busy dock—not tech demos.",
+      "subtitle": "Your team doesn't have time to type essays while trucks are backing in. These three capabilities speed up receiving, dispatch, and buying decisions without changing how your people work.",
+      "cards": [
+        {
+          "tag": "Receiving Dock",
+          "title": "AI quality reports at receiving",
+          "desc": "Snap photos of incoming pallets and record quick dock notes when the truck opens. ADDNEXO automatically generates a structured quality and condition report tied to that lot—ready for grower claims."
+        },
+        {
+          "tag": "Hands-Free Floor",
+          "title": "Voice-only operation",
+          "desc": "Create purchase orders, dispatches, and customer invoices just by speaking. It works right alongside traditional manual keyboard entry whenever your hands are full in the cooler."
+        },
+        {
+          "tag": "Margin Intelligence",
+          "title": "Conversational financial analyst",
+          "desc": "Ask plain-language questions about your operation at any moment—get instant answers on real lot margins and data-backed recommendations on what to buy and which suppliers not to buy from."
+        }
+      ]
+    },
+    "pricing": {
+      "h2": "$90 per user / month. Complete operational and financial control.",
+      "subtitle": "With 5 users, you already cover sales, administration, accounting, finance, and your entire warehouse operation inside a single system.",
+      "colUsers": "Team Size",
+      "colMonthly": "Monthly Investment",
+      "colCoverage": "Operational Coverage",
+      "rows": [
+        {
+          "users": "5 Users",
+          "price": "$450 / month",
+          "desc": "Covers sales, administration, accounting, finance, and full operation in one system.",
+          "highlight": true
+        },
+        {
+          "users": "8 Users",
+          "price": "$720 / month",
+          "desc": "Ideal for multi-buyer desks, dedicated receiving leads, and high-turn cooler teams.",
+          "highlight": false
+        },
+        {
+          "users": "20 Users",
+          "price": "$1,800 / month",
+          "desc": "Full-scale multi-warehouse wholesale distribution with complete department access.",
+          "highlight": false
+        }
+      ],
+      "footnote": "All modules included in every seat: Purchasing, Landed Costing, Lot Inventory, Sales & Dispatch, Invoicing, Accounts Receivable/Payable, AI Receiving Reports, Voice Operation, and Financial Control."
+    },
+    "faq": {
+      "h2": "Direct answers before you book your call.",
+      "items": [
+        {
+          "q": "Is ADDNEXO only for fresh produce distributors?",
+          "a": "It was engineered specifically around the hardest problems in wholesale fresh produce—lot traceability, post-invoice landed costs (freight, customs, cold storage), perishability, and shrink. If you distribute produce, meat, seafood, dairy, or imported perishables where lot margins move daily, it fits your operation out of the box."
+        },
+        {
+          "q": "How long does implementation actually take?",
+          "a": "Days to a couple of weeks—not the 6 to 12 months required by NetSuite, Famous, or Prophet. We import your active products, suppliers, and customers, configure your landed cost categories, and get your team running real lots immediately."
+        },
+        {
+          "q": "Do I have to abandon Excel overnight?",
+          "a": "No. We transition your operation progressively—starting with purchasing, lot receiving, and landed costing so you stop losing margin immediately, while importing your existing spreadsheets cleanly without disrupting daily dispatch."
+        },
+        {
+          "q": "Can it be customized to my specific operation?",
+          "a": "Yes. Because we built the platform from the ground up with real distributors, we adapt cost allocation rules, receiving workflows, invoice formats, and operational reports to match how your warehouse and buyers actually work."
+        },
+        {
+          "q": "Does it calculate the true landed cost of inventory automatically?",
+          "a": "Yes. As soon as you attach freight, customs, brokerage, cold storage, handling, or shrink to a purchase or import lot—even if bills arrive days apart—ADDNEXO automatically recalculates the exact unit cost and real gross margin of every box in that lot."
+        },
+        {
+          "q": "What happens during the 15-minute diagnostic call?",
+          "a": "No slide decks and no generic software pitch. We look at how you currently track lots, allocate freight/customs/shrink, and reconcile invoices between your floor and accounting. In 15 minutes, we'll show you exactly where margin is leaking and tell you honestly if ADDNEXO fits your operation."
+        }
+      ]
+    },
+    "finalCta": {
+      "h2": "Pin down what your lots actually cost.",
+      "subtitle": "Schedule a 15-minute diagnostic call with operators who know wholesale produce distribution inside and out.",
+      "bullets": [
+        "Walk through how you currently calculate landed cost and shrink per container.",
+        "See how commercial and financial flows connect on a live produce lot.",
+        "Get a clear, honest answer on whether ADDNEXO fits your workflow."
+      ],
+      "form": {
+        "nameLabel": "Your Name",
+        "namePh": "e.g. Carlos Mendoza",
+        "companyLabel": "Business Name",
+        "companyPh": "e.g. SunCoast Produce Wholesale",
+        "contactLabel": "Phone or Email",
+        "contactPh": "+1 (305) 555-0192 or carlos@company.com",
+        "painLabel": "What's the one thing costing you money that you can't quite pin down?",
+        "painPh": "e.g. Freight and repacking shrink come in weeks after we price and sell our avocado loads...",
+        "submit": "Book my free diagnostic call",
+        "submitting": "Booking your diagnostic call...",
+        "expectation": "15 minutes. No sales pitch. We'll tell you honestly if this fits your operation.",
+        "successTitle": "Diagnostic request received.",
+        "successBody": "We have received your details and will reach out shortly to lock in your 15-minute diagnostic window.",
+        "errors": {
+          "name": "Please enter your name.",
+          "company": "Please enter your business name.",
+          "contact": "Please enter a valid phone number or email address.",
+          "submit": "We couldn't submit your request right now. Please try again or message us on WhatsApp at +1 (754) 254-9069."
+        }
+      }
+    }
   }
 }
