@@ -8,7 +8,7 @@ import { getSiteUrl } from "@/lib/email-brand"
 
 function normalizeVariant(raw?: string | string[] | null): HeroVariantKey {
   const val = Array.isArray(raw) ? raw[0] : raw
-  if (val === "cost" || val === "excel" || val === "erp") {
+  if (val === "cost" || val === "excel" || val === "erp" || val === "voice") {
     return val
   }
   return "erp"

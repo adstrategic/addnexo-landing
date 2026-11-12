@@ -7,6 +7,7 @@ import CTABanner from "@/components/CTABanner"
 import DistributionFlow from "@/components/DistributionFlow"
 import Economics from "@/components/Economics"
 import FAQ from "@/components/FAQ"
+import FeatureMarquee from "@/components/FeatureMarquee"
 import Footer from "@/components/Footer"
 import Hero from "@/components/Hero"
 import History from "@/components/History"
@@ -73,6 +74,7 @@ export default async function HomePage({ params }: Props) {
         <Economics />
         <Modules />
         <BeyondErp />
+        <FeatureMarquee variant="light" />
         <Markets />
         <OperationalExample />
         <History />

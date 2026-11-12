@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { Camera, MessageSquareText, Mic, type LucideIcon } from "lucide-react"
 import { useTranslations } from "next-intl"
 
@@ -16,6 +17,11 @@ import {
 } from "@/lib/landing-styles"
 
 const CARD_ICONS: LucideIcon[] = [Mic, MessageSquareText, Camera]
+const CARD_IMAGES: Array<string | null> = [
+  null,
+  "/hombre-en-officina-usando-addnexo.jpeg",
+  "/entregando reporte addnexo.jpeg",
+]
 
 export default function BeyondErp() {
   const t = useTranslations("beyondErp")
@@ -44,27 +50,69 @@ export default function BeyondErp() {
           </p>
         </div>
 
-        <div className="mb-12 grid gap-6 md:grid-cols-3">
-          {cards.map((card, i) => {
-            const Icon = CARD_ICONS[i] ?? Mic
-            return (
-              <article
-                key={card.title}
-                data-reveal
-                className="rounded-2xl border border-brand-dark/8 bg-muted/30 p-7 transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(15,23,42,0.08)]"
-              >
-                <div className="mb-4 flex size-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                  <Icon className="size-5" aria-hidden />
-                </div>
-                <h3 className="mb-2.5 text-[1.12rem] font-extrabold tracking-[-0.02em] text-brand-dark">
-                  {card.title}
-                </h3>
-                <p className="text-[0.95rem] leading-[1.65] text-muted-foreground">
-                  {card.desc}
-                </p>
-              </article>
-            )
-          })}
+        <div className="mb-12 grid items-stretch gap-6 lg:grid-cols-12">
+          {/* Vertical Voice Creation Video Holder adapted to main page design */}
+          <div
+            data-reveal
+            className="flex flex-col items-center justify-center rounded-2xl border border-brand-dark/8 bg-muted/30 p-6 lg:col-span-4"
+          >
+            <div className="w-full max-w-[270px] overflow-hidden rounded-[28px] border-4 border-brand-dark/15 bg-brand-bg-dark p-1.5 shadow-[0_16px_40px_rgba(15,23,42,0.12)]">
+              <div className="relative aspect-[9/16] w-full overflow-hidden rounded-[22px] bg-black">
+                <video
+                  src="/muestra%20como%20crear%20una%20orden%20de%20compra%20por%20voz.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  controls
+                  className="h-full w-full object-contain"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* 3 Cards in native main-page style */}
+          <div className="grid gap-6 md:grid-cols-2 lg:col-span-8">
+            {cards.map((card, i) => {
+              const Icon = CARD_ICONS[i] ?? Mic
+              const imgSrc = CARD_IMAGES[i]
+              return (
+                <article
+                  key={card.title}
+                  data-reveal
+                  className={
+                    i === 0
+                      ? "rounded-2xl border border-brand-dark/8 bg-muted/30 p-7 transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(15,23,42,0.08)] md:col-span-2"
+                      : "flex flex-col justify-between rounded-2xl border border-brand-dark/8 bg-muted/30 p-7 transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(15,23,42,0.08)]"
+                  }
+                >
+                  <div>
+                    <div className="mb-4 flex size-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                      <Icon className="size-5" aria-hidden />
+                    </div>
+                    <h3 className="mb-2.5 text-[1.12rem] font-extrabold tracking-[-0.02em] text-brand-dark">
+                      {card.title}
+                    </h3>
+                    <p className="text-[0.95rem] leading-[1.65] text-muted-foreground">
+                      {card.desc}
+                    </p>
+                  </div>
+
+                  {imgSrc && (
+                    <div className="relative mt-5 aspect-[16/10] w-full overflow-hidden rounded-xl border border-brand-dark/8 bg-background">
+                      <Image
+                        src={imgSrc}
+                        alt={card.title}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 380px"
+                      />
+                    </div>
+                  )}
+                </article>
+              )
+            })}
+          </div>
         </div>
 
         <div
@@ -90,4 +138,3 @@ export default function BeyondErp() {
     </section>
   )
 }
-

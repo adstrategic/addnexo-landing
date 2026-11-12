@@ -23,7 +23,8 @@
       "produceDesc": "Página principal de campaña",
       "variantCost": "Costo Real (?v=cost)",
       "variantExcel": "Alternativa a Excel (?v=excel)",
-      "variantErp": "ERP para Produce (?v=erp)"
+      "variantErp": "ERP para Produce (?v=erp)",
+      "variantVoice": "Voz, Asistente IA y Leads (?v=voice)"
     },
     "requestDemo": "Solicitar Demo Gratis",
     "language": "EN"
@@ -516,6 +517,9 @@
   },
   "produce": {
     "nav": {
+      "home": "Página Principal",
+      "homeShort": "Inicio",
+      "voice": "Voz e IA",
       "problem": "El Punto Ciego de $42K",
       "howItWorks": "Cómo Funciona",
       "pricing": "Precios",
@@ -526,19 +530,42 @@
     "watchVideo": "Ver Demo en Video (3 min)",
     "socialProof": "Mercado mayorista de produce de $90B en EE. UU., construido por quienes lo operaron, no por quienes lo estudiaron.",
     "hero": {
+      "chips": [
+        "Operación 100% por Voz",
+        "Asistente Ejecutivo con IA",
+        "Costo Real por Lote (Landed Cost)",
+        "Reportes IA y Prospección de Compradores"
+      ],
       "variants": {
         "cost": {
           "h1": "La factura del proveedor no es el costo.",
-          "subheadline": "Fletes, aduana, bróker, seguro, cuarto frío y merma se suman después—y nadie conoce el costo real (landed cost) del lote hasta 3 semanas después de haberlo vendido."
+          "subheadline": "Fletes, aduana, bróker, seguro, cuarto frío y merma se suman después—y nadie conoce el costo real (landed cost) del lote hasta 3 semanas después de haberlo vendido. Controla cada lote y opera tu bodega por voz en tiempo real."
         },
         "excel": {
           "h1": "¿Sigues operando tu distribuidora en hojas de cálculo, libretas y WhatsApp?",
-          "subheadline": "Cuando compras, cuarto frío, despacho y contabilidad viven en archivos desconectados, una sola factura de flete no asignada o ajuste por merma borra en silencio tu margen en toda la carga."
+          "subheadline": "Deja de pasar horas de noche transcribiendo pedidos y conciliando archivos. Maneja tus compras, cuarto frío, despacho y contabilidad hablando por voz—con costo real por lote al instante."
         },
         "erp": {
           "h1": "El sistema operativo y financiero construido para distribuidores mayoristas de produce.",
-          "subheadline": "Conecta costos reales por lote (landed cost), inventario perecedero, pedidos, despacho y cuentas por pagar en un solo sistema en tiempo real—para distribuidores de $5M a $100M en EE. UU."
+          "subheadline": "Maneja toda tu operación por voz, pregúntale a tu asistente IA cómo está la empresa en cualquier segundo y conecta costos reales por lote, inventario, despacho y cobranza en un solo sistema."
+        },
+        "voice": {
+          "h1": "Maneja tu distribuidora por voz—y genera compradores calificados en automático.",
+          "subheadline": "Deja de pasar horas sentado escribiendo pedidos, facturas y hojas de cálculo. Crea órdenes de compra y despachos hablando, pregúntale a tu asistente de voz cómo está la empresa en tiempo real y envía presentaciones y listas de precios en automático a compradores filtrados por score."
         }
+      },
+      "voicePreview": {
+        "header": "MOTOR DE VOZ Y PROSPECCIÓN — EN VIVO",
+        "origin": "ERP por Voz · Asistente IA · Generador de Compradores",
+        "step1Tag": "1. CREACIÓN POR VOZ",
+        "step1Title": "«Crea OC: 1,600 cajas Aguacate Hass 48s a $26.25»",
+        "step1Status": "OC #4092 + Lote creados en 4s",
+        "step2Tag": "2. ASISTENTE DE VOZ IA",
+        "step2Title": "«¿Cómo está la empresa hoy y quién nos compra más?»",
+        "step2Status": "Margen neto +14.2% · Top: SunCoast",
+        "step3Tag": "3. GENERADOR DE LEADS COMPRADORES",
+        "step3Title": "Base Nacional de Compradores Filtrados por Score",
+        "step3Status": "Presentación y precios diarios enviados"
       },
       "ledgerPreview": {
         "header": "UNIDAD ECONÓMICA DE LOTE — #AVO-4029",
@@ -560,11 +587,40 @@
         "marginVerdictLive": "Realidad: -$2.45/caja pérdida"
       }
     },
+    "voiceSuperpower": {
+      "h2": "Maneja toda tu distribuidora por voz—en vez de pasar horas digitando de noche.",
+      "subtitle": "¿Por qué seguir atado al escritorio transcribiendo pedidos o sin poder delegar porque el software tradicional exige 30 clics? Habla con naturalidad para crear órdenes de compra, despachos, facturas y productos—y pregúntale a tu asistente IA cómo está la empresa en cualquier segundo.",
+      "videoLabel": "CREACIÓN POR VOZ EN VIVO — ORDEN DE COMPRA EN SEGUNDOS",
+      "videoCaption": "«Crea orden de compra para Productores de Michoacán: 1,600 cajas Aguacate Hass calibre 48 a $26.25, entrega jueves en cuarto frío Miami.»",
+      "unmuteBtn": "Activar audio de voz",
+      "muteBtn": "Silenciar audio",
+      "assistantTitle": "Un asistente ejecutivo que conoce el estado real de tu empresa.",
+      "assistantDesc": "Conectado en vivo a tus lotes, inventario, cobranza y contabilidad. Pregunta por voz o chat quién te compra más, qué productor te deja mejor margen neto, qué comprar esta semana y cómo va el mes.",
+      "assistantPrompt1": "«¿Cómo está la empresa hoy y qué cliente nos dejó mayor margen real este mes?»",
+      "assistantReply1": "El margen neto cobrado subió 14.2% ($184,900). SunCoast Foodservice lidera con 19.4% de margen neto en 14 lotes; 2 facturas vencidas ($11,400) ya tienen recordatorio automático de cobro.",
+      "assistantPrompt2": "«¿Qué proveedor de aguacate tuvo menor merma el trimestre pasado?»",
+      "assistantReply2": "Empacadora Uruapan promedió 1.8% de merma frente a 5.4% de Sierra Verde—ahorrando $3.10 por caja vendible.",
+      "pillars": [
+        {
+          "title": "Delega sin fricción operativa",
+          "desc": "Cualquier operador en bodega o ventas puede crear órdenes, despachos y recepciones por voz en segundos—sin semanas de capacitación."
+        },
+        {
+          "title": "Cero horas atado al teclado",
+          "desc": "Elimina la transcripción nocturna de hojas de papel y audios de WhatsApp. Hablas una vez y el registro operativo y contable se actualiza al instante."
+        },
+        {
+          "title": "Pulso del negocio 24/7",
+          "desc": "Conoce tu flujo de caja, cuentas por cobrar, inventario en frío y utilidad por lote desde tu oficina o celular sin esperar al contador."
+        }
+      ]
+    },
     "problem": {
       "h2": "La factura del grower dice $42,000. ¿Cuánto te costó realmente ese contenedor de aguacates?",
       "lead": "Recibes un contenedor de aguacates con una factura del productor por $42,000. Tu equipo de ventas calcula el precio sobre esa factura y vende la carga en cuatro días. Tres semanas después llegan a contabilidad las facturas de flete, aduana, cuarto frío y la merma de reempaque.",
       "body": "Para cuando tu contador concilia el mes en QuickBooks y Excel, la fruta ya se vendió, el cliente ya pagó y no tienes idea de qué lotes ganaron dinero y cuáles perdieron efectivo.",
       "marginCallout": "En un negocio con márgenes netos de 2–4%, esa asignación de costos decide si el contenedor ganó o perdió dinero.",
+      "coolerPhotoCaption": "5:00 a.m. en el cuarto frío: buscando entre papeles y hojas de cálculo mientras el flete no asignado y la merma se comen en silencio tu margen neto.",
       "receipt": {
         "title": "RECIBO DE COSTO REAL (LANDED COST)",
         "meta": "LOTE #AVO-4200 · 1,600 CAJAS AGUACATE HASS · PUERTO: PHARR / MIAMI",
@@ -835,6 +891,24 @@
           "submit": "No pudimos enviar tu solicitud en este momento. Intenta de nuevo o escríbenos por WhatsApp al +1 (754) 254-9069."
         }
       }
+    },
+    "fieldOperations": {
+      "h2": "Desde reportes de calidad en rampa y despacho guiado hasta búsqueda automática de compradores.",
+      "subtitle": "Cada movimiento físico en tu bodega se conecta con respaldos de calidad con IA, cobranza y contabilidad automatizada, y un motor comercial que prospecta nuevos compradores cada mañana.",
+      "receivingTitle": "Toma fotos en rampa al recibir o despachar",
+      "receivingDesc": "Cuando el camión llega o sale del cuarto frío, captura el estado del pallet desde la app. Sin libretas ni fotos perdidas en WhatsApp.",
+      "reportTitle": "La IA redacta y entrega el reporte oficial de calidad",
+      "reportDesc": "ADDNEXO redacta el resumen de condición, inserta las fotos con fecha y hora en un documento formal y lo envía al productor o comprador para proteger tu margen ante reclamos injustos.",
+      "dispatchTitle": "Despacho guiado en bodega con facturación y cobranza automática",
+      "dispatchDesc": "Tu equipo prepara pedidos por voz o escaneo. En cuanto sale el camión, se emite la factura, se actualiza contabilidad y se activa el seguimiento automático de cobro.",
+      "outreachTitle": "Prospección Automática: Encuentra compradores calificados y envía listas diarias de precios",
+      "outreachDesc": "ADDNEXO se conecta a bases de datos nacionales de compradores de produce filtrados por score. Envía automáticamente la presentación de tu empresa por correo y, cada mañana, distribuye tus precios y disponibilidad del día a toda tu cartera.",
+      "outreachSteps": [
+        "Compradores Filtrados por Score",
+        "Presentaciones Automáticas por Email",
+        "Envío Diario de Precios y Stock",
+        "Pedido Directo a Despacho"
+      ]
     }
   },
   "beyondErp": {
@@ -853,6 +927,43 @@
       {
         "title": "Reporte de calidad con IA",
         "desc": "Toma fotos cuando la mercancía llega o sale. La IA redacta el resumen, coloca las fotos en un documento preestablecido y lo descargas o envías directo desde la app."
+      }
+    ]
+  },
+  "featureMarquee": {
+    "pauseHint": "Pasa el cursor para pausar",
+    "items": [
+      {
+        "title": "Operación 100% por Voz",
+        "desc": "Crea órdenes de compra, despachos, facturas y catálogo hablando—deja de digitar por horas y delega sin fricción."
+      },
+      {
+        "title": "Asistente Ejecutivo con IA",
+        "desc": "Pregúntale cualquier cosa a tu empresa en tiempo real: quién compra más, qué comprar y cómo está tu utilidad hoy."
+      },
+      {
+        "title": "Costo Real por Lote (Landed Cost)",
+        "desc": "Vincula flete, aduana, bróker, cuarto frío y merma a cada contenedor para conocer tu costo exacto antes de vender."
+      },
+      {
+        "title": "Reportes de Calidad con IA",
+        "desc": "Toma fotos en rampa al recibir o despachar; la IA redacta el dictamen y genera el PDF listo para enviar."
+      },
+      {
+        "title": "Búsqueda Automática de Compradores",
+        "desc": "Filtra compradores nacionales por score, envía presentaciones en automático y comparte tu lista diaria de precios cada mañana."
+      },
+      {
+        "title": "Cobranza y Contabilidad Automatizada",
+        "desc": "Conecta cada despacho con facturación, recordatorios de cuentas por cobrar, cuentas por pagar y control financiero."
+      },
+      {
+        "title": "Trazabilidad Completa por Lote",
+        "desc": "Sigue cada pallet desde la compra al productor hasta ubicación en frío, asignación a cliente, despacho y liquidación."
+      },
+      {
+        "title": "Dashboards Ejecutivos en Vivo",
+        "desc": "Visibilidad instantánea de margen neto por lote, proveedor y vendedor sin esperar tres semanas al cierre contable."
       }
     ]
   }

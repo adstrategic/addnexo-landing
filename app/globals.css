@@ -5,8 +5,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-    --font-heading: var(--font-sans);
+    --font-heading: var(--font-heading), var(--font-sans);
     --font-sans: var(--font-sans);
+    --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
     --color-brand-dark: var(--brand-dark);
     --color-brand-cyan: var(--brand-cyan);
     --color-brand-blue: var(--brand-blue);
@@ -168,6 +169,27 @@
   100% {
     transform: translateY(-20px) scale(1.1);
   }
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee-fluid {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 46s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-fluid:hover,
+.group:hover .animate-marquee-fluid {
+  animation-play-state: paused;
 }
 
 @theme inline {

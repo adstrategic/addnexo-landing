@@ -175,6 +175,14 @@ export default function Navbar() {
                   >
                     <span>{t("navbar.landingsDropdown.variantErp")}</span>
                   </Link>
+
+                  <Link
+                    href="/produce?v=voice"
+                    onClick={handleNavClick}
+                    className="flex items-center justify-between rounded-lg px-3 py-2 text-[0.84rem] font-semibold text-brand-cyan transition-colors hover:bg-white/6 hover:text-white max-md:text-[0.95rem]"
+                  >
+                    <span>{t("navbar.landingsDropdown.variantVoice")}</span>
+                  </Link>
                 </div>
               </div>
             )}

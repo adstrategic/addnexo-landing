@@ -23,7 +23,8 @@
       "produceDesc": "Main campaign page",
       "variantCost": "True Landed Cost (?v=cost)",
       "variantExcel": "Excel Alternative (?v=excel)",
-      "variantErp": "Produce ERP (?v=erp)"
+      "variantErp": "Produce ERP (?v=erp)",
+      "variantVoice": "Voice, AI Assistant & Buyer Leads (?v=voice)"
     },
     "requestDemo": "Request a Free Demo",
     "language": "ES"
@@ -516,6 +517,9 @@
   },
   "produce": {
     "nav": {
+      "home": "Main Site",
+      "homeShort": "Home",
+      "voice": "Voice & AI",
       "problem": "The $42K Blind Spot",
       "howItWorks": "How It Works",
       "pricing": "Pricing",
@@ -526,19 +530,42 @@
     "watchVideo": "Watch 3-Min Walkthrough",
     "socialProof": "$90B US produce wholesale market, built by people who ran it, not studied it.",
     "hero": {
+      "chips": [
+        "100% Voice-Operated",
+        "Live AI Business Assistant",
+        "True Landed Cost per Lot",
+        "AI Quality Reports & Buyer Outreach"
+      ],
       "variants": {
         "cost": {
           "h1": "The supplier invoice is not the cost.",
-          "subheadline": "Freight, customs, brokerage, insurance, cold storage, and shrink get added later—and nobody knows the true landed cost of a lot until 3 weeks after it's already sold."
+          "subheadline": "Freight, customs, brokerage, insurance, cold storage, and shrink get added later—and nobody knows the true landed cost of a lot until 3 weeks after it's already sold. Track every lot and run your floor by voice in real time."
         },
         "excel": {
           "h1": "Still running your distribution business on spreadsheets, notebooks, and WhatsApp?",
-          "subheadline": "When purchasing, cold storage, dispatch, and accounting live in disconnected files, one unallocated freight bill or shrink adjustment silently wipes out your margin on the entire load."
+          "subheadline": "Stop sitting for hours at night typing orders and reconciling files. Run your purchasing, cold storage, dispatch, and accounting by voice—with live landed cost on every load."
         },
         "erp": {
           "h1": "The operating and financial system built for wholesale produce distribution.",
-          "subheadline": "Connect lot-level landed costs, perishable inventory, customer orders, dispatch, and accounts payable in one real-time system—built for $5M to $100M US produce distributors."
+          "subheadline": "Operate your entire business by voice, ask your AI assistant how the company stands at any moment, and connect lot-level landed costs, inventory, dispatch, and collections in one system."
+        },
+        "voice": {
+          "h1": "Run your distribution business by voice—and generate qualified buyers on autopilot.",
+          "subheadline": "Stop sitting for hours typing orders, invoices, and spreadsheets. Create purchase orders and dispatches by speaking, ask your AI voice assistant how the company stands in real time, and automatically email scored produce buyers nationwide every morning."
         }
+      },
+      "voicePreview": {
+        "header": "VOICE & BUYER GROWTH ENGINE — LIVE",
+        "origin": "Hands-Free ERP · Executive AI · Buyer Outreach",
+        "step1Tag": "1. VOICE CREATION",
+        "step1Title": "“Create PO: 1,600 boxes Hass Avocado 48s @ $26.25”",
+        "step1Status": "PO #4092 + Lot created in 4s",
+        "step2Tag": "2. AI VOICE ASSISTANT",
+        "step2Title": "“How is the company doing today & who buys the most?”",
+        "step2Status": "Net margin +14.2% · Top buyer: SunCoast",
+        "step3Tag": "3. BUYER LEAD GENERATOR",
+        "step3Title": "Scored Nationwide Produce Buyer Database",
+        "step3Status": "Auto-presentations & daily price list sent"
       },
       "ledgerPreview": {
         "header": "LOT ECONOMIC UNIT — #AVO-4029",
@@ -560,11 +587,40 @@
         "marginVerdictLive": "Actual: -$2.45/box loss"
       }
     },
+    "voiceSuperpower": {
+      "h2": "Run your entire produce operation by voice—instead of typing for hours at night.",
+      "subtitle": "Stop being chained to a desk typing orders or struggling to delegate because traditional software takes 30 clicks. Speak naturally to create purchase orders, dispatches, invoices, and catalog items—and ask your AI assistant how the company stands at any second.",
+      "videoLabel": "LIVE VOICE CREATION — PURCHASE ORDER IN SECONDS",
+      "videoCaption": "“Create purchase order for Michoacán Growers: 1,600 boxes Hass Avocado 48s at $26.25, arriving Thursday at Miami cooler.”",
+      "unmuteBtn": "Unmute voice demo",
+      "muteBtn": "Mute audio",
+      "assistantTitle": "An executive assistant that knows the real state of your company.",
+      "assistantDesc": "Connected directly to your lots, inventory, collections, and accounting. Ask by voice or chat who buys the most, which grower gives you the best net margin, what to buy this week, and how the month is performing.",
+      "assistantPrompt1": "“How is the company doing today and which customer generated the highest real margin this month?”",
+      "assistantReply1": "Net collected margin is up 14.2% ($184,900). SunCoast Foodservice leads with 19.4% net margin across 14 lots; 2 overdue invoices ($11,400) are scheduled for automatic collection.",
+      "assistantPrompt2": "“Which avocado supplier had the lowest shrink last quarter?”",
+      "assistantReply2": "Empacadora Uruapan averaged 1.8% shrink vs. 5.4% from Sierra Verde—saving $3.10 per sellable case.",
+      "pillars": [
+        {
+          "title": "Delegate without friction",
+          "desc": "Any warehouse or sales operator can execute orders, dispatches, and receiving by voice in seconds—without needing weeks of ERP training."
+        },
+        {
+          "title": "Zero hours stuck typing",
+          "desc": "Eliminate late-night data entry from paper clipboards and WhatsApp voice notes. You speak, and the operational and accounting record updates live."
+        },
+        {
+          "title": "24/7 company pulse",
+          "desc": "Know your exact cash position, pending collections, cooler stock, and lot profitability from your office or phone without waiting for accounting."
+        }
+      ]
+    },
     "problem": {
       "h2": "Your grower invoice says $42,000. What did that container of avocados actually cost you?",
       "lead": "You receive a container of avocados with a $42,000 grower invoice. Your sales team prices the load off that invoice and moves it in four days. Three weeks later, the freight bill, customs entry, cold storage invoice, and repacking shrink land on accounting's desk.",
       "body": "By the time your bookkeeper reconciles the month in QuickBooks and Excel, the fruit is long gone, the customer paid, and you have no idea which lots made money and which ones bled cash.",
       "marginCallout": "In a business operating on 2–4% net margins, how you allocate those costs decides whether that container made money or lost money.",
+      "coolerPhotoCaption": "5:00 a.m. in the cooler: searching through paper clipboards and spreadsheets while unallocated freight and shrink silently eat your net margin.",
       "receipt": {
         "title": "CONTAINER LANDED COST STATEMENT",
         "meta": "LOT #AVO-4200 · 1,600 CASES HASS AVOCADOS · ENTRY PORT: PHARR / MIAMI",
@@ -835,6 +891,24 @@
           "submit": "We couldn't submit your request right now. Please try again or message us on WhatsApp at +1 (754) 254-9069."
         }
       }
+    },
+    "fieldOperations": {
+      "h2": "From dock quality reports and guided dispatch to automated buyer outreach.",
+      "subtitle": "Every physical movement in your warehouse connects to AI quality proof, automated collections and accounting, and a commercial engine that finds new buyers every morning.",
+      "receivingTitle": "Snap photos on the dock at receiving or shipping",
+      "receivingDesc": "When a truck backs in or leaves the cooler, capture pallet condition directly from the app. No clipboards or lost photos on WhatsApp.",
+      "reportTitle": "AI generates and delivers the official quality report",
+      "reportDesc": "ADDNEXO writes the condition summary, places the timestamped photos into a formal document, and sends it to the grower or buyer to protect your margin from unfair claims.",
+      "dispatchTitle": "Guided warehouse dispatch with automatic billing & collections",
+      "dispatchDesc": "Floor teams fulfill orders by voice or scan. The moment the truck leaves, the invoice is issued, accounting updates, and automated collection follow-ups begin.",
+      "outreachTitle": "Automated Buyer Outreach: Find scored produce buyers and send daily price lists",
+      "outreachDesc": "ADDNEXO connects to nationwide databases of produce companies filtered by score. Automatically email your company presentation on a set cadence, and broadcast your daily prices and available inventory to your entire buyer list every morning.",
+      "outreachSteps": [
+        "Nationwide Scored Buyers",
+        "Automated Presentation Emails",
+        "Daily Price & Availability Broadcast",
+        "Direct Order to Dispatch"
+      ]
     }
   },
   "beyondErp": {
@@ -855,5 +929,42 @@
         "desc": "Take photos when merchandise arrives or ships. AI writes the summary, places the photos in a ready-made document, and you download or send it from the app."
       }
     ]
-  }
+  },
+  "featureMarquee": {
+      "pauseHint": "Hover to pause",
+      "items": [
+        {
+          "title": "100% Voice Operation",
+          "desc": "Create purchase orders, dispatches, invoices, and catalog items by speaking—stop typing for hours and delegate effortlessly."
+        },
+        {
+          "title": "Conversational AI Assistant",
+          "desc": "Ask your company anything in real time: who buys the most, what to buy, and how your margins and cash flow stand today."
+        },
+        {
+          "title": "True Landed Cost per Lot",
+          "desc": "Attach freight, customs, brokerage, cold storage, and shrink directly to each container so you know exact unit cost before selling."
+        },
+        {
+          "title": "AI Quality Reports",
+          "desc": "Snap dock photos at receiving or shipping; AI writes the condition summary and generates a ready-to-send inspection PDF."
+        },
+        {
+          "title": "Automated Buyer Outreach",
+          "desc": "Filter nationwide produce buyers by score, automate presentation emails, and broadcast daily prices and availability every morning."
+        },
+        {
+          "title": "Automated Collections & Accounting",
+          "desc": "Connect dispatches directly to invoicing, accounts receivable reminders, accounts payable, and live financial control."
+        },
+        {
+          "title": "End-to-End Lot Traceability",
+          "desc": "Track every box from grower purchase order to cooler location, customer allocation, dispatch, and final liquidation."
+        },
+        {
+          "title": "Live Executive Dashboards",
+          "desc": "Instant net profitability per lot, supplier, and salesperson without waiting three weeks for month-end reconciliation."
+        }
+      ]
+    }
 }

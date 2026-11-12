@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { useTranslations } from "next-intl"
 
 import { TraceabilityChain } from "@/components/visuals/TraceabilityChain"
@@ -29,14 +30,17 @@ export default function OperationalExample() {
           <p data-reveal className={sectionSubtitle}>
             {t("content")}
           </p>
-          <p data-reveal className="mt-3 text-[0.85rem] font-medium text-muted-foreground italic">
+          <p
+            data-reveal
+            className="mt-3 text-[0.85rem] font-medium text-muted-foreground italic"
+          >
             {t("privacy")}
           </p>
         </div>
 
         <div
           data-reveal
-          className="mx-auto grid max-w-[900px] gap-8 rounded-3xl border border-brand-dark/8 bg-background p-8 md:grid-cols-[280px_1fr] md:p-10"
+          className="mx-auto grid max-w-[960px] gap-8 rounded-3xl border border-brand-dark/8 bg-background p-8 md:grid-cols-[280px_1fr] md:p-10"
         >
           <div className="rounded-2xl border border-dashed border-brand-dark/20 bg-muted/50 p-6">
             <p className="mb-4 text-[0.72rem] font-bold tracking-[0.12em] text-muted-foreground uppercase">
@@ -55,17 +59,42 @@ export default function OperationalExample() {
                   <dt className="text-[0.75rem] font-semibold tracking-[0.06em] text-muted-foreground uppercase">
                     {t(`labels.${key}`)}
                   </dt>
-                  <dd className="text-[1.05rem] font-bold text-brand-dark">{value}</dd>
+                  <dd className="text-[1.05rem] font-bold text-brand-dark">
+                    {value}
+                  </dd>
                 </div>
               ))}
             </dl>
           </div>
 
-          <div className="flex flex-col justify-center">
-            <p className="mb-4 text-[0.78rem] font-bold tracking-[0.1em] text-primary uppercase">
-              ADDNEXO
-            </p>
-            <TraceabilityChain items={chain} />
+          <div className="flex flex-col justify-center gap-6">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl border border-brand-dark/8 bg-muted/30">
+                <Image
+                  src="/recibiendo mercancia con addnexo.jpeg"
+                  alt={t("headline")}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 300px"
+                />
+              </div>
+              <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl border border-brand-dark/8 bg-muted/30">
+                <Image
+                  src="/haciendo despacho con addnexo.jpeg"
+                  alt={t("headline")}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 300px"
+                />
+              </div>
+            </div>
+
+            <div>
+              <p className="mb-4 text-[0.78rem] font-bold tracking-[0.1em] text-primary uppercase">
+                ADDNEXO
+              </p>
+              <TraceabilityChain items={chain} />
+            </div>
           </div>
         </div>
       </div>

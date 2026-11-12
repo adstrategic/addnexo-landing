@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Outfit } from "next/font/google"
+import { JetBrains_Mono, Outfit, Space_Grotesk } from "next/font/google"
 import { NextIntlClientProvider, hasLocale } from "next-intl"
 import { getMessages, setRequestLocale } from "next-intl/server"
 import { notFound } from "next/navigation"
@@ -12,6 +12,18 @@ import { cn } from "@/lib/utils"
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-sans",
+})
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-heading",
+  weight: ["600", "700"],
+})
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  weight: ["500", "700"],
 })
 
 export const metadata: Metadata = {
@@ -45,7 +57,13 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html
       lang={locale}
       suppressHydrationWarning
-      className={cn("antialiased", outfit.variable, "font-sans")}
+      className={cn(
+        "antialiased",
+        outfit.variable,
+        spaceGrotesk.variable,
+        jetbrainsMono.variable,
+        "font-sans"
+      )}
     >
       <body>
         <NextIntlClientProvider messages={messages}>

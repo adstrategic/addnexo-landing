@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { useTranslations } from "next-intl"
 
 import { CostWaterfall } from "@/components/visuals/CostWaterfall"
@@ -43,12 +44,24 @@ export default function Economics() {
               {t("secondaryHeadline")}
             </h3>
             <CostWaterfall components={costs} />
-            <p className="mt-6 text-[1rem] font-semibold leading-[1.6] text-brand-dark">
+            <p className="mt-6 text-[1rem] leading-[1.6] font-semibold text-brand-dark">
               {t("closing")}
             </p>
           </div>
 
           <div data-reveal>
+            <div className="mb-7 overflow-hidden rounded-2xl border border-brand-dark/8 bg-muted/40 p-2 shadow-[0_8px_24px_rgba(15,23,42,0.06)]">
+              <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl">
+                <Image
+                  src="/viendo dasboard de addnexo.jpeg"
+                  alt={t("lotHeadline")}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 560px"
+                />
+              </div>
+            </div>
+
             <h3 className="mb-4 text-[clamp(1.4rem,2.5vw,1.85rem)] font-extrabold tracking-[-0.02em] text-brand-dark">
               {t("lotHeadline")}
             </h3>

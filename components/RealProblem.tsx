@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { useState } from "react"
 import { useTranslations } from "next-intl"
 
@@ -38,68 +39,90 @@ export default function RealProblem() {
           <p data-reveal className={sectionSubtitle}>
             {t("realProblem.content")}
           </p>
-          <p data-reveal className="mt-5 text-[1.02rem] leading-[1.7] text-foreground">
+          <p
+            data-reveal
+            className="mt-5 text-[1.02rem] leading-[1.7] text-foreground"
+          >
             {t("realProblem.body")}
           </p>
         </div>
 
-        <div data-reveal className="mx-auto max-w-[800px]">
-          <p className={sectionTag}>{t("painQuestions.intro")}</p>
-          <h3 className="mb-8 text-[clamp(1.5rem,3vw,2rem)] font-extrabold tracking-[-0.02em] text-brand-dark">
-            {t("painQuestions.headline")}
-          </h3>
+        <div
+          data-reveal
+          className="mx-auto grid max-w-[1100px] items-start gap-10 lg:grid-cols-12"
+        >
+          <div className="lg:col-span-5">
+            <div className="overflow-hidden rounded-2xl border border-brand-dark/8 bg-muted/40 p-2.5 shadow-[0_8px_24px_rgba(15,23,42,0.06)]">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
+                <Image
+                  src="/hombre-en-bodega-buscando.jpeg"
+                  alt={t("realProblem.headline")}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 440px"
+                />
+              </div>
+            </div>
+          </div>
 
-          <ul className="flex flex-col gap-3">
-            {questions.map((item, i) => {
-              const isOpen = open === i
-              return (
-                <li
-                  key={i}
-                  className="overflow-hidden rounded-2xl border border-brand-dark/8 bg-muted/40"
-                >
-                  <button
-                    type="button"
-                    className="flex w-full items-start gap-4 px-5 py-5 text-left transition-[background] duration-200 hover:bg-muted/80 active:scale-[0.995]"
-                    onClick={() => setOpen(isOpen ? null : i)}
-                    aria-expanded={isOpen}
+          <div className="lg:col-span-7">
+            <p className={sectionTag}>{t("painQuestions.intro")}</p>
+            <h3 className="mb-8 text-[clamp(1.5rem,3vw,2rem)] font-extrabold tracking-[-0.02em] text-brand-dark">
+              {t("painQuestions.headline")}
+            </h3>
+
+            <ul className="flex flex-col gap-3">
+              {questions.map((item, i) => {
+                const isOpen = open === i
+                return (
+                  <li
+                    key={i}
+                    className="overflow-hidden rounded-2xl border border-brand-dark/8 bg-muted/40"
                   >
-                    <span className="mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-full bg-brand-dark text-[0.8rem] font-bold text-white">
-                      {i + 1}
-                    </span>
-                    <span className="flex-1 text-[1rem] font-semibold leading-[1.5] text-brand-dark">
-                      {item.question}
-                    </span>
-                    <span
-                      className={cn(
-                        "mt-1 text-primary transition-transform duration-200",
-                        isOpen && "rotate-45"
-                      )}
-                      aria-hidden
+                    <button
+                      type="button"
+                      className="flex w-full items-start gap-4 px-5 py-5 text-left transition-[background] duration-200 hover:bg-muted/80 active:scale-[0.995]"
+                      onClick={() => setOpen(isOpen ? null : i)}
+                      aria-expanded={isOpen}
                     >
-                      +
-                    </span>
-                  </button>
-                  <div
-                    className={cn(
-                      "grid transition-[grid-template-rows] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]",
-                      isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
-                    )}
-                  >
-                    <div className="overflow-hidden">
-                      <p className="border-t border-brand-dark/6 px-5 pt-0 pb-5 pl-[4.25rem] text-[0.95rem] leading-[1.65] text-muted-foreground">
-                        {item.solution}
-                      </p>
+                      <span className="mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-full bg-brand-dark text-[0.8rem] font-bold text-white">
+                        {i + 1}
+                      </span>
+                      <span className="flex-1 text-[1rem] leading-[1.5] font-semibold text-brand-dark">
+                        {item.question}
+                      </span>
+                      <span
+                        className={cn(
+                          "mt-1 text-primary transition-transform duration-200",
+                          isOpen && "rotate-45"
+                        )}
+                        aria-hidden
+                      >
+                        +
+                      </span>
+                    </button>
+                    <div
+                      className={cn(
+                        "grid transition-[grid-template-rows] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]",
+                        isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+                      )}
+                    >
+                      <div className="overflow-hidden">
+                        <p className="border-t border-brand-dark/6 px-5 pt-0 pb-5 pl-[4.25rem] text-[0.95rem] leading-[1.65] text-muted-foreground">
+                          {item.solution}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-              )
-            })}
-          </ul>
+                  </li>
+                )
+              })}
+            </ul>
 
-          <div className="mt-10 flex justify-center">
-            <LandingButton asChild variant="dark" className="max-md:w-full">
-              <Link href={sectionHref("flow")}>{t("painQuestions.cta")}</Link>
-            </LandingButton>
+            <div className="mt-10 flex justify-center lg:justify-start">
+              <LandingButton asChild variant="dark" className="max-md:w-full">
+                <Link href={sectionHref("flow")}>{t("painQuestions.cta")}</Link>
+              </LandingButton>
+            </div>
           </div>
         </div>
       </div>
