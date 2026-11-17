@@ -4,7 +4,11 @@ import { z } from "zod"
 
 import NewUser from "@/components/Emails/NewUser"
 import WelcomeEmail from "@/components/Emails/Welcome"
-import { CONTACT_NOTIFY_EMAIL, EMAIL_FROM } from "@/lib/email-brand"
+import {
+  CONTACT_NOTIFY_EMAIL,
+  EMAIL_FROM,
+  getEmailLogoAttachment,
+} from "@/lib/email-brand"
 import { INDUSTRY_OPTIONS } from "@/lib/site"
 
 function getResendClient() {
@@ -84,6 +88,9 @@ export async function POST(request: Request) {
     )
   }
 
+  // Inline images require attachments; Resend batch.send does not support them.
+  const logoAttachment = await getEmailLogoAttachment()
+
   const emailsToSend = [
     ...(resolvedEmail
       ? [
@@ -95,6 +102,7 @@ export async function POST(request: Request) {
                 ? "Your 15-minute ADDNEXO diagnostic call"
                 : "Thanks for requesting an ADDNEXO demo",
             react: WelcomeEmail({ userFirstName: name }),
+            attachments: [logoAttachment],
           },
         ]
       : []),
@@ -113,14 +121,20 @@ export async function POST(request: Request) {
         userIndustry: industry ?? "fresh-produce",
         userChallenge: formattedMessage || "Diagnostic call request",
       }),
+      attachments: [logoAttachment],
     },
   ]
 
-  const { data, error } = await resend.batch.send(emailsToSend)
+  const results = await Promise.all(
+    emailsToSend.map((payload) => resend.emails.send(payload))
+  )
 
-  if (error) {
-    return NextResponse.json({ error: error.message }, { status: 500 })
+  const firstError = results.find((result) => result.error)?.error
+  if (firstError) {
+    return NextResponse.json({ error: firstError.message }, { status: 500 })
   }
 
-  return NextResponse.json(data)
+  return NextResponse.json({
+    data: results.map((result) => result.data).filter(Boolean),
+  })
 }

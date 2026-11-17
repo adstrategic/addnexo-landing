@@ -33,10 +33,10 @@ export function EmailLayout({ preview, children }: EmailLayoutProps) {
           <Container className="mx-auto max-w-xl px-0 py-10">
             <Img
               src={getEmailLogoUrl()}
-              width={140}
-              height={36}
+              width={180}
+              height={180}
               alt="ADDNEXO ERP"
-              className="mx-auto mb-8"
+              className="mx-auto mb-8 rounded-2xl"
             />
             {children}
             <Hr className="my-8 border-gray-300" />
